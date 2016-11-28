@@ -14,6 +14,10 @@
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
 		D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */; };
 		D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2731DEC4A3600642BAF /* PositanoTests.swift */; };
+		D647B2811DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */; };
+		D647B2821DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */; };
+		D647B2841DEC5A2600642BAF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2831DEC5A2600642BAF /* Config.swift */; };
+		D647B2851DEC5A2600642BAF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2831DEC5A2600642BAF /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		D647B26F1DEC4A3600642BAF /* PositanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B2731DEC4A3600642BAF /* PositanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoTests.swift; sourceTree = "<group>"; };
 		D647B2751DEC4A3600642BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoUserDefaults.swift; sourceTree = "<group>"; };
+		D647B2831DEC5A2600642BAF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				D647B25B1DEC4A3600642BAF /* Positano */,
+				D647B27E1DEC55E300642BAF /* PositanoKit */,
 				D647B2721DEC4A3600642BAF /* PositanoTests */,
 				D647B25A1DEC4A3600642BAF /* Products */,
 			);
@@ -81,11 +88,11 @@
 			children = (
 				D647B25C1DEC4A3600642BAF /* AppDelegate.swift */,
 				D647B25E1DEC4A3600642BAF /* FirstViewController.swift */,
-				D647B2601DEC4A3600642BAF /* SecondViewController.swift */,
-				D647B2621DEC4A3600642BAF /* Main.storyboard */,
 				D647B2651DEC4A3600642BAF /* Images.xcassets */,
-				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
 				D647B26A1DEC4A3600642BAF /* Info.plist */,
+				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
+				D647B2621DEC4A3600642BAF /* Main.storyboard */,
+				D647B2601DEC4A3600642BAF /* SecondViewController.swift */,
 			);
 			path = Positano;
 			sourceTree = "<group>";
@@ -93,10 +100,27 @@
 		D647B2721DEC4A3600642BAF /* PositanoTests */ = {
 			isa = PBXGroup;
 			children = (
-				D647B2731DEC4A3600642BAF /* PositanoTests.swift */,
 				D647B2751DEC4A3600642BAF /* Info.plist */,
+				D647B2731DEC4A3600642BAF /* PositanoTests.swift */,
 			);
 			path = PositanoTests;
+			sourceTree = "<group>";
+		};
+		D647B27E1DEC55E300642BAF /* PositanoKit */ = {
+			isa = PBXGroup;
+			children = (
+				D647B27F1DEC570600642BAF /* UserDefaults */,
+				D647B2831DEC5A2600642BAF /* Config.swift */,
+			);
+			path = PositanoKit;
+			sourceTree = "<group>";
+		};
+		D647B27F1DEC570600642BAF /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D647B2611DEC4A3600642BAF /* SecondViewController.swift in Sources */,
+				D647B2811DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */,
+				D647B2841DEC5A2600642BAF /* Config.swift in Sources */,
 				D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */,
 				D647B25F1DEC4A3600642BAF /* FirstViewController.swift in Sources */,
 			);
@@ -215,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */,
+				D647B2821DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */,
+				D647B2851DEC5A2600642BAF /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +263,7 @@
 				D647B2631DEC4A3600642BAF /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */ = {
@@ -243,6 +272,7 @@
 				D647B2681DEC4A3600642BAF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -348,7 +378,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
 				INFOPLIST_FILE = Positano/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hangzhou.positano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,7 +395,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
 				INFOPLIST_FILE = Positano/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hangzhou.positano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
