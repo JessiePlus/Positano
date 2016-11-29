@@ -18,6 +18,10 @@
 		D647B2821DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */; };
 		D647B2841DEC5A2600642BAF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2831DEC5A2600642BAF /* Config.swift */; };
 		D647B2851DEC5A2600642BAF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2831DEC5A2600642BAF /* Config.swift */; };
+		D649F9001DED09AD00308548 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; };
+		D649F9011DED09AD00308548 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; };
+		D649F9031DED09AD00308548 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,21 @@
 			remoteInfo = Positano;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D649F9041DED09AD00308548 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D649F9031DED09AD00308548 /* RealmSwift.framework in Embed Frameworks */,
+				D649F9011DED09AD00308548 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +63,8 @@
 		D647B2751DEC4A3600642BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoUserDefaults.swift; sourceTree = "<group>"; };
 		D647B2831DEC5A2600642BAF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D647B2871DEC76C300642BAF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		D647B2881DEC76C300642BAF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */,
+				D649F9001DED09AD00308548 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +90,7 @@
 		D647B2501DEC4A3600642BAF = {
 			isa = PBXGroup;
 			children = (
+				D647B2861DEC76C300642BAF /* Frameworks */,
 				D647B25B1DEC4A3600642BAF /* Positano */,
 				D647B27E1DEC55E300642BAF /* PositanoKit */,
 				D647B2721DEC4A3600642BAF /* PositanoTests */,
@@ -123,6 +147,15 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		D647B2861DEC76C300642BAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D647B2871DEC76C300642BAF /* Realm.framework */,
+				D647B2881DEC76C300642BAF /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +166,8 @@
 				D647B2551DEC4A3600642BAF /* Sources */,
 				D647B2561DEC4A3600642BAF /* Frameworks */,
 				D647B2571DEC4A3600642BAF /* Resources */,
+				D647B28B1DEC76E700642BAF /* ShellScript */,
+				D649F9041DED09AD00308548 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,17 +203,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = dinglin;
 				TargetAttributes = {
 					D647B2581DEC4A3600642BAF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = SFZX37BH94;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					D647B26E1DEC4A3600642BAF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = U3ANN6J6MB;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D647B2581DEC4A3600642BAF;
 					};
@@ -222,6 +259,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D647B28B1DEC76E700642BAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework\n$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D647B2551DEC4A3600642BAF /* Sources */ = {
@@ -296,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -346,6 +402,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -377,6 +434,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Positano/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -394,6 +455,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Positano/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
