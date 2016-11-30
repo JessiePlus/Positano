@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F951F1F3DC1DFF1516D5ABE /* Pods_PositanoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */; };
+		8E5246C845F010B546FCE5E0 /* Pods_Positano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B25F1DEC4A3600642BAF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25E1DEC4A3600642BAF /* FirstViewController.swift */; };
 		D647B2611DEC4A3600642BAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2601DEC4A3600642BAF /* SecondViewController.swift */; };
@@ -50,6 +52,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27E28256DA72F555CA405EC3 /* Pods-Positano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.debug.xcconfig"; sourceTree = "<group>"; };
+		67555F41A03D7A38C07B0BE1 /* Pods-PositanoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.release.xcconfig"; sourceTree = "<group>"; };
+		C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PositanoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B25E1DEC4A3600642BAF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 		D647B2831DEC5A2600642BAF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D647B2871DEC76C300642BAF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		D647B2881DEC76C300642BAF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Positano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			files = (
 				D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */,
 				D649F9001DED09AD00308548 /* Realm.framework in Frameworks */,
+				8E5246C845F010B546FCE5E0 /* Pods_Positano.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +90,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F951F1F3DC1DFF1516D5ABE /* Pods_PositanoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F6F2A0B6A78D24A56196B8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27E28256DA72F555CA405EC3 /* Pods-Positano.debug.xcconfig */,
+				8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */,
+				C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */,
+				67555F41A03D7A38C07B0BE1 /* Pods-PositanoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D647B2501DEC4A3600642BAF = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +116,7 @@
 				D647B27E1DEC55E300642BAF /* PositanoKit */,
 				D647B2721DEC4A3600642BAF /* PositanoTests */,
 				D647B25A1DEC4A3600642BAF /* Products */,
+				7F6F2A0B6A78D24A56196B8E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +174,8 @@
 			children = (
 				D647B2871DEC76C300642BAF /* Realm.framework */,
 				D647B2881DEC76C300642BAF /* RealmSwift.framework */,
+				E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */,
+				D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,11 +187,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D647B2781DEC4A3600642BAF /* Build configuration list for PBXNativeTarget "Positano" */;
 			buildPhases = (
+				DCEF2B519D83615A21998EAA /* [CP] Check Pods Manifest.lock */,
 				D647B2551DEC4A3600642BAF /* Sources */,
 				D647B2561DEC4A3600642BAF /* Frameworks */,
 				D647B2571DEC4A3600642BAF /* Resources */,
 				D647B28B1DEC76E700642BAF /* ShellScript */,
 				D649F9041DED09AD00308548 /* Embed Frameworks */,
+				D747DCD0F7995814F64FFCD3 /* [CP] Embed Pods Frameworks */,
+				18DD6013EF1DEE840FB84ABB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D647B27B1DEC4A3600642BAF /* Build configuration list for PBXNativeTarget "PositanoTests" */;
 			buildPhases = (
+				03FD01685A848548C555B6EA /* [CP] Check Pods Manifest.lock */,
 				D647B26B1DEC4A3600642BAF /* Sources */,
 				D647B26C1DEC4A3600642BAF /* Frameworks */,
 				D647B26D1DEC4A3600642BAF /* Resources */,
+				2506C261056AD4CF8DAA130E /* [CP] Embed Pods Frameworks */,
+				E29FE46A4635CA778308CB27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +291,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03FD01685A848548C555B6EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		18DD6013EF1DEE840FB84ABB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Positano/Pods-Positano-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2506C261056AD4CF8DAA130E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D647B28B1DEC76E700642BAF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -275,6 +350,51 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		D747DCD0F7995814F64FFCD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Positano/Pods-Positano-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCEF2B519D83615A21998EAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E29FE46A4635CA778308CB27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -430,6 +550,7 @@
 		};
 		D647B2791DEC4A3600642BAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E28256DA72F555CA405EC3 /* Pods-Positano.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -451,6 +572,7 @@
 		};
 		D647B27A1DEC4A3600642BAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -472,6 +594,7 @@
 		};
 		D647B27C1DEC4A3600642BAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +610,7 @@
 		};
 		D647B27D1DEC4A3600642BAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67555F41A03D7A38C07B0BE1 /* Pods-PositanoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
