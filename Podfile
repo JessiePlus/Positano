@@ -5,6 +5,7 @@ use_frameworks!
 def pods
 
     pod 'JPush', '~> 2.1.9'
+    pod ‘LeanCloud’
 end
 
 target 'Positano' do
