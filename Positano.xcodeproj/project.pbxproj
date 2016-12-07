@@ -9,17 +9,106 @@
 /* Begin PBXBuildFile section */
 		1F951F1F3DC1DFF1516D5ABE /* Pods_PositanoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */; };
 		8E5246C845F010B546FCE5E0 /* Pods_Positano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */; };
+		D614AD651DF406E9007747D7 /* RegisterPickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */; };
+		D614AD691DF40755007747D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD671DF40755007747D7 /* BaseViewController.swift */; };
+		D614AD6A1DF40755007747D7 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD681DF40755007747D7 /* SegueViewController.swift */; };
+		D614AD8E1DF407FC007747D7 /* Bundle+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD6D1DF407FC007747D7 /* Bundle+Yep.swift */; };
+		D614AD8F1DF407FC007747D7 /* CGImage+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD6E1DF407FC007747D7 /* CGImage+Yep.swift */; };
+		D614AD901DF407FC007747D7 /* CGRect+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD6F1DF407FC007747D7 /* CGRect+Yep.swift */; };
+		D614AD911DF407FC007747D7 /* CGSize+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD701DF407FC007747D7 /* CGSize+Yep.swift */; };
+		D614AD931DF407FC007747D7 /* CLPlacemark+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD721DF407FC007747D7 /* CLPlacemark+Yep.swift */; };
+		D614AD941DF407FC007747D7 /* Date+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD731DF407FC007747D7 /* Date+Yep.swift */; };
+		D614AD951DF407FC007747D7 /* DeviceUtil+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD741DF407FC007747D7 /* DeviceUtil+Yep.swift */; };
+		D614AD961DF407FC007747D7 /* Double+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD751DF407FC007747D7 /* Double+Yep.swift */; };
+		D614AD9A1DF407FC007747D7 /* NSParagraphStyle+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD7A1DF407FC007747D7 /* NSParagraphStyle+Yep.swift */; };
+		D614AD9B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD7B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift */; };
+		D614AD9C1DF407FC007747D7 /* String+Trans.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD7C1DF407FC007747D7 /* String+Trans.swift */; };
+		D614AD9D1DF407FC007747D7 /* String+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD7D1DF407FC007747D7 /* String+Yep.swift */; };
+		D614AD9E1DF407FC007747D7 /* TimeZone+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD7E1DF407FC007747D7 /* TimeZone+Yep.swift */; };
+		D614AD9F1DF407FC007747D7 /* UIApplication+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD7F1DF407FC007747D7 /* UIApplication+Yep.swift */; };
+		D614ADA11DF407FC007747D7 /* UIColor+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD811DF407FC007747D7 /* UIColor+Yep.swift */; };
+		D614ADA21DF407FC007747D7 /* UIFont+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD821DF407FC007747D7 /* UIFont+Yep.swift */; };
+		D614ADA31DF407FC007747D7 /* UIImage+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD831DF407FC007747D7 /* UIImage+Yep.swift */; };
+		D614ADA51DF407FC007747D7 /* UIMotionEffect+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD851DF407FC007747D7 /* UIMotionEffect+Yep.swift */; };
+		D614ADA61DF407FC007747D7 /* UIScrollView+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD861DF407FC007747D7 /* UIScrollView+Yep.swift */; };
+		D614ADA71DF407FC007747D7 /* UISearchBar+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD871DF407FC007747D7 /* UISearchBar+Yep.swift */; };
+		D614ADA81DF407FC007747D7 /* UISegmentedControl+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD881DF407FC007747D7 /* UISegmentedControl+Yep.swift */; };
+		D614ADA91DF407FC007747D7 /* UIStoryboard+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD891DF407FC007747D7 /* UIStoryboard+Yep.swift */; };
+		D614ADAE1DF40FB3007747D7 /* KeypathObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADAD1DF40FB3007747D7 /* KeypathObserver.framework */; };
+		D614ADAF1DF40FB3007747D7 /* KeypathObserver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADAD1DF40FB3007747D7 /* KeypathObserver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614ADBF1DF41160007747D7 /* YepLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADB71DF41160007747D7 /* YepLog.swift */; };
+		D614ADC21DF41CFA007747D7 /* Ruler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADC11DF41CFA007747D7 /* Ruler.framework */; };
+		D614ADC31DF41CFA007747D7 /* Ruler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADC11DF41CFA007747D7 /* Ruler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614ADC51DF6B40F007747D7 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D614ADC41DF6B40F007747D7 /* Intro.storyboard */; };
+		D614ADCA1DF6B9DC007747D7 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADC81DF6B9DC007747D7 /* BorderTextField.swift */; };
+		D614ADCB1DF6B9DC007747D7 /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADC91DF6B9DC007747D7 /* UnderLineTextField.swift */; };
+		D614ADCF1DF70582007747D7 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADCD1DF70582007747D7 /* FPSLabel.swift */; };
+		D614ADD01DF70582007747D7 /* NavigationTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADCE1DF70582007747D7 /* NavigationTitleLabel.swift */; };
+		D614ADD21DF70729007747D7 /* YepConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADD11DF70729007747D7 /* YepConfig.swift */; };
+		D614ADD91DF7ABE2007747D7 /* UIViewController+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADD81DF7ABE2007747D7 /* UIViewController+Yep.swift */; };
+		D614ADE81DF7ACA6007747D7 /* PositanoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADDF1DF7ACA6007747D7 /* PositanoKit.framework */; };
+		D614ADEF1DF7ACA6007747D7 /* PositanoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADEE1DF7ACA6007747D7 /* PositanoKitTests.swift */; };
+		D614ADF11DF7ACA6007747D7 /* PositanoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D614ADE11DF7ACA6007747D7 /* PositanoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D614ADF41DF7ACA6007747D7 /* PositanoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADDF1DF7ACA6007747D7 /* PositanoKit.framework */; };
+		D614ADF51DF7ACA6007747D7 /* PositanoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADDF1DF7ACA6007747D7 /* PositanoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AE021DF7AD2F007747D7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADFC1DF7AD2F007747D7 /* Config.swift */; };
+		D614AE031DF7AD2F007747D7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADFE1DF7AD2F007747D7 /* Models.swift */; };
+		D614AE041DF7AD2F007747D7 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADFF1DF7AD2F007747D7 /* RealmConfig.swift */; };
+		D614AE051DF7AD2F007747D7 /* PositanoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE011DF7AD2F007747D7 /* PositanoUserDefaults.swift */; };
+		D614AE0F1DF7AD89007747D7 /* Array+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE071DF7AD89007747D7 /* Array+Yep.swift */; };
+		D614AE101DF7AD89007747D7 /* Date+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE081DF7AD89007747D7 /* Date+Yep.swift */; };
+		D614AE111DF7AD89007747D7 /* Double+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE091DF7AD89007747D7 /* Double+Yep.swift */; };
+		D614AE121DF7AD89007747D7 /* FileManager+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0A1DF7AD89007747D7 /* FileManager+Yep.swift */; };
+		D614AE131DF7AD89007747D7 /* Realm+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0B1DF7AD89007747D7 /* Realm+Yep.swift */; };
+		D614AE141DF7AD89007747D7 /* String+Trans.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0C1DF7AD89007747D7 /* String+Trans.swift */; };
+		D614AE151DF7AD89007747D7 /* String+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0D1DF7AD89007747D7 /* String+Yep.swift */; };
+		D614AE161DF7AD89007747D7 /* UIImage+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0E1DF7AD89007747D7 /* UIImage+Yep.swift */; };
+		D614AE171DF7AE1B007747D7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; };
+		D614AE181DF7AE1B007747D7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; };
+		D614AE271DF7B029007747D7 /* PositanoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */; };
+		D614AE2E1DF7B029007747D7 /* PositanoNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE2D1DF7B029007747D7 /* PositanoNetworkingTests.swift */; };
+		D614AE301DF7B029007747D7 /* PositanoNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D614AE201DF7B029007747D7 /* PositanoNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D614AE331DF7B029007747D7 /* PositanoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */; };
+		D614AE341DF7B029007747D7 /* PositanoNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AE3F1DF7B088007747D7 /* NSURLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE3C1DF7B088007747D7 /* NSURLRequest+cURL.swift */; };
+		D614AE401DF7B088007747D7 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE3D1DF7B088007747D7 /* Manager.swift */; };
+		D614AE411DF7B088007747D7 /* PositanoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE3E1DF7B088007747D7 /* PositanoNetworking.swift */; };
+		D614AE481DF7D862007747D7 /* YepAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE431DF7D862007747D7 /* YepAlert.swift */; };
+		D614AE491DF7D862007747D7 /* YepAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE441DF7D862007747D7 /* YepAsset.swift */; };
+		D614AE4A1DF7D862007747D7 /* YepHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE451DF7D862007747D7 /* YepHelpers.swift */; };
+		D614AE4B1DF7D862007747D7 /* YepHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE461DF7D862007747D7 /* YepHUD.swift */; };
+		D614AE4C1DF7D862007747D7 /* YepSoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE471DF7D862007747D7 /* YepSoundEffect.swift */; };
+		D614AE501DF7F6B4007747D7 /* Navi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE4F1DF7F6B4007747D7 /* Navi.framework */; };
+		D614AE511DF7F6B4007747D7 /* Navi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE4F1DF7F6B4007747D7 /* Navi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AE581DF7F735007747D7 /* AttributedStringCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE531DF7F735007747D7 /* AttributedStringCache.swift */; };
+		D614AE591DF7F735007747D7 /* AvatarStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE541DF7F735007747D7 /* AvatarStyles.swift */; };
+		D614AE5A1DF7F735007747D7 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE551DF7F735007747D7 /* ImageCache.swift */; };
+		D614AE5B1DF7F735007747D7 /* PlainAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE561DF7F735007747D7 /* PlainAvatar.swift */; };
+		D614AE5C1DF7F735007747D7 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE571DF7F735007747D7 /* UserAvatar.swift */; };
+		D614AE611DF7FBE0007747D7 /* CancelableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE5E1DF7FBE0007747D7 /* CancelableTask.swift */; };
+		D614AE621DF7FBE0007747D7 /* SafeDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE5F1DF7FBE0007747D7 /* SafeDispatch.swift */; };
+		D614AE631DF7FBE0007747D7 /* YepMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE601DF7FBE0007747D7 /* YepMedia.swift */; };
+		D614AE6A1DF7FDC8007747D7 /* URL+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE691DF7FDC8007747D7 /* URL+Yep.swift */; };
+		D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE6C1DF7FE26007747D7 /* CanScrollsToTop.swift */; };
+		D614AE781DF7FE26007747D7 /* Copyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE6D1DF7FE26007747D7 /* Copyable.swift */; };
+		D614AE7A1DF7FE26007747D7 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE6F1DF7FE26007747D7 /* NibLoadable.swift */; };
+		D614AE7B1DF7FE26007747D7 /* PhoneNumberRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE701DF7FE26007747D7 /* PhoneNumberRepresentation.swift */; };
+		D614AE7C1DF7FE26007747D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE711DF7FE26007747D7 /* Reusable.swift */; };
+		D614AE7F1DF7FE26007747D7 /* Shareable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE741DF7FE26007747D7 /* Shareable.swift */; };
+		D614AE811DF7FE26007747D7 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE761DF7FE26007747D7 /* UserRepresentation.swift */; };
+		D614AE851DF7FF3C007747D7 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE831DF7FF3C007747D7 /* NSDate+Extension.swift */; };
+		D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D614AE841DF7FF3C007747D7 /* NSDateTimeAgo.bundle */; };
+		D614AE881DF801F6007747D7 /* AutoReview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE871DF801F6007747D7 /* AutoReview.framework */; };
+		D614AE891DF801F6007747D7 /* AutoReview.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE871DF801F6007747D7 /* AutoReview.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AE8B1DF80238007747D7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8A1DF80238007747D7 /* Kingfisher.framework */; };
+		D614AE8C1DF80238007747D7 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8A1DF80238007747D7 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AE8E1DF80264007747D7 /* Proposer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8D1DF80264007747D7 /* Proposer.framework */; };
+		D614AE8F1DF80264007747D7 /* Proposer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8D1DF80264007747D7 /* Proposer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
-		D647B25F1DEC4A3600642BAF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25E1DEC4A3600642BAF /* FirstViewController.swift */; };
-		D647B2611DEC4A3600642BAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2601DEC4A3600642BAF /* SecondViewController.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
 		D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */; };
 		D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2731DEC4A3600642BAF /* PositanoTests.swift */; };
-		D647B2811DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */; };
-		D647B2821DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */; };
-		D647B2841DEC5A2600642BAF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2831DEC5A2600642BAF /* Config.swift */; };
-		D647B2851DEC5A2600642BAF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2831DEC5A2600642BAF /* Config.swift */; };
 		D649F9001DED09AD00308548 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; };
 		D649F9011DED09AD00308548 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; };
@@ -27,6 +116,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D614ADE91DF7ACA6007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D614ADDE1DF7ACA6007747D7;
+			remoteInfo = PositanoKit;
+		};
+		D614ADEB1DF7ACA6007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D647B2581DEC4A3600642BAF;
+			remoteInfo = Positano;
+		};
+		D614ADF21DF7ACA6007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D614ADDE1DF7ACA6007747D7;
+			remoteInfo = PositanoKit;
+		};
+		D614AE281DF7B029007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D614AE1D1DF7B029007747D7;
+			remoteInfo = PositanoNetworking;
+		};
+		D614AE2A1DF7B029007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D647B2581DEC4A3600642BAF;
+			remoteInfo = Positano;
+		};
+		D614AE311DF7B029007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D614AE1D1DF7B029007747D7;
+			remoteInfo = PositanoNetworking;
+		};
+		D614AE4D1DF7DD3F007747D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D614AE1D1DF7B029007747D7;
+			remoteInfo = PositanoNetworking;
+		};
 		D647B2701DEC4A3600642BAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D647B2511DEC4A3600642BAF /* Project object */;
@@ -43,8 +181,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D614ADF51DF7ACA6007747D7 /* PositanoKit.framework in Embed Frameworks */,
 				D649F9031DED09AD00308548 /* RealmSwift.framework in Embed Frameworks */,
+				D614AE8F1DF80264007747D7 /* Proposer.framework in Embed Frameworks */,
+				D614ADC31DF41CFA007747D7 /* Ruler.framework in Embed Frameworks */,
+				D614AE891DF801F6007747D7 /* AutoReview.framework in Embed Frameworks */,
+				D614AE8C1DF80238007747D7 /* Kingfisher.framework in Embed Frameworks */,
 				D649F9011DED09AD00308548 /* Realm.framework in Embed Frameworks */,
+				D614ADAF1DF40FB3007747D7 /* KeypathObserver.framework in Embed Frameworks */,
+				D614AE341DF7B029007747D7 /* PositanoNetworking.framework in Embed Frameworks */,
+				D614AE511DF7F6B4007747D7 /* Navi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,10 +203,97 @@
 		8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.release.xcconfig"; sourceTree = "<group>"; };
 		C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PositanoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPickNameViewController.swift; sourceTree = "<group>"; };
+		D614AD671DF40755007747D7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D614AD681DF40755007747D7 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		D614AD6D1DF407FC007747D7 /* Bundle+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Yep.swift"; sourceTree = "<group>"; };
+		D614AD6E1DF407FC007747D7 /* CGImage+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Yep.swift"; sourceTree = "<group>"; };
+		D614AD6F1DF407FC007747D7 /* CGRect+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Yep.swift"; sourceTree = "<group>"; };
+		D614AD701DF407FC007747D7 /* CGSize+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Yep.swift"; sourceTree = "<group>"; };
+		D614AD721DF407FC007747D7 /* CLPlacemark+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLPlacemark+Yep.swift"; sourceTree = "<group>"; };
+		D614AD731DF407FC007747D7 /* Date+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Yep.swift"; sourceTree = "<group>"; };
+		D614AD741DF407FC007747D7 /* DeviceUtil+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceUtil+Yep.swift"; sourceTree = "<group>"; };
+		D614AD751DF407FC007747D7 /* Double+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Yep.swift"; sourceTree = "<group>"; };
+		D614AD7A1DF407FC007747D7 /* NSParagraphStyle+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSParagraphStyle+Yep.swift"; sourceTree = "<group>"; };
+		D614AD7B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHImageRequestOptions+Yep.swift"; sourceTree = "<group>"; };
+		D614AD7C1DF407FC007747D7 /* String+Trans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trans.swift"; sourceTree = "<group>"; };
+		D614AD7D1DF407FC007747D7 /* String+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Yep.swift"; sourceTree = "<group>"; };
+		D614AD7E1DF407FC007747D7 /* TimeZone+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeZone+Yep.swift"; sourceTree = "<group>"; };
+		D614AD7F1DF407FC007747D7 /* UIApplication+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Yep.swift"; sourceTree = "<group>"; };
+		D614AD811DF407FC007747D7 /* UIColor+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Yep.swift"; sourceTree = "<group>"; };
+		D614AD821DF407FC007747D7 /* UIFont+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Yep.swift"; sourceTree = "<group>"; };
+		D614AD831DF407FC007747D7 /* UIImage+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Yep.swift"; sourceTree = "<group>"; };
+		D614AD851DF407FC007747D7 /* UIMotionEffect+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIMotionEffect+Yep.swift"; sourceTree = "<group>"; };
+		D614AD861DF407FC007747D7 /* UIScrollView+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Yep.swift"; sourceTree = "<group>"; };
+		D614AD871DF407FC007747D7 /* UISearchBar+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Yep.swift"; sourceTree = "<group>"; };
+		D614AD881DF407FC007747D7 /* UISegmentedControl+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Yep.swift"; sourceTree = "<group>"; };
+		D614AD891DF407FC007747D7 /* UIStoryboard+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Yep.swift"; sourceTree = "<group>"; };
+		D614ADAD1DF40FB3007747D7 /* KeypathObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeypathObserver.framework; path = Carthage/Build/iOS/KeypathObserver.framework; sourceTree = "<group>"; };
+		D614ADB71DF41160007747D7 /* YepLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepLog.swift; sourceTree = "<group>"; };
+		D614ADC11DF41CFA007747D7 /* Ruler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruler.framework; path = Carthage/Build/iOS/Ruler.framework; sourceTree = "<group>"; };
+		D614ADC41DF6B40F007747D7 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		D614ADC81DF6B9DC007747D7 /* BorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		D614ADC91DF6B9DC007747D7 /* UnderLineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderLineTextField.swift; sourceTree = "<group>"; };
+		D614ADCD1DF70582007747D7 /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
+		D614ADCE1DF70582007747D7 /* NavigationTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTitleLabel.swift; sourceTree = "<group>"; };
+		D614ADD11DF70729007747D7 /* YepConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepConfig.swift; sourceTree = "<group>"; };
+		D614ADD81DF7ABE2007747D7 /* UIViewController+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Yep.swift"; sourceTree = "<group>"; };
+		D614ADDF1DF7ACA6007747D7 /* PositanoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PositanoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D614ADE11DF7ACA6007747D7 /* PositanoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PositanoKit.h; sourceTree = "<group>"; };
+		D614ADE21DF7ACA6007747D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D614ADE71DF7ACA6007747D7 /* PositanoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositanoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D614ADEE1DF7ACA6007747D7 /* PositanoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoKitTests.swift; sourceTree = "<group>"; };
+		D614ADF01DF7ACA6007747D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D614ADFC1DF7AD2F007747D7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D614ADFE1DF7AD2F007747D7 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D614ADFF1DF7AD2F007747D7 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
+		D614AE011DF7AD2F007747D7 /* PositanoUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoUserDefaults.swift; sourceTree = "<group>"; };
+		D614AE071DF7AD89007747D7 /* Array+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Yep.swift"; sourceTree = "<group>"; };
+		D614AE081DF7AD89007747D7 /* Date+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Yep.swift"; sourceTree = "<group>"; };
+		D614AE091DF7AD89007747D7 /* Double+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Yep.swift"; sourceTree = "<group>"; };
+		D614AE0A1DF7AD89007747D7 /* FileManager+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Yep.swift"; sourceTree = "<group>"; };
+		D614AE0B1DF7AD89007747D7 /* Realm+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Yep.swift"; sourceTree = "<group>"; };
+		D614AE0C1DF7AD89007747D7 /* String+Trans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trans.swift"; sourceTree = "<group>"; };
+		D614AE0D1DF7AD89007747D7 /* String+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Yep.swift"; sourceTree = "<group>"; };
+		D614AE0E1DF7AD89007747D7 /* UIImage+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Yep.swift"; sourceTree = "<group>"; };
+		D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PositanoNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D614AE201DF7B029007747D7 /* PositanoNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PositanoNetworking.h; sourceTree = "<group>"; };
+		D614AE211DF7B029007747D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D614AE261DF7B029007747D7 /* PositanoNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositanoNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D614AE2D1DF7B029007747D7 /* PositanoNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoNetworkingTests.swift; sourceTree = "<group>"; };
+		D614AE2F1DF7B029007747D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D614AE3C1DF7B088007747D7 /* NSURLRequest+cURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLRequest+cURL.swift"; sourceTree = "<group>"; };
+		D614AE3D1DF7B088007747D7 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D614AE3E1DF7B088007747D7 /* PositanoNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoNetworking.swift; sourceTree = "<group>"; };
+		D614AE431DF7D862007747D7 /* YepAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepAlert.swift; sourceTree = "<group>"; };
+		D614AE441DF7D862007747D7 /* YepAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepAsset.swift; sourceTree = "<group>"; };
+		D614AE451DF7D862007747D7 /* YepHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepHelpers.swift; sourceTree = "<group>"; };
+		D614AE461DF7D862007747D7 /* YepHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepHUD.swift; sourceTree = "<group>"; };
+		D614AE471DF7D862007747D7 /* YepSoundEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepSoundEffect.swift; sourceTree = "<group>"; };
+		D614AE4F1DF7F6B4007747D7 /* Navi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Navi.framework; path = Carthage/Build/iOS/Navi.framework; sourceTree = "<group>"; };
+		D614AE531DF7F735007747D7 /* AttributedStringCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringCache.swift; sourceTree = "<group>"; };
+		D614AE541DF7F735007747D7 /* AvatarStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarStyles.swift; sourceTree = "<group>"; };
+		D614AE551DF7F735007747D7 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D614AE561DF7F735007747D7 /* PlainAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainAvatar.swift; sourceTree = "<group>"; };
+		D614AE571DF7F735007747D7 /* UserAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
+		D614AE5E1DF7FBE0007747D7 /* CancelableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelableTask.swift; sourceTree = "<group>"; };
+		D614AE5F1DF7FBE0007747D7 /* SafeDispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeDispatch.swift; sourceTree = "<group>"; };
+		D614AE601DF7FBE0007747D7 /* YepMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepMedia.swift; sourceTree = "<group>"; };
+		D614AE691DF7FDC8007747D7 /* URL+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Yep.swift"; sourceTree = "<group>"; };
+		D614AE6C1DF7FE26007747D7 /* CanScrollsToTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanScrollsToTop.swift; sourceTree = "<group>"; };
+		D614AE6D1DF7FE26007747D7 /* Copyable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Copyable.swift; sourceTree = "<group>"; };
+		D614AE6F1DF7FE26007747D7 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D614AE701DF7FE26007747D7 /* PhoneNumberRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberRepresentation.swift; sourceTree = "<group>"; };
+		D614AE711DF7FE26007747D7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D614AE741DF7FE26007747D7 /* Shareable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shareable.swift; sourceTree = "<group>"; };
+		D614AE761DF7FE26007747D7 /* UserRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
+		D614AE831DF7FF3C007747D7 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		D614AE841DF7FF3C007747D7 /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
+		D614AE871DF801F6007747D7 /* AutoReview.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AutoReview.framework; path = Carthage/Build/iOS/AutoReview.framework; sourceTree = "<group>"; };
+		D614AE8A1DF80238007747D7 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		D614AE8D1DF80264007747D7 /* Proposer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Proposer.framework; path = Carthage/Build/iOS/Proposer.framework; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D647B25E1DEC4A3600642BAF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D647B2601DEC4A3600642BAF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D647B2651DEC4A3600642BAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D647B2681DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,21 +301,59 @@
 		D647B26F1DEC4A3600642BAF /* PositanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B2731DEC4A3600642BAF /* PositanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoTests.swift; sourceTree = "<group>"; };
 		D647B2751DEC4A3600642BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoUserDefaults.swift; sourceTree = "<group>"; };
-		D647B2831DEC5A2600642BAF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D647B2871DEC76C300642BAF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		D647B2881DEC76C300642BAF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Positano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D614ADDB1DF7ACA6007747D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614AE171DF7AE1B007747D7 /* Realm.framework in Frameworks */,
+				D614AE181DF7AE1B007747D7 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614ADE41DF7ACA6007747D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614ADE81DF7ACA6007747D7 /* PositanoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE1A1DF7B029007747D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE231DF7B029007747D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614AE271DF7B029007747D7 /* PositanoNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D647B2561DEC4A3600642BAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D614AE8B1DF80238007747D7 /* Kingfisher.framework in Frameworks */,
+				D614AE501DF7F6B4007747D7 /* Navi.framework in Frameworks */,
+				D614AE8E1DF80264007747D7 /* Proposer.framework in Frameworks */,
+				D614ADC21DF41CFA007747D7 /* Ruler.framework in Frameworks */,
+				D614AE331DF7B029007747D7 /* PositanoNetworking.framework in Frameworks */,
+				D614AE881DF801F6007747D7 /* AutoReview.framework in Frameworks */,
 				D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */,
 				D649F9001DED09AD00308548 /* Realm.framework in Frameworks */,
 				8E5246C845F010B546FCE5E0 /* Pods_Positano.framework in Frameworks */,
+				D614ADF41DF7ACA6007747D7 /* PositanoKit.framework in Frameworks */,
+				D614ADAE1DF40FB3007747D7 /* KeypathObserver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,15 +379,230 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D614AD661DF40731007747D7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D614AD671DF40755007747D7 /* BaseViewController.swift */,
+				D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */,
+				D614AD681DF40755007747D7 /* SegueViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D614AD6B1DF407FC007747D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE821DF7FF3C007747D7 /* NSDate+TimeAgo */,
+				D614AD6D1DF407FC007747D7 /* Bundle+Yep.swift */,
+				D614AD6E1DF407FC007747D7 /* CGImage+Yep.swift */,
+				D614AD6F1DF407FC007747D7 /* CGRect+Yep.swift */,
+				D614AD701DF407FC007747D7 /* CGSize+Yep.swift */,
+				D614AD721DF407FC007747D7 /* CLPlacemark+Yep.swift */,
+				D614AD731DF407FC007747D7 /* Date+Yep.swift */,
+				D614AD741DF407FC007747D7 /* DeviceUtil+Yep.swift */,
+				D614AD751DF407FC007747D7 /* Double+Yep.swift */,
+				D614AD7A1DF407FC007747D7 /* NSParagraphStyle+Yep.swift */,
+				D614AD7B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift */,
+				D614AD7C1DF407FC007747D7 /* String+Trans.swift */,
+				D614AD7D1DF407FC007747D7 /* String+Yep.swift */,
+				D614AD7E1DF407FC007747D7 /* TimeZone+Yep.swift */,
+				D614AD7F1DF407FC007747D7 /* UIApplication+Yep.swift */,
+				D614AD811DF407FC007747D7 /* UIColor+Yep.swift */,
+				D614AD821DF407FC007747D7 /* UIFont+Yep.swift */,
+				D614AD831DF407FC007747D7 /* UIImage+Yep.swift */,
+				D614AD851DF407FC007747D7 /* UIMotionEffect+Yep.swift */,
+				D614AD861DF407FC007747D7 /* UIScrollView+Yep.swift */,
+				D614AD871DF407FC007747D7 /* UISearchBar+Yep.swift */,
+				D614AD881DF407FC007747D7 /* UISegmentedControl+Yep.swift */,
+				D614AD891DF407FC007747D7 /* UIStoryboard+Yep.swift */,
+				D614ADD81DF7ABE2007747D7 /* UIViewController+Yep.swift */,
+				D614AE691DF7FDC8007747D7 /* URL+Yep.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D614ADB01DF41160007747D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE431DF7D862007747D7 /* YepAlert.swift */,
+				D614AE441DF7D862007747D7 /* YepAsset.swift */,
+				D614ADD11DF70729007747D7 /* YepConfig.swift */,
+				D614AE461DF7D862007747D7 /* YepHUD.swift */,
+				D614AE451DF7D862007747D7 /* YepHelpers.swift */,
+				D614ADB71DF41160007747D7 /* YepLog.swift */,
+				D614AE471DF7D862007747D7 /* YepSoundEffect.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D614ADC61DF6B940007747D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D614ADCC1DF70582007747D7 /* Labels */,
+				D614ADC71DF6B9DC007747D7 /* TextFields */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D614ADC71DF6B9DC007747D7 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				D614ADC81DF6B9DC007747D7 /* BorderTextField.swift */,
+				D614ADC91DF6B9DC007747D7 /* UnderLineTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		D614ADCC1DF70582007747D7 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				D614ADCD1DF70582007747D7 /* FPSLabel.swift */,
+				D614ADCE1DF70582007747D7 /* NavigationTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		D614ADE01DF7ACA6007747D7 /* PositanoKit */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE061DF7AD88007747D7 /* Extensions */,
+				D614AE5D1DF7FBE0007747D7 /* Helpers */,
+				D614ADFD1DF7AD2F007747D7 /* Persistence */,
+				D614AE001DF7AD2F007747D7 /* UserDefaults */,
+				D614ADFC1DF7AD2F007747D7 /* Config.swift */,
+				D614ADE21DF7ACA6007747D7 /* Info.plist */,
+				D614ADE11DF7ACA6007747D7 /* PositanoKit.h */,
+			);
+			path = PositanoKit;
+			sourceTree = "<group>";
+		};
+		D614ADED1DF7ACA6007747D7 /* PositanoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D614ADF01DF7ACA6007747D7 /* Info.plist */,
+				D614ADEE1DF7ACA6007747D7 /* PositanoKitTests.swift */,
+			);
+			path = PositanoKitTests;
+			sourceTree = "<group>";
+		};
+		D614ADFD1DF7AD2F007747D7 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				D614ADFE1DF7AD2F007747D7 /* Models.swift */,
+				D614ADFF1DF7AD2F007747D7 /* RealmConfig.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		D614AE001DF7AD2F007747D7 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE011DF7AD2F007747D7 /* PositanoUserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		D614AE061DF7AD88007747D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE071DF7AD89007747D7 /* Array+Yep.swift */,
+				D614AE081DF7AD89007747D7 /* Date+Yep.swift */,
+				D614AE091DF7AD89007747D7 /* Double+Yep.swift */,
+				D614AE0A1DF7AD89007747D7 /* FileManager+Yep.swift */,
+				D614AE0B1DF7AD89007747D7 /* Realm+Yep.swift */,
+				D614AE0C1DF7AD89007747D7 /* String+Trans.swift */,
+				D614AE0D1DF7AD89007747D7 /* String+Yep.swift */,
+				D614AE0E1DF7AD89007747D7 /* UIImage+Yep.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D614AE1F1DF7B029007747D7 /* PositanoNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE3B1DF7B088007747D7 /* Extensions */,
+				D614AE211DF7B029007747D7 /* Info.plist */,
+				D614AE3D1DF7B088007747D7 /* Manager.swift */,
+				D614AE201DF7B029007747D7 /* PositanoNetworking.h */,
+				D614AE3E1DF7B088007747D7 /* PositanoNetworking.swift */,
+			);
+			path = PositanoNetworking;
+			sourceTree = "<group>";
+		};
+		D614AE2C1DF7B029007747D7 /* PositanoNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE2F1DF7B029007747D7 /* Info.plist */,
+				D614AE2D1DF7B029007747D7 /* PositanoNetworkingTests.swift */,
+			);
+			path = PositanoNetworkingTests;
+			sourceTree = "<group>";
+		};
+		D614AE3B1DF7B088007747D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE3C1DF7B088007747D7 /* NSURLRequest+cURL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D614AE521DF7F735007747D7 /* Caches */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE531DF7F735007747D7 /* AttributedStringCache.swift */,
+				D614AE541DF7F735007747D7 /* AvatarStyles.swift */,
+				D614AE551DF7F735007747D7 /* ImageCache.swift */,
+				D614AE561DF7F735007747D7 /* PlainAvatar.swift */,
+				D614AE571DF7F735007747D7 /* UserAvatar.swift */,
+			);
+			path = Caches;
+			sourceTree = "<group>";
+		};
+		D614AE5D1DF7FBE0007747D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE5E1DF7FBE0007747D7 /* CancelableTask.swift */,
+				D614AE5F1DF7FBE0007747D7 /* SafeDispatch.swift */,
+				D614AE601DF7FBE0007747D7 /* YepMedia.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D614AE6B1DF7FE26007747D7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE6C1DF7FE26007747D7 /* CanScrollsToTop.swift */,
+				D614AE6D1DF7FE26007747D7 /* Copyable.swift */,
+				D614AE6F1DF7FE26007747D7 /* NibLoadable.swift */,
+				D614AE701DF7FE26007747D7 /* PhoneNumberRepresentation.swift */,
+				D614AE711DF7FE26007747D7 /* Reusable.swift */,
+				D614AE741DF7FE26007747D7 /* Shareable.swift */,
+				D614AE761DF7FE26007747D7 /* UserRepresentation.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D614AE821DF7FF3C007747D7 /* NSDate+TimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				D614AE831DF7FF3C007747D7 /* NSDate+Extension.swift */,
+				D614AE841DF7FF3C007747D7 /* NSDateTimeAgo.bundle */,
+			);
+			path = "NSDate+TimeAgo";
+			sourceTree = "<group>";
+		};
 		D647B2501DEC4A3600642BAF = {
 			isa = PBXGroup;
 			children = (
 				D647B2861DEC76C300642BAF /* Frameworks */,
+				7F6F2A0B6A78D24A56196B8E /* Pods */,
 				D647B25B1DEC4A3600642BAF /* Positano */,
-				D647B27E1DEC55E300642BAF /* PositanoKit */,
+				D614ADE01DF7ACA6007747D7 /* PositanoKit */,
+				D614ADED1DF7ACA6007747D7 /* PositanoKitTests */,
+				D614AE1F1DF7B029007747D7 /* PositanoNetworking */,
+				D614AE2C1DF7B029007747D7 /* PositanoNetworkingTests */,
 				D647B2721DEC4A3600642BAF /* PositanoTests */,
 				D647B25A1DEC4A3600642BAF /* Products */,
-				7F6F2A0B6A78D24A56196B8E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +611,10 @@
 			children = (
 				D647B2591DEC4A3600642BAF /* Positano.app */,
 				D647B26F1DEC4A3600642BAF /* PositanoTests.xctest */,
+				D614ADDF1DF7ACA6007747D7 /* PositanoKit.framework */,
+				D614ADE71DF7ACA6007747D7 /* PositanoKitTests.xctest */,
+				D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */,
+				D614AE261DF7B029007747D7 /* PositanoNetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,13 +622,18 @@
 		D647B25B1DEC4A3600642BAF /* Positano */ = {
 			isa = PBXGroup;
 			children = (
+				D614AE521DF7F735007747D7 /* Caches */,
+				D614AD6B1DF407FC007747D7 /* Extensions */,
+				D614ADB01DF41160007747D7 /* Helpers */,
+				D614AE6B1DF7FE26007747D7 /* Protocols */,
+				D614AD661DF40731007747D7 /* ViewControllers */,
+				D614ADC61DF6B940007747D7 /* Views */,
 				D647B25C1DEC4A3600642BAF /* AppDelegate.swift */,
-				D647B25E1DEC4A3600642BAF /* FirstViewController.swift */,
 				D647B2651DEC4A3600642BAF /* Images.xcassets */,
 				D647B26A1DEC4A3600642BAF /* Info.plist */,
+				D614ADC41DF6B40F007747D7 /* Intro.storyboard */,
 				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
 				D647B2621DEC4A3600642BAF /* Main.storyboard */,
-				D647B2601DEC4A3600642BAF /* SecondViewController.swift */,
 			);
 			path = Positano;
 			sourceTree = "<group>";
@@ -152,26 +647,15 @@
 			path = PositanoTests;
 			sourceTree = "<group>";
 		};
-		D647B27E1DEC55E300642BAF /* PositanoKit */ = {
-			isa = PBXGroup;
-			children = (
-				D647B27F1DEC570600642BAF /* UserDefaults */,
-				D647B2831DEC5A2600642BAF /* Config.swift */,
-			);
-			path = PositanoKit;
-			sourceTree = "<group>";
-		};
-		D647B27F1DEC570600642BAF /* UserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-				D647B2801DEC572F00642BAF /* PositanoUserDefaults.swift */,
-			);
-			path = UserDefaults;
-			sourceTree = "<group>";
-		};
 		D647B2861DEC76C300642BAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D614AE8D1DF80264007747D7 /* Proposer.framework */,
+				D614AE8A1DF80238007747D7 /* Kingfisher.framework */,
+				D614AE871DF801F6007747D7 /* AutoReview.framework */,
+				D614AE4F1DF7F6B4007747D7 /* Navi.framework */,
+				D614ADC11DF41CFA007747D7 /* Ruler.framework */,
+				D614ADAD1DF40FB3007747D7 /* KeypathObserver.framework */,
 				D647B2871DEC76C300642BAF /* Realm.framework */,
 				D647B2881DEC76C300642BAF /* RealmSwift.framework */,
 				E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */,
@@ -182,7 +666,101 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D614ADDC1DF7ACA6007747D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614ADF11DF7ACA6007747D7 /* PositanoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE1B1DF7B029007747D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614AE301DF7B029007747D7 /* PositanoNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D614ADDE1DF7ACA6007747D7 /* PositanoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D614ADF61DF7ACA6007747D7 /* Build configuration list for PBXNativeTarget "PositanoKit" */;
+			buildPhases = (
+				D614ADDA1DF7ACA6007747D7 /* Sources */,
+				D614ADDB1DF7ACA6007747D7 /* Frameworks */,
+				D614ADDC1DF7ACA6007747D7 /* Headers */,
+				D614ADDD1DF7ACA6007747D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D614AE4E1DF7DD3F007747D7 /* PBXTargetDependency */,
+			);
+			name = PositanoKit;
+			productName = PositanoKit;
+			productReference = D614ADDF1DF7ACA6007747D7 /* PositanoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D614ADE61DF7ACA6007747D7 /* PositanoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D614ADF91DF7ACA6007747D7 /* Build configuration list for PBXNativeTarget "PositanoKitTests" */;
+			buildPhases = (
+				D614ADE31DF7ACA6007747D7 /* Sources */,
+				D614ADE41DF7ACA6007747D7 /* Frameworks */,
+				D614ADE51DF7ACA6007747D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D614ADEA1DF7ACA6007747D7 /* PBXTargetDependency */,
+				D614ADEC1DF7ACA6007747D7 /* PBXTargetDependency */,
+			);
+			name = PositanoKitTests;
+			productName = PositanoKitTests;
+			productReference = D614ADE71DF7ACA6007747D7 /* PositanoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D614AE1D1DF7B029007747D7 /* PositanoNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D614AE351DF7B029007747D7 /* Build configuration list for PBXNativeTarget "PositanoNetworking" */;
+			buildPhases = (
+				D614AE191DF7B029007747D7 /* Sources */,
+				D614AE1A1DF7B029007747D7 /* Frameworks */,
+				D614AE1B1DF7B029007747D7 /* Headers */,
+				D614AE1C1DF7B029007747D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PositanoNetworking;
+			productName = PositanoNetworking;
+			productReference = D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D614AE251DF7B029007747D7 /* PositanoNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D614AE381DF7B029007747D7 /* Build configuration list for PBXNativeTarget "PositanoNetworkingTests" */;
+			buildPhases = (
+				D614AE221DF7B029007747D7 /* Sources */,
+				D614AE231DF7B029007747D7 /* Frameworks */,
+				D614AE241DF7B029007747D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D614AE291DF7B029007747D7 /* PBXTargetDependency */,
+				D614AE2B1DF7B029007747D7 /* PBXTargetDependency */,
+			);
+			name = PositanoNetworkingTests;
+			productName = PositanoNetworkingTests;
+			productReference = D614AE261DF7B029007747D7 /* PositanoNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D647B2581DEC4A3600642BAF /* Positano */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D647B2781DEC4A3600642BAF /* Build configuration list for PBXNativeTarget "Positano" */;
@@ -199,6 +777,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				D614ADF31DF7ACA6007747D7 /* PBXTargetDependency */,
+				D614AE321DF7B029007747D7 /* PBXTargetDependency */,
 			);
 			name = Positano;
 			productName = Positano;
@@ -232,10 +812,34 @@
 		D647B2511DEC4A3600642BAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = dinglin;
 				TargetAttributes = {
+					D614ADDE1DF7ACA6007747D7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SFZX37BH94;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					D614ADE61DF7ACA6007747D7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U3ANN6J6MB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D647B2581DEC4A3600642BAF;
+					};
+					D614AE1D1DF7B029007747D7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SFZX37BH94;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					D614AE251DF7B029007747D7 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U3ANN6J6MB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D647B2581DEC4A3600642BAF;
+					};
 					D647B2581DEC4A3600642BAF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = SFZX37BH94;
@@ -266,18 +870,52 @@
 			targets = (
 				D647B2581DEC4A3600642BAF /* Positano */,
 				D647B26E1DEC4A3600642BAF /* PositanoTests */,
+				D614ADDE1DF7ACA6007747D7 /* PositanoKit */,
+				D614ADE61DF7ACA6007747D7 /* PositanoKitTests */,
+				D614AE1D1DF7B029007747D7 /* PositanoNetworking */,
+				D614AE251DF7B029007747D7 /* PositanoNetworkingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D614ADDD1DF7ACA6007747D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614ADE51DF7ACA6007747D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE1C1DF7B029007747D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE241DF7B029007747D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D647B2571DEC4A3600642BAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */,
+				D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */,
 				D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */,
 				D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */,
+				D614ADC51DF6B40F007747D7 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,15 +1037,110 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D614ADDA1DF7ACA6007747D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614AE111DF7AD89007747D7 /* Double+Yep.swift in Sources */,
+				D614AE131DF7AD89007747D7 /* Realm+Yep.swift in Sources */,
+				D614AE621DF7FBE0007747D7 /* SafeDispatch.swift in Sources */,
+				D614AE021DF7AD2F007747D7 /* Config.swift in Sources */,
+				D614AE631DF7FBE0007747D7 /* YepMedia.swift in Sources */,
+				D614AE0F1DF7AD89007747D7 /* Array+Yep.swift in Sources */,
+				D614AE101DF7AD89007747D7 /* Date+Yep.swift in Sources */,
+				D614AE141DF7AD89007747D7 /* String+Trans.swift in Sources */,
+				D614AE121DF7AD89007747D7 /* FileManager+Yep.swift in Sources */,
+				D614AE051DF7AD2F007747D7 /* PositanoUserDefaults.swift in Sources */,
+				D614AE031DF7AD2F007747D7 /* Models.swift in Sources */,
+				D614AE041DF7AD2F007747D7 /* RealmConfig.swift in Sources */,
+				D614AE161DF7AD89007747D7 /* UIImage+Yep.swift in Sources */,
+				D614AE151DF7AD89007747D7 /* String+Yep.swift in Sources */,
+				D614AE611DF7FBE0007747D7 /* CancelableTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614ADE31DF7ACA6007747D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614ADEF1DF7ACA6007747D7 /* PositanoKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE191DF7B029007747D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614AE3F1DF7B088007747D7 /* NSURLRequest+cURL.swift in Sources */,
+				D614AE411DF7B088007747D7 /* PositanoNetworking.swift in Sources */,
+				D614AE401DF7B088007747D7 /* Manager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D614AE221DF7B029007747D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D614AE2E1DF7B029007747D7 /* PositanoNetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D647B2551DEC4A3600642BAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D647B2611DEC4A3600642BAF /* SecondViewController.swift in Sources */,
-				D647B2811DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */,
-				D647B2841DEC5A2600642BAF /* Config.swift in Sources */,
+				D614AE4A1DF7D862007747D7 /* YepHelpers.swift in Sources */,
+				D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */,
+				D614AE5A1DF7F735007747D7 /* ImageCache.swift in Sources */,
+				D614AD951DF407FC007747D7 /* DeviceUtil+Yep.swift in Sources */,
+				D614AE811DF7FE26007747D7 /* UserRepresentation.swift in Sources */,
+				D614AD931DF407FC007747D7 /* CLPlacemark+Yep.swift in Sources */,
+				D614ADCB1DF6B9DC007747D7 /* UnderLineTextField.swift in Sources */,
+				D614ADA31DF407FC007747D7 /* UIImage+Yep.swift in Sources */,
+				D614AD911DF407FC007747D7 /* CGSize+Yep.swift in Sources */,
+				D614ADA81DF407FC007747D7 /* UISegmentedControl+Yep.swift in Sources */,
+				D614AD6A1DF40755007747D7 /* SegueViewController.swift in Sources */,
+				D614AE591DF7F735007747D7 /* AvatarStyles.swift in Sources */,
+				D614AE851DF7FF3C007747D7 /* NSDate+Extension.swift in Sources */,
+				D614ADCA1DF6B9DC007747D7 /* BorderTextField.swift in Sources */,
+				D614AE491DF7D862007747D7 /* YepAsset.swift in Sources */,
+				D614AD8F1DF407FC007747D7 /* CGImage+Yep.swift in Sources */,
+				D614AE5B1DF7F735007747D7 /* PlainAvatar.swift in Sources */,
+				D614AD901DF407FC007747D7 /* CGRect+Yep.swift in Sources */,
+				D614AD691DF40755007747D7 /* BaseViewController.swift in Sources */,
+				D614ADA61DF407FC007747D7 /* UIScrollView+Yep.swift in Sources */,
+				D614ADA51DF407FC007747D7 /* UIMotionEffect+Yep.swift in Sources */,
+				D614AE4B1DF7D862007747D7 /* YepHUD.swift in Sources */,
+				D614ADD91DF7ABE2007747D7 /* UIViewController+Yep.swift in Sources */,
+				D614ADCF1DF70582007747D7 /* FPSLabel.swift in Sources */,
+				D614ADA91DF407FC007747D7 /* UIStoryboard+Yep.swift in Sources */,
+				D614AE581DF7F735007747D7 /* AttributedStringCache.swift in Sources */,
+				D614AE7B1DF7FE26007747D7 /* PhoneNumberRepresentation.swift in Sources */,
+				D614AD941DF407FC007747D7 /* Date+Yep.swift in Sources */,
+				D614AE7F1DF7FE26007747D7 /* Shareable.swift in Sources */,
+				D614ADA21DF407FC007747D7 /* UIFont+Yep.swift in Sources */,
+				D614ADBF1DF41160007747D7 /* YepLog.swift in Sources */,
 				D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */,
-				D647B25F1DEC4A3600642BAF /* FirstViewController.swift in Sources */,
+				D614ADD01DF70582007747D7 /* NavigationTitleLabel.swift in Sources */,
+				D614AE7C1DF7FE26007747D7 /* Reusable.swift in Sources */,
+				D614ADA71DF407FC007747D7 /* UISearchBar+Yep.swift in Sources */,
+				D614AD9F1DF407FC007747D7 /* UIApplication+Yep.swift in Sources */,
+				D614AE481DF7D862007747D7 /* YepAlert.swift in Sources */,
+				D614AE4C1DF7D862007747D7 /* YepSoundEffect.swift in Sources */,
+				D614AE5C1DF7F735007747D7 /* UserAvatar.swift in Sources */,
+				D614AD651DF406E9007747D7 /* RegisterPickNameViewController.swift in Sources */,
+				D614ADD21DF70729007747D7 /* YepConfig.swift in Sources */,
+				D614AD9A1DF407FC007747D7 /* NSParagraphStyle+Yep.swift in Sources */,
+				D614AD8E1DF407FC007747D7 /* Bundle+Yep.swift in Sources */,
+				D614AD9C1DF407FC007747D7 /* String+Trans.swift in Sources */,
+				D614AE781DF7FE26007747D7 /* Copyable.swift in Sources */,
+				D614AD961DF407FC007747D7 /* Double+Yep.swift in Sources */,
+				D614AE7A1DF7FE26007747D7 /* NibLoadable.swift in Sources */,
+				D614AD9E1DF407FC007747D7 /* TimeZone+Yep.swift in Sources */,
+				D614AE6A1DF7FDC8007747D7 /* URL+Yep.swift in Sources */,
+				D614AD9B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift in Sources */,
+				D614ADA11DF407FC007747D7 /* UIColor+Yep.swift in Sources */,
+				D614AD9D1DF407FC007747D7 /* String+Yep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,14 +1149,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */,
-				D647B2821DEC572F00642BAF /* PositanoUserDefaults.swift in Sources */,
-				D647B2851DEC5A2600642BAF /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D614ADEA1DF7ACA6007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D614ADDE1DF7ACA6007747D7 /* PositanoKit */;
+			targetProxy = D614ADE91DF7ACA6007747D7 /* PBXContainerItemProxy */;
+		};
+		D614ADEC1DF7ACA6007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D647B2581DEC4A3600642BAF /* Positano */;
+			targetProxy = D614ADEB1DF7ACA6007747D7 /* PBXContainerItemProxy */;
+		};
+		D614ADF31DF7ACA6007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D614ADDE1DF7ACA6007747D7 /* PositanoKit */;
+			targetProxy = D614ADF21DF7ACA6007747D7 /* PBXContainerItemProxy */;
+		};
+		D614AE291DF7B029007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D614AE1D1DF7B029007747D7 /* PositanoNetworking */;
+			targetProxy = D614AE281DF7B029007747D7 /* PBXContainerItemProxy */;
+		};
+		D614AE2B1DF7B029007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D647B2581DEC4A3600642BAF /* Positano */;
+			targetProxy = D614AE2A1DF7B029007747D7 /* PBXContainerItemProxy */;
+		};
+		D614AE321DF7B029007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D614AE1D1DF7B029007747D7 /* PositanoNetworking */;
+			targetProxy = D614AE311DF7B029007747D7 /* PBXContainerItemProxy */;
+		};
+		D614AE4E1DF7DD3F007747D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D614AE1D1DF7B029007747D7 /* PositanoNetworking */;
+			targetProxy = D614AE4D1DF7DD3F007747D7 /* PBXContainerItemProxy */;
+		};
 		D647B2711DEC4A3600642BAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D647B2581DEC4A3600642BAF /* Positano */;
@@ -453,6 +1219,172 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D614ADF71DF7ACA6007747D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SFZX37BH94;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PositanoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D614ADF81DF7ACA6007747D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SFZX37BH94;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PositanoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D614ADFA1DF7ACA6007747D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = U3ANN6J6MB;
+				INFOPLIST_FILE = PositanoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Positano.app/Positano";
+			};
+			name = Debug;
+		};
+		D614ADFB1DF7ACA6007747D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = U3ANN6J6MB;
+				INFOPLIST_FILE = PositanoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Positano.app/Positano";
+			};
+			name = Release;
+		};
+		D614AE361DF7B029007747D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SFZX37BH94;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PositanoNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D614AE371DF7B029007747D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SFZX37BH94;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PositanoNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D614AE391DF7B029007747D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = U3ANN6J6MB;
+				INFOPLIST_FILE = PositanoNetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Positano.app/Positano";
+			};
+			name = Debug;
+		};
+		D614AE3A1DF7B029007747D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = U3ANN6J6MB;
+				INFOPLIST_FILE = PositanoNetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Positano.app/Positano";
+			};
+			name = Release;
+		};
 		D647B2761DEC4A3600642BAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,7 +1426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -539,7 +1471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -552,6 +1484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27E28256DA72F555CA405EC3 /* Pods-Positano.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
@@ -574,6 +1507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
@@ -627,6 +1561,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D614ADF61DF7ACA6007747D7 /* Build configuration list for PBXNativeTarget "PositanoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D614ADF71DF7ACA6007747D7 /* Debug */,
+				D614ADF81DF7ACA6007747D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D614ADF91DF7ACA6007747D7 /* Build configuration list for PBXNativeTarget "PositanoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D614ADFA1DF7ACA6007747D7 /* Debug */,
+				D614ADFB1DF7ACA6007747D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D614AE351DF7B029007747D7 /* Build configuration list for PBXNativeTarget "PositanoNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D614AE361DF7B029007747D7 /* Debug */,
+				D614AE371DF7B029007747D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D614AE381DF7B029007747D7 /* Build configuration list for PBXNativeTarget "PositanoNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D614AE391DF7B029007747D7 /* Debug */,
+				D614AE3A1DF7B029007747D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D647B2541DEC4A3600642BAF /* Build configuration list for PBXProject "Positano" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -13,6 +13,8 @@ def pods
     pod 'JPush', '~> 2.1.9'
     pod 'Fabric'
     pod ‘LeanCloud’
+    pod 'RxSwift',    '~> 3.0'
+    pod 'RxCocoa',    '~> 3.0'
 end
 
 target 'Positano' do
@@ -22,6 +24,8 @@ target 'Positano' do
 
     target 'PositanoTests' do
         inherit! :search_paths
+        pod 'RxBlocking', '~> 3.0'
+        pod 'RxTest',     '~> 3.0'
     end
 end
 

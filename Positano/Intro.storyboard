@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register Pick Name View Controller-->
+        <scene sceneID="cpD-2n-0q6">
+            <objects>
+                <viewController storyboardIdentifier="RegisterPickNameViewController" id="6Be-Bn-mK5" userLabel="Register Pick Name View Controller" customClass="RegisterPickNameViewController" customModule="Positano" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SkK-nx-rsC"/>
+                        <viewControllerLayoutGuide type="bottom" id="KB9-ZZ-QIm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zaa-sx-v6x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybz-Ha-cNb">
+                                <rect key="frame" x="0.0" y="101" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tap Next you agree to our terms." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wha-z3-8Y4" userLabel="Prompt Terms Label">
+                                        <rect key="frame" x="51.5" y="14.5" width="271.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wha-z3-8Y4" firstAttribute="centerX" secondItem="ybz-Ha-cNb" secondAttribute="centerX" id="Tip-0j-bVl"/>
+                                    <constraint firstItem="wha-z3-8Y4" firstAttribute="centerY" secondItem="ybz-Ha-cNb" secondAttribute="centerY" id="UV9-nt-bug"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-n8-eiu" userLabel="Pick Name Prompt Label">
+                                <rect key="frame" x="114" y="80" width="146.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alice, Bob" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyI-Pt-IYd" userLabel="Name Text Field">
+                                <rect key="frame" x="16" y="151" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8nB-Gm-MZ3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ybz-Ha-cNb" firstAttribute="top" secondItem="NGu-n8-eiu" secondAttribute="bottom" id="90V-kC-z02"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RyI-Pt-IYd" secondAttribute="trailing" id="948-1f-i5m"/>
+                            <constraint firstItem="RyI-Pt-IYd" firstAttribute="top" secondItem="NGu-n8-eiu" secondAttribute="bottom" constant="50" id="RUh-g4-XvU"/>
+                            <constraint firstItem="RyI-Pt-IYd" firstAttribute="top" secondItem="ybz-Ha-cNb" secondAttribute="bottom" id="X8v-h6-19n"/>
+                            <constraint firstItem="NGu-n8-eiu" firstAttribute="centerX" secondItem="Zaa-sx-v6x" secondAttribute="centerX" id="Y6x-JV-M7v"/>
+                            <constraint firstAttribute="trailing" secondItem="ybz-Ha-cNb" secondAttribute="trailing" id="bBG-uM-iR5"/>
+                            <constraint firstItem="RyI-Pt-IYd" firstAttribute="leading" secondItem="Zaa-sx-v6x" secondAttribute="leadingMargin" id="cQX-JI-4YJ"/>
+                            <constraint firstItem="NGu-n8-eiu" firstAttribute="top" secondItem="SkK-nx-rsC" secondAttribute="bottom" constant="60" id="hqq-bn-Iye"/>
+                            <constraint firstItem="ybz-Ha-cNb" firstAttribute="leading" secondItem="Zaa-sx-v6x" secondAttribute="leading" id="r8k-uj-xPQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jbH-UF-R5V" userLabel="Navigation Item"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="RyI-Pt-IYd" id="NOO-yb-y2J"/>
+                        <outlet property="nameTextFieldTopConstraint" destination="RUh-g4-XvU" id="ZSP-eA-HUl"/>
+                        <outlet property="pickNamePromptLabel" destination="NGu-n8-eiu" id="XtM-iL-GPc"/>
+                        <outlet property="pickNamePromptLabelTopConstraint" destination="hqq-bn-Iye" id="RXv-37-uVY"/>
+                        <outlet property="promptTermsLabel" destination="wha-z3-8Y4" id="0jq-Dp-TFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBa-Z8-3sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231.19999999999999" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
