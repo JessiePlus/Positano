@@ -104,6 +104,8 @@
 		D614AE8C1DF80238007747D7 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8A1DF80238007747D7 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D614AE8E1DF80264007747D7 /* Proposer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8D1DF80264007747D7 /* Proposer.framework */; };
 		D614AE8F1DF80264007747D7 /* Proposer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE8D1DF80264007747D7 /* Proposer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AEAA1DF8E83F007747D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D614AEAC1DF8E83F007747D7 /* Localizable.strings */; };
+		D614AEB01DF8E89B007747D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D614AEB21DF8E89B007747D7 /* InfoPlist.strings */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
@@ -292,6 +294,10 @@
 		D614AE871DF801F6007747D7 /* AutoReview.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AutoReview.framework; path = Carthage/Build/iOS/AutoReview.framework; sourceTree = "<group>"; };
 		D614AE8A1DF80238007747D7 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		D614AE8D1DF80264007747D7 /* Proposer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Proposer.framework; path = Carthage/Build/iOS/Proposer.framework; sourceTree = "<group>"; };
+		D614AEAB1DF8E83F007747D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D614AEAD1DF8E872007747D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D614AEB11DF8E89B007747D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D614AEB31DF8E89D007747D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -622,6 +628,7 @@
 		D647B25B1DEC4A3600642BAF /* Positano */ = {
 			isa = PBXGroup;
 			children = (
+				D614AEB21DF8E89B007747D7 /* InfoPlist.strings */,
 				D614AE521DF7F735007747D7 /* Caches */,
 				D614AD6B1DF407FC007747D7 /* Extensions */,
 				D614ADB01DF41160007747D7 /* Helpers */,
@@ -634,6 +641,7 @@
 				D614ADC41DF6B40F007747D7 /* Intro.storyboard */,
 				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
 				D647B2621DEC4A3600642BAF /* Main.storyboard */,
+				D614AEAC1DF8E83F007747D7 /* Localizable.strings */,
 			);
 			path = Positano;
 			sourceTree = "<group>";
@@ -862,6 +870,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D647B2501DEC4A3600642BAF;
 			productRefGroup = D647B25A1DEC4A3600642BAF /* Products */;
@@ -912,6 +921,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */,
+				D614AEB01DF8E89B007747D7 /* InfoPlist.strings in Resources */,
+				D614AEAA1DF8E83F007747D7 /* Localizable.strings in Resources */,
 				D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */,
 				D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */,
 				D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */,
@@ -1198,6 +1209,25 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D614AEAC1DF8E83F007747D7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D614AEAB1DF8E83F007747D7 /* en */,
+				D614AEAD1DF8E872007747D7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D614AEB21DF8E89B007747D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D614AEB11DF8E89B007747D7 /* en */,
+				D614AEB31DF8E89D007747D7 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		D647B2621DEC4A3600642BAF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1389,6 +1419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1440,6 +1471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
