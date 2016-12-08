@@ -216,9 +216,9 @@
 		8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.release.xcconfig"; sourceTree = "<group>"; };
 		C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PositanoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterPickNameViewController.swift; path = Positano/ViewControllers/RegisterPickNameViewController.swift; sourceTree = SOURCE_ROOT; };
-		D614AD671DF40755007747D7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewControllers/BaseViewController.swift; sourceTree = "<group>"; };
-		D614AD681DF40755007747D7 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueViewController.swift; path = ViewControllers/SegueViewController.swift; sourceTree = "<group>"; };
+		D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterPickNameViewController.swift; path = RegisterPickNameViewController.swift; sourceTree = "<group>"; };
+		D614AD671DF40755007747D7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D614AD681DF40755007747D7 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueViewController.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
 		D614AD6D1DF407FC007747D7 /* Bundle+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Yep.swift"; sourceTree = "<group>"; };
 		D614AD6E1DF407FC007747D7 /* CGImage+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Yep.swift"; sourceTree = "<group>"; };
 		D614AD6F1DF407FC007747D7 /* CGRect+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Yep.swift"; sourceTree = "<group>"; };
@@ -312,11 +312,11 @@
 		D614AEB51DF93840007747D7 /* RegisterPickMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPickMobileViewController.swift; sourceTree = "<group>"; };
 		D614AEB91DF93915007747D7 /* BaseInputMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputMobileViewController.swift; sourceTree = "<group>"; };
 		D614AEBA1DF93915007747D7 /* BaseVerifyMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVerifyMobileViewController.swift; sourceTree = "<group>"; };
-		D614AEBF1DF939A8007747D7 /* YepService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YepService.swift; path = Remote/YepService.swift; sourceTree = "<group>"; };
-		D614AEC61DF93D9E007747D7 /* SharedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedStore.swift; path = ReSwift/SharedStore.swift; sourceTree = "<group>"; };
-		D614AEC71DF93D9E007747D7 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = ReSwift/AppState.swift; sourceTree = "<group>"; };
-		D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneReducer.swift; path = ReSwift/Reducers/MobilePhoneReducer.swift; sourceTree = "<group>"; };
-		D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneActions.swift; path = ReSwift/Actions/MobilePhoneActions.swift; sourceTree = "<group>"; };
+		D614AEBF1DF939A8007747D7 /* YepService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YepService.swift; path = ../../../thirdPart/Yep/YepKit/Remote/YepService.swift; sourceTree = "<group>"; };
+		D614AEC61DF93D9E007747D7 /* SharedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedStore.swift; path = ../../../thirdPart/Yep/Yep/ReSwift/SharedStore.swift; sourceTree = "<group>"; };
+		D614AEC71DF93D9E007747D7 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = ../../../thirdPart/Yep/Yep/ReSwift/AppState.swift; sourceTree = "<group>"; };
+		D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneReducer.swift; path = ../../../../thirdPart/Yep/Yep/ReSwift/Reducers/MobilePhoneReducer.swift; sourceTree = "<group>"; };
+		D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneActions.swift; path = ../../../../thirdPart/Yep/Yep/ReSwift/Actions/MobilePhoneActions.swift; sourceTree = "<group>"; };
 		D614AED11DF93EBB007747D7 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -490,10 +490,10 @@
 		D614ADE01DF7ACA6007747D7 /* PositanoKit */ = {
 			isa = PBXGroup;
 			children = (
-				D614AEC21DF939A8007747D7 /* Remote */,
 				D614AE061DF7AD88007747D7 /* Extensions */,
 				D614AE5D1DF7FBE0007747D7 /* Helpers */,
 				D614ADFD1DF7AD2F007747D7 /* Persistence */,
+				D614AEC21DF939A8007747D7 /* Remote */,
 				D614AE001DF7AD2F007747D7 /* UserDefaults */,
 				D614ADFC1DF7AD2F007747D7 /* Config.swift */,
 				D614ADE21DF7ACA6007747D7 /* Info.plist */,
@@ -632,6 +632,7 @@
 				D614AEB81DF938F3007747D7 /* ViewControllers */,
 			);
 			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D614AEB81DF938F3007747D7 /* ViewControllers */ = {
@@ -643,6 +644,7 @@
 				D614AD681DF40755007747D7 /* SegueViewController.swift */,
 			);
 			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D614AEC21DF939A8007747D7 /* Remote */ = {
@@ -651,7 +653,7 @@
 				D614AEBF1DF939A8007747D7 /* YepService.swift */,
 			);
 			name = Remote;
-			path = ../../thirdPart/Yep/YepKit;
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		D614AEC91DF93D9E007747D7 /* Reducers */ = {
@@ -660,6 +662,7 @@
 				D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */,
 			);
 			name = Reducers;
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 		D614AECB1DF93D9E007747D7 /* Actions */ = {
@@ -668,18 +671,19 @@
 				D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */,
 			);
 			name = Actions;
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		D614AECC1DF93D9E007747D7 /* ReSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D614AEC61DF93D9E007747D7 /* SharedStore.swift */,
-				D614AEC71DF93D9E007747D7 /* AppState.swift */,
-				D614AEC91DF93D9E007747D7 /* Reducers */,
 				D614AECB1DF93D9E007747D7 /* Actions */,
+				D614AEC91DF93D9E007747D7 /* Reducers */,
+				D614AEC71DF93D9E007747D7 /* AppState.swift */,
+				D614AEC61DF93D9E007747D7 /* SharedStore.swift */,
 			);
 			name = ReSwift;
-			path = ../../thirdPart/Yep/Yep;
+			path = ReSwift;
 			sourceTree = "<group>";
 		};
 		D647B2501DEC4A3600642BAF = {
@@ -713,22 +717,22 @@
 		D647B25B1DEC4A3600642BAF /* Positano */ = {
 			isa = PBXGroup;
 			children = (
-				D614AECC1DF93D9E007747D7 /* ReSwift */,
 				D614AEB71DF938E9007747D7 /* Base */,
-				D614AEB21DF8E89B007747D7 /* InfoPlist.strings */,
 				D614AE521DF7F735007747D7 /* Caches */,
 				D614AD6B1DF407FC007747D7 /* Extensions */,
 				D614ADB01DF41160007747D7 /* Helpers */,
 				D614AE6B1DF7FE26007747D7 /* Protocols */,
+				D614AECC1DF93D9E007747D7 /* ReSwift */,
 				D614AD661DF40731007747D7 /* ViewControllers */,
 				D614ADC61DF6B940007747D7 /* Views */,
 				D647B25C1DEC4A3600642BAF /* AppDelegate.swift */,
 				D647B2651DEC4A3600642BAF /* Images.xcassets */,
 				D647B26A1DEC4A3600642BAF /* Info.plist */,
+				D614AEB21DF8E89B007747D7 /* InfoPlist.strings */,
 				D614ADC41DF6B40F007747D7 /* Intro.storyboard */,
 				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
-				D647B2621DEC4A3600642BAF /* Main.storyboard */,
 				D614AEAC1DF8E83F007747D7 /* Localizable.strings */,
+				D647B2621DEC4A3600642BAF /* Main.storyboard */,
 			);
 			path = Positano;
 			sourceTree = "<group>";
@@ -1312,6 +1316,7 @@
 				D614AEAD1DF8E872007747D7 /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D614AEB21DF8E89B007747D7 /* InfoPlist.strings */ = {
@@ -1321,7 +1326,7 @@
 				D614AEB31DF8E89D007747D7 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
-			path = ..;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D647B2621DEC4A3600642BAF /* Main.storyboard */ = {
