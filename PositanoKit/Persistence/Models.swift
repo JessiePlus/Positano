@@ -18,11 +18,6 @@ public let realmQueue = DispatchQueue(label: "com.Positano.realmQueue", qos: .ut
 
 // MARK: User
 
-func println(_ item: @autoclosure () -> Any) {
-    #if DEBUG
-        Swift.print(item())
-    #endif
-}
 
 open class Avatar: Object {
     open dynamic var avatarURLString: String = ""
