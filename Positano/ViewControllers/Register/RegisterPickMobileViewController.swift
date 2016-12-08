@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 Catch Inc. All rights reserved.
 //
 //test branch
+//test branch 2
 import UIKit
 import PositanoKit
 import Ruler
