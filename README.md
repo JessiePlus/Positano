@@ -1,5 +1,5 @@
 # Positano
-This is a weather APP(ideas and technology come from Yep).
+This is a weather APP(ideas and technologies come from Yep).
 
 Both CocoaPods and Carthage are used in Positano for third party frameworks management.
 
