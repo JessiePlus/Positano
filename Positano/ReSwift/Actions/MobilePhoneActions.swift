@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Catch Inc. All rights reserved.
 //
 
-import YepKit
+import PositanoKit
 import ReSwift
 
 struct MobilePhoneUpdateAction: Action {

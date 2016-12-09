@@ -108,14 +108,14 @@
 		D614AEB61DF93840007747D7 /* RegisterPickMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEB51DF93840007747D7 /* RegisterPickMobileViewController.swift */; };
 		D614AEBC1DF93915007747D7 /* BaseInputMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEB91DF93915007747D7 /* BaseInputMobileViewController.swift */; };
 		D614AEBD1DF93915007747D7 /* BaseVerifyMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEBA1DF93915007747D7 /* BaseVerifyMobileViewController.swift */; };
-		D614AEC31DF939A8007747D7 /* YepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEBF1DF939A8007747D7 /* YepService.swift */; };
-		D614AECD1DF93D9E007747D7 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEC61DF93D9E007747D7 /* SharedStore.swift */; };
-		D614AECE1DF93D9E007747D7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEC71DF93D9E007747D7 /* AppState.swift */; };
-		D614AECF1DF93D9E007747D7 /* MobilePhoneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */; };
-		D614AED01DF93D9E007747D7 /* MobilePhoneActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */; };
 		D614AED21DF93EBC007747D7 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AED11DF93EBB007747D7 /* ReSwift.framework */; };
 		D614AED31DF93EBC007747D7 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AED11DF93EBB007747D7 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D614AED61DFA42E2007747D7 /* Intro.storyboard */; };
+		D614AEDE1DFA8A36007747D7 /* MobilePhoneActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AED91DFA8A36007747D7 /* MobilePhoneActions.swift */; };
+		D614AEDF1DFA8A36007747D7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDA1DFA8A36007747D7 /* AppState.swift */; };
+		D614AEE01DFA8A36007747D7 /* MobilePhoneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDC1DFA8A36007747D7 /* MobilePhoneReducer.swift */; };
+		D614AEE11DFA8A36007747D7 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDD1DFA8A36007747D7 /* SharedStore.swift */; };
+		D614AEE41DFA8AB5007747D7 /* YepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE31DFA8AB5007747D7 /* YepService.swift */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
@@ -311,13 +311,13 @@
 		D614AEB51DF93840007747D7 /* RegisterPickMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPickMobileViewController.swift; sourceTree = "<group>"; };
 		D614AEB91DF93915007747D7 /* BaseInputMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputMobileViewController.swift; sourceTree = "<group>"; };
 		D614AEBA1DF93915007747D7 /* BaseVerifyMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVerifyMobileViewController.swift; sourceTree = "<group>"; };
-		D614AEBF1DF939A8007747D7 /* YepService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YepService.swift; path = ../../../thirdPart/Yep/YepKit/Remote/YepService.swift; sourceTree = "<group>"; };
-		D614AEC61DF93D9E007747D7 /* SharedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedStore.swift; path = ../../../thirdPart/Yep/Yep/ReSwift/SharedStore.swift; sourceTree = "<group>"; };
-		D614AEC71DF93D9E007747D7 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = ../../../thirdPart/Yep/Yep/ReSwift/AppState.swift; sourceTree = "<group>"; };
-		D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneReducer.swift; path = ../../../../thirdPart/Yep/Yep/ReSwift/Reducers/MobilePhoneReducer.swift; sourceTree = "<group>"; };
-		D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneActions.swift; path = ../../../../thirdPart/Yep/Yep/ReSwift/Actions/MobilePhoneActions.swift; sourceTree = "<group>"; };
 		D614AED11DF93EBB007747D7 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		D614AED51DFA42E2007747D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Intro.storyboard; sourceTree = "<group>"; };
+		D614AED91DFA8A36007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneActions.swift; sourceTree = "<group>"; };
+		D614AEDA1DFA8A36007747D7 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D614AEDC1DFA8A36007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneReducer.swift; sourceTree = "<group>"; };
+		D614AEDD1DFA8A36007747D7 /* SharedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		D614AEE31DFA8AB5007747D7 /* YepService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepService.swift; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -493,7 +493,7 @@
 				D614AE061DF7AD88007747D7 /* Extensions */,
 				D614AE5D1DF7FBE0007747D7 /* Helpers */,
 				D614ADFD1DF7AD2F007747D7 /* Persistence */,
-				D614AEC21DF939A8007747D7 /* Remote */,
+				D614AEE21DFA8AB5007747D7 /* Remote */,
 				D614AE001DF7AD2F007747D7 /* UserDefaults */,
 				D614ADFC1DF7AD2F007747D7 /* Config.swift */,
 				D614ADE21DF7ACA6007747D7 /* Info.plist */,
@@ -645,39 +645,39 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		D614AEC21DF939A8007747D7 /* Remote */ = {
+		D614AED71DFA8A36007747D7 /* ReSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D614AEBF1DF939A8007747D7 /* YepService.swift */,
+				D614AED81DFA8A36007747D7 /* Actions */,
+				D614AEDB1DFA8A36007747D7 /* Reducers */,
+				D614AEDA1DFA8A36007747D7 /* AppState.swift */,
+				D614AEDD1DFA8A36007747D7 /* SharedStore.swift */,
 			);
-			path = Remote;
+			path = ReSwift;
 			sourceTree = "<group>";
 		};
-		D614AEC91DF93D9E007747D7 /* Reducers */ = {
+		D614AED81DFA8A36007747D7 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */,
-			);
-			path = Reducers;
-			sourceTree = "<group>";
-		};
-		D614AECB1DF93D9E007747D7 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */,
+				D614AED91DFA8A36007747D7 /* MobilePhoneActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
 		};
-		D614AECC1DF93D9E007747D7 /* ReSwift */ = {
+		D614AEDB1DFA8A36007747D7 /* Reducers */ = {
 			isa = PBXGroup;
 			children = (
-				D614AECB1DF93D9E007747D7 /* Actions */,
-				D614AEC91DF93D9E007747D7 /* Reducers */,
-				D614AEC71DF93D9E007747D7 /* AppState.swift */,
-				D614AEC61DF93D9E007747D7 /* SharedStore.swift */,
+				D614AEDC1DFA8A36007747D7 /* MobilePhoneReducer.swift */,
 			);
-			path = ReSwift;
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		D614AEE21DFA8AB5007747D7 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				D614AEE31DFA8AB5007747D7 /* YepService.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		D647B2501DEC4A3600642BAF = {
@@ -716,7 +716,7 @@
 				D614AD6B1DF407FC007747D7 /* Extensions */,
 				D614ADB01DF41160007747D7 /* Helpers */,
 				D614AE6B1DF7FE26007747D7 /* Protocols */,
-				D614AECC1DF93D9E007747D7 /* ReSwift */,
+				D614AED71DFA8A36007747D7 /* ReSwift */,
 				D614AD661DF40731007747D7 /* ViewControllers */,
 				D614ADC61DF6B940007747D7 /* Views */,
 				D647B25C1DEC4A3600642BAF /* AppDelegate.swift */,
@@ -1148,7 +1148,7 @@
 				D614AE141DF7AD89007747D7 /* String+Trans.swift in Sources */,
 				D614AE121DF7AD89007747D7 /* FileManager+Yep.swift in Sources */,
 				D614AE051DF7AD2F007747D7 /* PositanoUserDefaults.swift in Sources */,
-				D614AEC31DF939A8007747D7 /* YepService.swift in Sources */,
+				D614AEE41DFA8AB5007747D7 /* YepService.swift in Sources */,
 				D614AE031DF7AD2F007747D7 /* Models.swift in Sources */,
 				D614AE041DF7AD2F007747D7 /* RealmConfig.swift in Sources */,
 				D614AE161DF7AD89007747D7 /* UIImage+Yep.swift in Sources */,
@@ -1187,7 +1187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D614AECD1DF93D9E007747D7 /* SharedStore.swift in Sources */,
 				D614AE4A1DF7D862007747D7 /* YepHelpers.swift in Sources */,
 				D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */,
 				D614AE5A1DF7F735007747D7 /* ImageCache.swift in Sources */,
@@ -1206,12 +1205,13 @@
 				D614AD8F1DF407FC007747D7 /* CGImage+Yep.swift in Sources */,
 				D614AEB61DF93840007747D7 /* RegisterPickMobileViewController.swift in Sources */,
 				D614AE5B1DF7F735007747D7 /* PlainAvatar.swift in Sources */,
-				D614AECF1DF93D9E007747D7 /* MobilePhoneReducer.swift in Sources */,
 				D614AD901DF407FC007747D7 /* CGRect+Yep.swift in Sources */,
+				D614AEE01DFA8A36007747D7 /* MobilePhoneReducer.swift in Sources */,
 				D614AD691DF40755007747D7 /* BaseViewController.swift in Sources */,
-				D614AECE1DF93D9E007747D7 /* AppState.swift in Sources */,
 				D614ADA61DF407FC007747D7 /* UIScrollView+Yep.swift in Sources */,
+				D614AEDF1DFA8A36007747D7 /* AppState.swift in Sources */,
 				D614ADA51DF407FC007747D7 /* UIMotionEffect+Yep.swift in Sources */,
+				D614AEDE1DFA8A36007747D7 /* MobilePhoneActions.swift in Sources */,
 				D614AEBC1DF93915007747D7 /* BaseInputMobileViewController.swift in Sources */,
 				D614AE4B1DF7D862007747D7 /* YepHUD.swift in Sources */,
 				D614ADD91DF7ABE2007747D7 /* UIViewController+Yep.swift in Sources */,
@@ -1225,12 +1225,12 @@
 				D614ADBF1DF41160007747D7 /* YepLog.swift in Sources */,
 				D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */,
 				D614ADD01DF70582007747D7 /* NavigationTitleLabel.swift in Sources */,
-				D614AED01DF93D9E007747D7 /* MobilePhoneActions.swift in Sources */,
 				D614AE7C1DF7FE26007747D7 /* Reusable.swift in Sources */,
 				D614ADA71DF407FC007747D7 /* UISearchBar+Yep.swift in Sources */,
 				D614AD9F1DF407FC007747D7 /* UIApplication+Yep.swift in Sources */,
 				D614AE481DF7D862007747D7 /* YepAlert.swift in Sources */,
 				D614AE4C1DF7D862007747D7 /* YepSoundEffect.swift in Sources */,
+				D614AEE11DFA8A36007747D7 /* SharedStore.swift in Sources */,
 				D614AE5C1DF7F735007747D7 /* UserAvatar.swift in Sources */,
 				D614AD651DF406E9007747D7 /* RegisterPickNameViewController.swift in Sources */,
 				D614ADD21DF70729007747D7 /* YepConfig.swift in Sources */,
