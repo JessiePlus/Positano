@@ -16,9 +16,11 @@ final class RegisterPickMobileViewController: BaseInputMobileViewController {
 
     fileprivate lazy var disposeBag = DisposeBag()
     
-    @IBOutlet fileprivate weak var pickMobileNumberPromptLabel: UILabel!
-    @IBOutlet fileprivate weak var pickMobileNumberPromptLabelTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var pickMobileNumberPromptLabel: UILabel!
 
+    @IBOutlet weak var pickMobileNumberPromptLabelTopConstraint: NSLayoutConstraint!
+    
+    
     fileprivate lazy var nextButton: UIBarButtonItem = {
         let button = UIBarButtonItem()
         button.title = String.trans_buttonNextStep
