@@ -13,10 +13,10 @@ class BaseInputMobileViewController: BaseViewController, PhoneNumberRepresentati
 
     @IBOutlet weak var areaCodeTextField: BorderTextField!
     @IBOutlet weak var areaCodeTextFieldWidthConstraint: NSLayoutConstraint!
-
     @IBOutlet weak var mobileNumberTextField: BorderTextField!
-    @IBOutlet fileprivate weak var mobileNumberTextFieldTopConstraint: NSLayoutConstraint!
-
+    @IBOutlet weak var mobileNumberTextFieldTopConstraint: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

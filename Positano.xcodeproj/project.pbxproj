@@ -39,7 +39,6 @@
 		D614ADBF1DF41160007747D7 /* YepLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADB71DF41160007747D7 /* YepLog.swift */; };
 		D614ADC21DF41CFA007747D7 /* Ruler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADC11DF41CFA007747D7 /* Ruler.framework */; };
 		D614ADC31DF41CFA007747D7 /* Ruler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614ADC11DF41CFA007747D7 /* Ruler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D614ADC51DF6B40F007747D7 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D614ADC41DF6B40F007747D7 /* Intro.storyboard */; };
 		D614ADCA1DF6B9DC007747D7 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADC81DF6B9DC007747D7 /* BorderTextField.swift */; };
 		D614ADCB1DF6B9DC007747D7 /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADC91DF6B9DC007747D7 /* UnderLineTextField.swift */; };
 		D614ADCF1DF70582007747D7 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614ADCD1DF70582007747D7 /* FPSLabel.swift */; };
@@ -116,6 +115,7 @@
 		D614AED01DF93D9E007747D7 /* MobilePhoneActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */; };
 		D614AED21DF93EBC007747D7 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AED11DF93EBB007747D7 /* ReSwift.framework */; };
 		D614AED31DF93EBC007747D7 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AED11DF93EBB007747D7 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D614AED61DFA42E2007747D7 /* Intro.storyboard */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
@@ -216,9 +216,9 @@
 		8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.release.xcconfig"; sourceTree = "<group>"; };
 		C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PositanoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterPickNameViewController.swift; path = RegisterPickNameViewController.swift; sourceTree = "<group>"; };
-		D614AD671DF40755007747D7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		D614AD681DF40755007747D7 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueViewController.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPickNameViewController.swift; sourceTree = "<group>"; };
+		D614AD671DF40755007747D7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D614AD681DF40755007747D7 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
 		D614AD6D1DF407FC007747D7 /* Bundle+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Yep.swift"; sourceTree = "<group>"; };
 		D614AD6E1DF407FC007747D7 /* CGImage+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Yep.swift"; sourceTree = "<group>"; };
 		D614AD6F1DF407FC007747D7 /* CGRect+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Yep.swift"; sourceTree = "<group>"; };
@@ -244,7 +244,6 @@
 		D614ADAD1DF40FB3007747D7 /* KeypathObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeypathObserver.framework; path = Carthage/Build/iOS/KeypathObserver.framework; sourceTree = "<group>"; };
 		D614ADB71DF41160007747D7 /* YepLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepLog.swift; sourceTree = "<group>"; };
 		D614ADC11DF41CFA007747D7 /* Ruler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruler.framework; path = Carthage/Build/iOS/Ruler.framework; sourceTree = "<group>"; };
-		D614ADC41DF6B40F007747D7 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		D614ADC81DF6B9DC007747D7 /* BorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
 		D614ADC91DF6B9DC007747D7 /* UnderLineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderLineTextField.swift; sourceTree = "<group>"; };
 		D614ADCD1DF70582007747D7 /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
@@ -318,6 +317,7 @@
 		D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneReducer.swift; path = ../../../../thirdPart/Yep/Yep/ReSwift/Reducers/MobilePhoneReducer.swift; sourceTree = "<group>"; };
 		D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobilePhoneActions.swift; path = ../../../../thirdPart/Yep/Yep/ReSwift/Actions/MobilePhoneActions.swift; sourceTree = "<group>"; };
 		D614AED11DF93EBB007747D7 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		D614AED51DFA42E2007747D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Intro.storyboard; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -631,7 +631,6 @@
 			children = (
 				D614AEB81DF938F3007747D7 /* ViewControllers */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -643,7 +642,6 @@
 				D614AD671DF40755007747D7 /* BaseViewController.swift */,
 				D614AD681DF40755007747D7 /* SegueViewController.swift */,
 			);
-			name = ViewControllers;
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
@@ -652,7 +650,6 @@
 			children = (
 				D614AEBF1DF939A8007747D7 /* YepService.swift */,
 			);
-			name = Remote;
 			path = Remote;
 			sourceTree = "<group>";
 		};
@@ -661,7 +658,6 @@
 			children = (
 				D614AEC81DF93D9E007747D7 /* MobilePhoneReducer.swift */,
 			);
-			name = Reducers;
 			path = Reducers;
 			sourceTree = "<group>";
 		};
@@ -670,7 +666,6 @@
 			children = (
 				D614AECA1DF93D9E007747D7 /* MobilePhoneActions.swift */,
 			);
-			name = Actions;
 			path = Actions;
 			sourceTree = "<group>";
 		};
@@ -682,7 +677,6 @@
 				D614AEC71DF93D9E007747D7 /* AppState.swift */,
 				D614AEC61DF93D9E007747D7 /* SharedStore.swift */,
 			);
-			name = ReSwift;
 			path = ReSwift;
 			sourceTree = "<group>";
 		};
@@ -729,7 +723,7 @@
 				D647B2651DEC4A3600642BAF /* Images.xcassets */,
 				D647B26A1DEC4A3600642BAF /* Info.plist */,
 				D614AEB21DF8E89B007747D7 /* InfoPlist.strings */,
-				D614ADC41DF6B40F007747D7 /* Intro.storyboard */,
+				D614AED61DFA42E2007747D7 /* Intro.storyboard */,
 				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
 				D614AEAC1DF8E83F007747D7 /* Localizable.strings */,
 				D647B2621DEC4A3600642BAF /* Main.storyboard */,
@@ -1018,7 +1012,7 @@
 				D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */,
 				D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */,
 				D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */,
-				D614ADC51DF6B40F007747D7 /* Intro.storyboard in Resources */,
+				D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1326,6 +1320,15 @@
 				D614AEB31DF8E89D007747D7 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			path = .;
+			sourceTree = "<group>";
+		};
+		D614AED61DFA42E2007747D7 /* Intro.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D614AED51DFA42E2007747D7 /* Base */,
+			);
+			name = Intro.storyboard;
 			path = .;
 			sourceTree = "<group>";
 		};
