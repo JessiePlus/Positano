@@ -21,6 +21,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-n8-eiu" userLabel="Pick Name Prompt Label">
+                                <rect key="frame" x="114" y="80" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alice, Bob" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyI-Pt-IYd" userLabel="Name Text Field" customClass="BorderTextField" customModule="Positano" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="151" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8nB-Gm-MZ3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybz-Ha-cNb">
                                 <rect key="frame" x="0.0" y="101" width="375" height="50"/>
                                 <subviews>
@@ -31,37 +46,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="wha-z3-8Y4" firstAttribute="centerX" secondItem="ybz-Ha-cNb" secondAttribute="centerX" id="Tip-0j-bVl"/>
                                     <constraint firstItem="wha-z3-8Y4" firstAttribute="centerY" secondItem="ybz-Ha-cNb" secondAttribute="centerY" id="UV9-nt-bug"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-n8-eiu" userLabel="Pick Name Prompt Label">
-                                <rect key="frame" x="114" y="80" width="147" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alice, Bob" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyI-Pt-IYd" userLabel="Name Text Field" customClass="BorderTextField" customModule="Positano" customModuleProvider="target">
-                                <rect key="frame" x="16" y="151" width="343" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="8nB-Gm-MZ3"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ybz-Ha-cNb" firstAttribute="top" secondItem="NGu-n8-eiu" secondAttribute="bottom" id="90V-kC-z02"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RyI-Pt-IYd" secondAttribute="trailing" id="948-1f-i5m"/>
+                            <constraint firstAttribute="trailing" secondItem="RyI-Pt-IYd" secondAttribute="trailing" id="948-1f-i5m"/>
                             <constraint firstItem="RyI-Pt-IYd" firstAttribute="top" secondItem="NGu-n8-eiu" secondAttribute="bottom" constant="50" id="RUh-g4-XvU"/>
                             <constraint firstItem="RyI-Pt-IYd" firstAttribute="top" secondItem="ybz-Ha-cNb" secondAttribute="bottom" id="X8v-h6-19n"/>
                             <constraint firstItem="NGu-n8-eiu" firstAttribute="centerX" secondItem="Zaa-sx-v6x" secondAttribute="centerX" id="Y6x-JV-M7v"/>
                             <constraint firstAttribute="trailing" secondItem="ybz-Ha-cNb" secondAttribute="trailing" id="bBG-uM-iR5"/>
-                            <constraint firstItem="RyI-Pt-IYd" firstAttribute="leading" secondItem="Zaa-sx-v6x" secondAttribute="leadingMargin" id="cQX-JI-4YJ"/>
+                            <constraint firstItem="RyI-Pt-IYd" firstAttribute="leading" secondItem="Zaa-sx-v6x" secondAttribute="leading" id="cQX-JI-4YJ"/>
                             <constraint firstItem="NGu-n8-eiu" firstAttribute="top" secondItem="SkK-nx-rsC" secondAttribute="bottom" constant="60" id="hqq-bn-Iye"/>
                             <constraint firstItem="ybz-Ha-cNb" firstAttribute="leading" secondItem="Zaa-sx-v6x" secondAttribute="leading" id="r8k-uj-xPQ"/>
                         </constraints>
@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="86" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRz-rf-6dN" userLabel="Area Code Text Field" customClass="BorderTextField" customModule="Positano" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="151" width="60" height="60"/>
+                                <rect key="frame" x="0.0" y="151" width="79" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="tjq-ic-VFy"/>
                                     <constraint firstAttribute="height" constant="60" id="zSg-JP-JSc"/>
@@ -113,7 +113,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEg-FM-mjb" userLabel="Mobile Number Text Field" customClass="BorderTextField" customModule="Positano" customModuleProvider="target">
-                                <rect key="frame" x="60" y="151" width="299" height="60"/>
+                                <rect key="frame" x="79" y="151" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="JUz-Ln-ZZC"/>
                                 </constraints>
