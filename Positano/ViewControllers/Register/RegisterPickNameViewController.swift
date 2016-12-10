@@ -120,7 +120,9 @@ class RegisterPickNameViewController: BaseViewController {
         let nickname = text.trimming(.whitespaceAndNewline)
         PositanoUserDefaults.nickname.value = nickname
         
-        performSegue(withIdentifier: "showRegisterPickMobile", sender: nil)
+        performSegue(withIdentifier: "showRegisterPickMail", sender: nil)
+//        performSegue(withIdentifier: "showRegisterPickMobile", sender: nil)
+
     }
 }
 

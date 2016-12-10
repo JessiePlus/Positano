@@ -85,7 +85,16 @@ public struct MobilePhone {
     }
 }
 
-// MARK: - Register
+public struct MailAddress {
+    
+    public let address: String
+
+    public init(address: String) {
+        self.address = address
+    }
+}
+
+// MARK: - Register by mobile
 
 public func validateMobilePhone(_ mobilePhone: MobilePhone, failureHandler: FailureHandler?, completion: @escaping ((Bool, String)) -> Void) {
 
@@ -157,6 +166,73 @@ public func verifyMobilePhone(_ mobilePhone: MobilePhone, verifyCode: String, fa
     apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
+// MARK: - Register by mail
+
+public func validateMailAddress(_ mailAddress: MailAddress, failureHandler: FailureHandler?, completion: @escaping ((Bool, String)) -> Void) {
+    
+    let requestParameters: JSONDictionary = [
+        "mail": mailAddress.address,
+        ]
+    
+    let parse: (JSONDictionary) -> (Bool, String)? = { data in
+        println("validateMobilePhone: \(data)")
+        if let available = data["available"] as? Bool {
+            if available {
+                return (available, "")
+            } else {
+                if let message = data["message"] as? String {
+                    return (available, message)
+                }
+            }
+        }
+        
+        return (false, "")
+    }
+    
+    let resource = jsonResource(path: "/v1/users/mobile_validate", method: .get, requestParameters: requestParameters, parse: parse)
+    
+    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
+
+public func registerMailAddress(_ mailAddress: MailAddress, nickname: String, failureHandler: FailureHandler?, completion: @escaping (Bool) -> Void) {
+    
+    let requestParameters: JSONDictionary = [
+        "mail": mailAddress.address,
+        "nickname": nickname,
+    ]
+    
+    let parse: (JSONDictionary) -> Bool? = { data in
+        if let state = data["state"] as? String {
+            if state == "blocked" {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    let resource = jsonResource(path: "/v1/registration/create", method: .post, requestParameters: requestParameters, parse: parse)
+    
+    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
+
+public func verifyMailAddress(_ mailAddress: MailAddress, verifyCode: String, failureHandler: FailureHandler?, completion: @escaping (LoginUser) -> Void) {
+    
+    let requestParameters: JSONDictionary = [
+        "mail": mailAddress.address,
+        "token": verifyCode,
+        "client": Config.clientType,
+        "expiring": 0, // 永不过期
+    ]
+    
+    let parse: (JSONDictionary) -> LoginUser? = { data in
+        return LoginUser.fromJSONDictionary(data)
+    }
+    
+    let resource = jsonResource(path: "/v1/registration/update", method: .put, requestParameters: requestParameters, parse: parse)
+    
+    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
 
 
 
