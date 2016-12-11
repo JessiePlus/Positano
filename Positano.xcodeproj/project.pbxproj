@@ -121,6 +121,7 @@
 		D614AEEA1DFBAFDD007747D7 /* MobilePhoneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE91DFBAFDD007747D7 /* MobilePhoneReducer.swift */; };
 		D614AEED1DFBB1D2007747D7 /* BaseInputMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */; };
 		D614AEEE1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */; };
+		D614AEF41DFD357E007747D7 /* LoginByMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEF21DFD357E007747D7 /* LoginByMailViewController.swift */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
@@ -328,6 +329,7 @@
 		D614AEE91DFBAFDD007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneReducer.swift; sourceTree = "<group>"; };
 		D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputMailViewController.swift; sourceTree = "<group>"; };
 		D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVerifyMailViewController.swift; sourceTree = "<group>"; };
+		D614AEF21DFD357E007747D7 /* LoginByMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginByMailViewController.swift; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 		D614AD661DF40731007747D7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D614AEF11DFD357E007747D7 /* Login */,
 				D614AEB41DF9382C007747D7 /* Register */,
 			);
 			path = ViewControllers;
@@ -693,6 +696,14 @@
 				D614AEE31DFA8AB5007747D7 /* PositanoService.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		D614AEF11DFD357E007747D7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D614AEF21DFD357E007747D7 /* LoginByMailViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D647B2501DEC4A3600642BAF = {
@@ -1239,6 +1250,7 @@
 				D614AD941DF407FC007747D7 /* Date+Yep.swift in Sources */,
 				D614AE7F1DF7FE26007747D7 /* Shareable.swift in Sources */,
 				D614ADA21DF407FC007747D7 /* UIFont+Yep.swift in Sources */,
+				D614AEF41DFD357E007747D7 /* LoginByMailViewController.swift in Sources */,
 				D614ADBF1DF41160007747D7 /* YepLog.swift in Sources */,
 				D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */,
 				D614ADD01DF70582007747D7 /* NavigationTitleLabel.swift in Sources */,

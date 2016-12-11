@@ -179,5 +179,24 @@ public func registerMailAddress(_ mailAddress: MailAddress, nickname: String, pa
     apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
+// MARK: - Login by mail
 
+public func loginByMail(_ mailAddress: MailAddress, password: String, failureHandler: FailureHandler?, completion: @escaping (LoginUser) -> Void) {
+    
+    println("User login type is \(Config.clientType)")
+    
+    let requestParameters: JSONDictionary = [
+        "username": mailAddress.address,
+        "password": password,
+        "client": Config.clientType,
+    ]
+    
+    let parse: (JSONDictionary) -> LoginUser? = { data in
+        return LoginUser.fromJSONDictionary(data)
+    }
+    
+    let resource = jsonResource(path: "/1.1/login", method: .post, requestParameters: requestParameters, parse: parse)
+    
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
 

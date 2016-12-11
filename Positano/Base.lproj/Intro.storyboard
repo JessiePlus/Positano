@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNE-9V-doH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="-310"/>
+            <point key="canvasLocation" x="334" y="-314"/>
         </scene>
         <!--Register Pick Mail View Controller-->
         <scene sceneID="pvp-fX-X0B">
@@ -222,6 +222,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wy-Rf-jAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="334" y="357"/>
+        </scene>
+        <!--Login By Mail View Controller-->
+        <scene sceneID="Xwe-lU-7kZ">
+            <objects>
+                <viewController storyboardIdentifier="LoginByMailViewController" id="mqz-dj-Xe0" customClass="LoginByMailViewController" customModule="Positano" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKg-vo-2wI"/>
+                        <viewControllerLayoutGuide type="bottom" id="vkZ-pX-bUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sjW-9r-gbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your e-mail address?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMf-Ms-aoJ" userLabel="Pick Mail Address Prompt Label">
+                                <rect key="frame" x="102" y="80" width="171" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxA-Bo-QNz" userLabel="Pick Password Prompt Label">
+                                <rect key="frame" x="123.5" y="212" width="128" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgt-Sd-zVE" userLabel="Mail Address Text Field" customClass="BorderTextField" customModule="Positano" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="152" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jTa-54-PWq"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="skO-H1-Bxc" userLabel="Password Text Field" customClass="BorderTextField" customModule="Positano" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="234" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iPJ-dE-buq"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="skO-H1-Bxc" firstAttribute="leading" secondItem="sjW-9r-gbZ" secondAttribute="leading" id="EPR-ek-Mni"/>
+                            <constraint firstAttribute="trailing" secondItem="Jgt-Sd-zVE" secondAttribute="trailing" id="HIf-cb-3Sr"/>
+                            <constraint firstItem="JxA-Bo-QNz" firstAttribute="centerX" secondItem="sjW-9r-gbZ" secondAttribute="centerX" id="HWD-CT-Qmz"/>
+                            <constraint firstItem="pMf-Ms-aoJ" firstAttribute="top" secondItem="wKg-vo-2wI" secondAttribute="bottom" constant="60" id="INf-4t-t7y" userLabel="Pick Mail Address Prompt Label Top Constraint"/>
+                            <constraint firstItem="skO-H1-Bxc" firstAttribute="top" secondItem="JxA-Bo-QNz" secondAttribute="bottom" id="NNR-ao-LqN"/>
+                            <constraint firstItem="Jgt-Sd-zVE" firstAttribute="leading" secondItem="sjW-9r-gbZ" secondAttribute="leading" id="Ocj-R9-uOp"/>
+                            <constraint firstAttribute="trailing" secondItem="skO-H1-Bxc" secondAttribute="trailing" id="SSX-jb-eTP"/>
+                            <constraint firstItem="Jgt-Sd-zVE" firstAttribute="top" secondItem="pMf-Ms-aoJ" secondAttribute="bottom" constant="50" id="bSV-Ml-R5t" userLabel="Mail Address Text Field Top Constraint"/>
+                            <constraint firstItem="JxA-Bo-QNz" firstAttribute="top" secondItem="Jgt-Sd-zVE" secondAttribute="bottom" id="cov-oJ-Zec"/>
+                            <constraint firstItem="pMf-Ms-aoJ" firstAttribute="centerX" secondItem="sjW-9r-gbZ" secondAttribute="centerX" id="heL-fy-Z12"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mailAddressTextField" destination="Jgt-Sd-zVE" id="2yC-Y7-nzN"/>
+                        <outlet property="mailAddressTextFieldTopConstraint" destination="INf-4t-t7y" id="PiA-2O-6mY"/>
+                        <outlet property="passwordTextField" destination="skO-H1-Bxc" id="4UI-oB-xhm"/>
+                        <outlet property="pickMailAddressPromptLabel" destination="pMf-Ms-aoJ" id="ldv-ev-Uj2"/>
+                        <outlet property="pickMailAddressPromptLabelTopConstraint" destination="INf-4t-t7y" id="Gwy-gz-eim"/>
+                        <outlet property="pickPasswordPromptLabel" destination="JxA-Bo-QNz" id="Pyv-rJ-XLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqU-1b-tyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706" y="1068"/>
         </scene>
     </scenes>
 </document>

@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Vuu-II-W7S" kind="relationship" relationship="rootViewController" id="hF3-jN-kqx"/>
+                        <segue destination="Xhr-Iw-RN1" kind="relationship" relationship="rootViewController" id="VTt-uT-Phm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9m-Hy-s5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,6 +99,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aI-Hj-W5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="275" y="1128"/>
+        </scene>
+        <!--LoginByMailViewController-->
+        <scene sceneID="5fW-PY-jRG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Intro" referencedIdentifier="LoginByMailViewController" id="Xhr-Iw-RN1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9an-ic-hGA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkW-4F-6xU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="1127"/>
         </scene>
     </scenes>
     <resources>
