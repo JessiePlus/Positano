@@ -14,6 +14,7 @@ class BaseInputMailViewController: BaseViewController {
     @IBOutlet weak var mailAddressTextField: BorderTextField!
     @IBOutlet weak var mailAddressTextFieldTopConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var passwordTextField: BorderTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

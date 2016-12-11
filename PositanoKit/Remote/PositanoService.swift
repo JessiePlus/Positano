@@ -12,15 +12,9 @@ import PositanoNetworking
 import RealmSwift
 import Alamofire
 
-#if STAGING
-public let yepHost = "park-staging.catchchatchina.com"
-public let yepBaseURL = URL(string: "https://park-staging.catchchatchina.com/api")!
-public let fayeBaseURL = URL(string: "wss://faye-staging.catchchatchina.com/faye")!
-#else
-public let yepHost = "soyep.com"
-public let yepBaseURL = URL(string: "https://api.soyep.com")!
-public let fayeBaseURL = URL(string: "wss://faye.catchchatchina.com/faye")!
-#endif
+
+public let PositanoHost = "positano.com"
+public let PositanoBaseURL = URL(string: "https://api.leancloud.cn")!
 
 func println(_ item: @autoclosure () -> Any) {
     #if DEBUG
@@ -45,15 +39,13 @@ public struct LoginUser: CustomStringConvertible {
 
     static func fromJSONDictionary(_ data: JSONDictionary) -> LoginUser? {
 
-        guard let accessToken = data["access_token"] as? String else { return nil }
-
-        guard let user = data["user"] as? JSONDictionary else { return nil }
-        guard let userID = user["id"] as? String else { return nil }
-        guard let nickname = user["nickname"] as? String else { return nil }
-        guard let pusherID = user["pusher_id"] as? String else { return nil }
-
-        let username = user["username"] as? String
-        let avatarURLString = user["avatar_url"] as? String
+        guard let accessToken = data["sessionToken"] as? String else { return nil }
+        guard let userID = data["objectId"] as? String else { return nil }
+        guard let username = data["username"] as? String else { return nil }
+        guard let nickname = data["nickname"] as? String else { return nil }
+        
+        let pusherID = "pusher_id"//data["pusher_id"] as? String else { return nil }
+        let avatarURLString = "avatar_url"//data["avatar_url"] as? String else { return nil }
 
         return LoginUser(accessToken: accessToken, userID: userID, username: username, nickname: nickname, avatarURLString: avatarURLString, pusherID: pusherID)
     }
@@ -120,7 +112,7 @@ public func validateMobilePhone(_ mobilePhone: MobilePhone, failureHandler: Fail
 
     let resource = jsonResource(path: "/v1/users/mobile_validate", method: .get, requestParameters: requestParameters, parse: parse)
 
-    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
 public func registerMobilePhone(_ mobilePhone: MobilePhone, nickname: String, failureHandler: FailureHandler?, completion: @escaping (Bool) -> Void) {
@@ -144,7 +136,7 @@ public func registerMobilePhone(_ mobilePhone: MobilePhone, nickname: String, fa
 
     let resource = jsonResource(path: "/v1/registration/create", method: .post, requestParameters: requestParameters, parse: parse)
 
-    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
 public func verifyMobilePhone(_ mobilePhone: MobilePhone, verifyCode: String, failureHandler: FailureHandler?, completion: @escaping (LoginUser) -> Void) {
@@ -163,75 +155,28 @@ public func verifyMobilePhone(_ mobilePhone: MobilePhone, verifyCode: String, fa
 
     let resource = jsonResource(path: "/v1/registration/update", method: .put, requestParameters: requestParameters, parse: parse)
 
-    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
 // MARK: - Register by mail
 
-public func validateMailAddress(_ mailAddress: MailAddress, failureHandler: FailureHandler?, completion: @escaping ((Bool, String)) -> Void) {
+public func registerMailAddress(_ mailAddress: MailAddress, nickname: String, password: String, failureHandler: FailureHandler?, completion: @escaping (LoginUser) -> Void) {
     
     let requestParameters: JSONDictionary = [
-        "mail": mailAddress.address,
-        ]
-    
-    let parse: (JSONDictionary) -> (Bool, String)? = { data in
-        println("validateMobilePhone: \(data)")
-        if let available = data["available"] as? Bool {
-            if available {
-                return (available, "")
-            } else {
-                if let message = data["message"] as? String {
-                    return (available, message)
-                }
-            }
-        }
-        
-        return (false, "")
-    }
-    
-    let resource = jsonResource(path: "/v1/users/mobile_validate", method: .get, requestParameters: requestParameters, parse: parse)
-    
-    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
-}
-
-public func registerMailAddress(_ mailAddress: MailAddress, nickname: String, failureHandler: FailureHandler?, completion: @escaping (Bool) -> Void) {
-    
-    let requestParameters: JSONDictionary = [
-        "mail": mailAddress.address,
+        "username" : mailAddress.address,
+        "password" : password,
+        "email": mailAddress.address,
         "nickname": nickname,
     ]
     
-    let parse: (JSONDictionary) -> Bool? = { data in
-        if let state = data["state"] as? String {
-            if state == "blocked" {
-                return true
-            }
-        }
-        
-        return false
-    }
-    
-    let resource = jsonResource(path: "/v1/registration/create", method: .post, requestParameters: requestParameters, parse: parse)
-    
-    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
-}
-
-public func verifyMailAddress(_ mailAddress: MailAddress, verifyCode: String, failureHandler: FailureHandler?, completion: @escaping (LoginUser) -> Void) {
-    
-    let requestParameters: JSONDictionary = [
-        "mail": mailAddress.address,
-        "token": verifyCode,
-        "client": Config.clientType,
-        "expiring": 0, // 永不过期
-    ]
     
     let parse: (JSONDictionary) -> LoginUser? = { data in
         return LoginUser.fromJSONDictionary(data)
     }
     
-    let resource = jsonResource(path: "/v1/registration/update", method: .put, requestParameters: requestParameters, parse: parse)
+    let resource = jsonResource(path: "/1.1/users", method: .post, requestParameters: requestParameters, parse: parse)
     
-    apiRequest({_ in}, baseURL: yepBaseURL, resource: resource, failure: failureHandler, completion: completion)
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
 

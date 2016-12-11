@@ -11,6 +11,7 @@ import PositanoKit
 import Ruler
 import RxSwift
 import RxCocoa
+import LeanCloud
 
 final class RegisterPickMailViewController: BaseInputMailViewController, UITextFieldDelegate {
     
@@ -20,6 +21,7 @@ final class RegisterPickMailViewController: BaseInputMailViewController, UITextF
     
     @IBOutlet weak var pickMailAddressPromptLabelTopConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var pickPasswordPromptLabel: UILabel!
     
     fileprivate lazy var nextButton: UIBarButtonItem = {
         let button = UIBarButtonItem()
@@ -53,9 +55,14 @@ final class RegisterPickMailViewController: BaseInputMailViewController, UITextF
         mailAddressTextField.textColor = UIColor.yepInputTextColor()
         mailAddressTextField.delegate = self
         
-        Observable.combineLatest(mailAddressTextField.rx.textInput.text, mailAddressTextField.rx.textInput.text) { (a, b) -> Bool in
-            guard let b = b else { return false }
-            return !b.isEmpty
+        passwordTextField.text = mailAddress?.address
+        passwordTextField.backgroundColor = UIColor.white
+        passwordTextField.textColor = UIColor.yepInputTextColor()
+        passwordTextField.delegate = self
+        
+        Observable.combineLatest(mailAddressTextField.rx.textInput.text, passwordTextField.rx.textInput.text) { (a, b) -> Bool in
+            guard let a = a, let b = b else { return false }
+            return !a.isEmpty && !b.isEmpty
             }
             .bindTo(nextButton.rx.isEnabled)
             .addDisposableTo(disposeBag)
@@ -85,66 +92,40 @@ final class RegisterPickMailViewController: BaseInputMailViewController, UITextF
         
         view.endEditing(true)
         
-        guard let address = mailAddressTextField.text else {
+        guard let address = mailAddressTextField.text, let password = passwordTextField.text else {
             return
         }
         let mailAddress = MailAddress(address: address)
+        
         sharedStore().dispatch(MailAddressUpdateAction(mailAddress: mailAddress))
         
         YepHUD.showActivityIndicator()
         
-        validateMailAddress(mailAddress, failureHandler: { (reason, errorMessage) in
-            
-            YepHUD.hideActivityIndicator()
-            
-        }, completion: { (available, message) in
-            
-            if available, let nickname = PositanoUserDefaults.nickname.value {
-                println("ValidateMobile: available")
+        if let nickname = PositanoUserDefaults.nickname.value {
+            registerMailAddress(mailAddress, nickname: nickname, password: password, failureHandler: { (reason, errorMessage) in
                 
-                registerMailAddress(mailAddress, nickname: nickname, failureHandler: { (reason, errorMessage) in
-                    
-                    YepHUD.hideActivityIndicator()
-                    
-                    if let errorMessage = errorMessage {
-                        YepAlert.alertSorry(message: errorMessage, inViewController: self, withDismissAction: { [weak self] in
-                            self?.mailAddressTextField.becomeFirstResponder()
-                        })
-                    }
-                    
-                }, completion: { created in
-                    
-                    YepHUD.hideActivityIndicator()
-                    
-                    if created {
-                        SafeDispatch.async { [weak self] in
-                            self?.performSegue(withIdentifier: "showRegisterVerifyMobile", sender: nil)
-                        }
-                        
-                    } else {
-                        SafeDispatch.async { [weak self] in
-                            self?.nextButton.isEnabled = false
-                            
-                            YepAlert.alertSorry(message: "registerMobile failed", inViewController: self, withDismissAction: { [weak self] in
-                                self?.mailAddressTextField.becomeFirstResponder()
-                            })
-                        }
-                    }
-                })
+                YepHUD.hideActivityIndicator()
                 
-            } else {
-                println("ValidateMobile: \(message)")
+                if let errorMessage = errorMessage {
+                    YepAlert.alertSorry(message: errorMessage, inViewController: self, withDismissAction: { [weak self] in
+                        self?.mailAddressTextField.becomeFirstResponder()
+                    })
+                }
+                
+            }, completion: { loginUser in
+                
+                println("loginUser: \(loginUser)")
                 
                 YepHUD.hideActivityIndicator()
                 
                 SafeDispatch.async { [weak self] in
-                    self?.nextButton.isEnabled = false
                     
-                    YepAlert.alertSorry(message: message, inViewController: self, withDismissAction: { [weak self] in
-                        self?.mailAddressTextField.becomeFirstResponder()
-                    })
+                saveTokenAndUserInfoOfLoginUser(loginUser)
+                    
+//              self?.performSegue(withIdentifier: "showRegisterPickAvatar", sender: nil)
                 }
-            }
-        })
+            })
+        }
+        
     }
 }
