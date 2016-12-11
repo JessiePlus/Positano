@@ -111,11 +111,16 @@
 		D614AED21DF93EBC007747D7 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AED11DF93EBB007747D7 /* ReSwift.framework */; };
 		D614AED31DF93EBC007747D7 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AED11DF93EBB007747D7 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D614AED61DFA42E2007747D7 /* Intro.storyboard */; };
-		D614AEDE1DFA8A36007747D7 /* MobilePhoneActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AED91DFA8A36007747D7 /* MobilePhoneActions.swift */; };
+		D614AEDE1DFA8A36007747D7 /* MailAddressActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AED91DFA8A36007747D7 /* MailAddressActions.swift */; };
 		D614AEDF1DFA8A36007747D7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDA1DFA8A36007747D7 /* AppState.swift */; };
-		D614AEE01DFA8A36007747D7 /* MobilePhoneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDC1DFA8A36007747D7 /* MobilePhoneReducer.swift */; };
+		D614AEE01DFA8A36007747D7 /* MailAddressReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDC1DFA8A36007747D7 /* MailAddressReducer.swift */; };
 		D614AEE11DFA8A36007747D7 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEDD1DFA8A36007747D7 /* SharedStore.swift */; };
-		D614AEE41DFA8AB5007747D7 /* YepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE31DFA8AB5007747D7 /* YepService.swift */; };
+		D614AEE41DFA8AB5007747D7 /* PositanoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE31DFA8AB5007747D7 /* PositanoService.swift */; };
+		D614AEE61DFBA67E007747D7 /* RegisterPickMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE51DFBA67E007747D7 /* RegisterPickMailViewController.swift */; };
+		D614AEE81DFBAF89007747D7 /* MobilePhoneActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE71DFBAF89007747D7 /* MobilePhoneActions.swift */; };
+		D614AEEA1DFBAFDD007747D7 /* MobilePhoneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEE91DFBAFDD007747D7 /* MobilePhoneReducer.swift */; };
+		D614AEED1DFBB1D2007747D7 /* BaseInputMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */; };
+		D614AEEE1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
@@ -313,11 +318,16 @@
 		D614AEBA1DF93915007747D7 /* BaseVerifyMobileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVerifyMobileViewController.swift; sourceTree = "<group>"; };
 		D614AED11DF93EBB007747D7 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		D614AED51DFA42E2007747D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Intro.storyboard; sourceTree = "<group>"; };
-		D614AED91DFA8A36007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneActions.swift; sourceTree = "<group>"; };
+		D614AED91DFA8A36007747D7 /* MailAddressActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailAddressActions.swift; sourceTree = "<group>"; };
 		D614AEDA1DFA8A36007747D7 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		D614AEDC1DFA8A36007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneReducer.swift; sourceTree = "<group>"; };
+		D614AEDC1DFA8A36007747D7 /* MailAddressReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailAddressReducer.swift; sourceTree = "<group>"; };
 		D614AEDD1DFA8A36007747D7 /* SharedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
-		D614AEE31DFA8AB5007747D7 /* YepService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepService.swift; sourceTree = "<group>"; };
+		D614AEE31DFA8AB5007747D7 /* PositanoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoService.swift; sourceTree = "<group>"; };
+		D614AEE51DFBA67E007747D7 /* RegisterPickMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPickMailViewController.swift; sourceTree = "<group>"; };
+		D614AEE71DFBAF89007747D7 /* MobilePhoneActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneActions.swift; sourceTree = "<group>"; };
+		D614AEE91DFBAFDD007747D7 /* MobilePhoneReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneReducer.swift; sourceTree = "<group>"; };
+		D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputMailViewController.swift; sourceTree = "<group>"; };
+		D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVerifyMailViewController.swift; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -620,6 +630,7 @@
 		D614AEB41DF9382C007747D7 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				D614AEE51DFBA67E007747D7 /* RegisterPickMailViewController.swift */,
 				D614AEB51DF93840007747D7 /* RegisterPickMobileViewController.swift */,
 				D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */,
 			);
@@ -637,7 +648,9 @@
 		D614AEB81DF938F3007747D7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */,
 				D614AEB91DF93915007747D7 /* BaseInputMobileViewController.swift */,
+				D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */,
 				D614AEBA1DF93915007747D7 /* BaseVerifyMobileViewController.swift */,
 				D614AD671DF40755007747D7 /* BaseViewController.swift */,
 				D614AD681DF40755007747D7 /* SegueViewController.swift */,
@@ -659,7 +672,8 @@
 		D614AED81DFA8A36007747D7 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				D614AED91DFA8A36007747D7 /* MobilePhoneActions.swift */,
+				D614AED91DFA8A36007747D7 /* MailAddressActions.swift */,
+				D614AEE71DFBAF89007747D7 /* MobilePhoneActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -667,7 +681,8 @@
 		D614AEDB1DFA8A36007747D7 /* Reducers */ = {
 			isa = PBXGroup;
 			children = (
-				D614AEDC1DFA8A36007747D7 /* MobilePhoneReducer.swift */,
+				D614AEDC1DFA8A36007747D7 /* MailAddressReducer.swift */,
+				D614AEE91DFBAFDD007747D7 /* MobilePhoneReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -675,7 +690,7 @@
 		D614AEE21DFA8AB5007747D7 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				D614AEE31DFA8AB5007747D7 /* YepService.swift */,
+				D614AEE31DFA8AB5007747D7 /* PositanoService.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -1148,7 +1163,7 @@
 				D614AE141DF7AD89007747D7 /* String+Trans.swift in Sources */,
 				D614AE121DF7AD89007747D7 /* FileManager+Yep.swift in Sources */,
 				D614AE051DF7AD2F007747D7 /* PositanoUserDefaults.swift in Sources */,
-				D614AEE41DFA8AB5007747D7 /* YepService.swift in Sources */,
+				D614AEE41DFA8AB5007747D7 /* PositanoService.swift in Sources */,
 				D614AE031DF7AD2F007747D7 /* Models.swift in Sources */,
 				D614AE041DF7AD2F007747D7 /* RealmConfig.swift in Sources */,
 				D614AE161DF7AD89007747D7 /* UIImage+Yep.swift in Sources */,
@@ -1188,6 +1203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D614AE4A1DF7D862007747D7 /* YepHelpers.swift in Sources */,
+				D614AEEA1DFBAFDD007747D7 /* MobilePhoneReducer.swift in Sources */,
 				D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */,
 				D614AE5A1DF7F735007747D7 /* ImageCache.swift in Sources */,
 				D614AD951DF407FC007747D7 /* DeviceUtil+Yep.swift in Sources */,
@@ -1206,12 +1222,13 @@
 				D614AEB61DF93840007747D7 /* RegisterPickMobileViewController.swift in Sources */,
 				D614AE5B1DF7F735007747D7 /* PlainAvatar.swift in Sources */,
 				D614AD901DF407FC007747D7 /* CGRect+Yep.swift in Sources */,
-				D614AEE01DFA8A36007747D7 /* MobilePhoneReducer.swift in Sources */,
+				D614AEE81DFBAF89007747D7 /* MobilePhoneActions.swift in Sources */,
+				D614AEE01DFA8A36007747D7 /* MailAddressReducer.swift in Sources */,
 				D614AD691DF40755007747D7 /* BaseViewController.swift in Sources */,
 				D614ADA61DF407FC007747D7 /* UIScrollView+Yep.swift in Sources */,
 				D614AEDF1DFA8A36007747D7 /* AppState.swift in Sources */,
 				D614ADA51DF407FC007747D7 /* UIMotionEffect+Yep.swift in Sources */,
-				D614AEDE1DFA8A36007747D7 /* MobilePhoneActions.swift in Sources */,
+				D614AEDE1DFA8A36007747D7 /* MailAddressActions.swift in Sources */,
 				D614AEBC1DF93915007747D7 /* BaseInputMobileViewController.swift in Sources */,
 				D614AE4B1DF7D862007747D7 /* YepHUD.swift in Sources */,
 				D614ADD91DF7ABE2007747D7 /* UIViewController+Yep.swift in Sources */,
@@ -1228,6 +1245,7 @@
 				D614AE7C1DF7FE26007747D7 /* Reusable.swift in Sources */,
 				D614ADA71DF407FC007747D7 /* UISearchBar+Yep.swift in Sources */,
 				D614AD9F1DF407FC007747D7 /* UIApplication+Yep.swift in Sources */,
+				D614AEEE1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift in Sources */,
 				D614AE481DF7D862007747D7 /* YepAlert.swift in Sources */,
 				D614AE4C1DF7D862007747D7 /* YepSoundEffect.swift in Sources */,
 				D614AEE11DFA8A36007747D7 /* SharedStore.swift in Sources */,
@@ -1243,7 +1261,9 @@
 				D614AE7A1DF7FE26007747D7 /* NibLoadable.swift in Sources */,
 				D614AD9E1DF407FC007747D7 /* TimeZone+Yep.swift in Sources */,
 				D614AE6A1DF7FDC8007747D7 /* URL+Yep.swift in Sources */,
+				D614AEED1DFBB1D2007747D7 /* BaseInputMailViewController.swift in Sources */,
 				D614AD9B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift in Sources */,
+				D614AEE61DFBA67E007747D7 /* RegisterPickMailViewController.swift in Sources */,
 				D614ADA11DF407FC007747D7 /* UIColor+Yep.swift in Sources */,
 				D614AD9D1DF407FC007747D7 /* String+Yep.swift in Sources */,
 			);

@@ -14,7 +14,7 @@ final private class SharedStore {
 
     lazy var store: Store<AppState> = {
         return Store<AppState>(
-            reducer: MobilePhoneReducer(),
+            reducer: MailAddressReducer(),
             state: nil
         )
     }()

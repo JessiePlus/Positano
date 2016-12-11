@@ -8,6 +8,9 @@
 
 import Foundation
 
+public let PositanoAppID = "x6XqOXajuBXl7KAPgkDGVm2v-gzGzoHsz"
+public let PositanoAppKey = "HlGlENGF6ki2CL32REOskquL"
+
 public enum Method: String, CustomStringConvertible {
     case get = "GET"
     case head = "HEAD"
@@ -324,6 +327,8 @@ public func jsonResource<A>(token: String?, path: String, method: Method, reques
 
     let jsonBody = encodeJSON(requestParameters)
     var headers = [
+        "X-LC-Id": PositanoAppID,
+        "X-LC-Key": PositanoAppKey,
         "Content-Type": "application/json",
     ]
     if let token = token {

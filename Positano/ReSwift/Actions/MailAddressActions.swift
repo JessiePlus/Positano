@@ -1,5 +1,5 @@
 //
-//  AppState.swift
+//  MobilePhoneActions.swift
 //  Yep
 //
 //  Created by NIX on 16/8/29.
@@ -9,11 +9,8 @@
 import PositanoKit
 import ReSwift
 
-struct AppState: StateType {
+struct MailAddressUpdateAction: Action {
 
-    var mailAddress: MailAddress?
-    var mobilePhone: MobilePhone?
-
+    let mailAddress: MailAddress?
 }
-
 
