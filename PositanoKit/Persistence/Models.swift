@@ -207,3 +207,39 @@ public func updateUserWithUserID(_ userID: String, useUserInfo userInfo: JSONDic
     }
 }
 
+public func clearUselessRealmObjects() {
+    
+    realmQueue.async {
+        
+        guard let realm = try? Realm() else {
+            return
+        }
+        
+        defer {
+            realm.refresh()
+        }
+        
+        println("do clearUselessRealmObjects")
+        
+        realm.beginWrite()
+        
+        // Message
+        
+        do {
+            // 7天前
+
+        }
+        
+        // Feed
+
+        
+        // User
+        
+        
+        // Group
+        
+        let _ = try? realm.commitWrite()
+    }
+}
+
+

@@ -19,7 +19,7 @@ final public class Config {
     
     public static var isAppActive: (() -> Bool)?
     
-    public static let appGroupID: String = "group.Catch-Inc.Yep"
+    public static let appGroupID: String = "group.CSee-Inc.Positano"
 
     public static var clientType: Int {
         #if DEBUG

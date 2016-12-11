@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F951F1F3DC1DFF1516D5ABE /* Pods_PositanoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */; };
+		41436D8382D6E33F18EBBD79 /* Pods_PositanoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B18972CFDD5A23427EEB5D /* Pods_PositanoKit.framework */; };
 		8E5246C845F010B546FCE5E0 /* Pods_Positano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */; };
 		D614AD651DF406E9007747D7 /* RegisterPickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */; };
 		D614AD691DF40755007747D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AD671DF40755007747D7 /* BaseViewController.swift */; };
@@ -62,8 +63,6 @@
 		D614AE141DF7AD89007747D7 /* String+Trans.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0C1DF7AD89007747D7 /* String+Trans.swift */; };
 		D614AE151DF7AD89007747D7 /* String+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0D1DF7AD89007747D7 /* String+Yep.swift */; };
 		D614AE161DF7AD89007747D7 /* UIImage+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE0E1DF7AD89007747D7 /* UIImage+Yep.swift */; };
-		D614AE171DF7AE1B007747D7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; };
-		D614AE181DF7AE1B007747D7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; };
 		D614AE271DF7B029007747D7 /* PositanoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AE1E1DF7B029007747D7 /* PositanoNetworking.framework */; };
 		D614AE2E1DF7B029007747D7 /* PositanoNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AE2D1DF7B029007747D7 /* PositanoNetworkingTests.swift */; };
 		D614AE301DF7B029007747D7 /* PositanoNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D614AE201DF7B029007747D7 /* PositanoNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -122,15 +121,13 @@
 		D614AEED1DFBB1D2007747D7 /* BaseInputMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */; };
 		D614AEEE1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */; };
 		D614AEF41DFD357E007747D7 /* LoginByMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEF21DFD357E007747D7 /* LoginByMailViewController.swift */; };
+		D614AEFC1DFD5547007747D7 /* MonkeyKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */; };
+		D614AEFD1DFD5547007747D7 /* MonkeyKing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
 		D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */; };
 		D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2731DEC4A3600642BAF /* PositanoTests.swift */; };
-		D649F9001DED09AD00308548 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; };
-		D649F9011DED09AD00308548 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2871DEC76C300642BAF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; };
-		D649F9031DED09AD00308548 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D647B2881DEC76C300642BAF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,13 +196,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D614AEFD1DFD5547007747D7 /* MonkeyKing.framework in Embed Frameworks */,
 				D614ADF51DF7ACA6007747D7 /* PositanoKit.framework in Embed Frameworks */,
-				D649F9031DED09AD00308548 /* RealmSwift.framework in Embed Frameworks */,
 				D614AE8F1DF80264007747D7 /* Proposer.framework in Embed Frameworks */,
 				D614ADC31DF41CFA007747D7 /* Ruler.framework in Embed Frameworks */,
 				D614AE891DF801F6007747D7 /* AutoReview.framework in Embed Frameworks */,
 				D614AE8C1DF80238007747D7 /* Kingfisher.framework in Embed Frameworks */,
-				D649F9011DED09AD00308548 /* Realm.framework in Embed Frameworks */,
 				D614ADAF1DF40FB3007747D7 /* KeypathObserver.framework in Embed Frameworks */,
 				D614AED31DF93EBC007747D7 /* ReSwift.framework in Embed Frameworks */,
 				D614AE341DF7B029007747D7 /* PositanoNetworking.framework in Embed Frameworks */,
@@ -220,6 +216,8 @@
 		27E28256DA72F555CA405EC3 /* Pods-Positano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.debug.xcconfig"; sourceTree = "<group>"; };
 		67555F41A03D7A38C07B0BE1 /* Pods-PositanoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Positano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Positano/Pods-Positano.release.xcconfig"; sourceTree = "<group>"; };
+		91B18972CFDD5A23427EEB5D /* Pods_PositanoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PositanoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10C76A4F031B9282548C093 /* Pods-PositanoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoKit/Pods-PositanoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PositanoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D614AD641DF406E9007747D7 /* RegisterPickNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPickNameViewController.swift; sourceTree = "<group>"; };
@@ -330,6 +328,9 @@
 		D614AEEB1DFBB1D1007747D7 /* BaseInputMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputMailViewController.swift; sourceTree = "<group>"; };
 		D614AEEC1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVerifyMailViewController.swift; sourceTree = "<group>"; };
 		D614AEF21DFD357E007747D7 /* LoginByMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginByMailViewController.swift; sourceTree = "<group>"; };
+		D614AEF81DFD52B6007747D7 /* Positano-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Positano-Bridging-Header.h"; sourceTree = "<group>"; };
+		D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MonkeyKing.framework; path = Carthage/Build/iOS/MonkeyKing.framework; sourceTree = "<group>"; };
+		D614AF001DFD5C7F007747D7 /* Positano.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Positano.entitlements; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -339,9 +340,8 @@
 		D647B26F1DEC4A3600642BAF /* PositanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B2731DEC4A3600642BAF /* PositanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoTests.swift; sourceTree = "<group>"; };
 		D647B2751DEC4A3600642BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D647B2871DEC76C300642BAF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		D647B2881DEC76C300642BAF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Positano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAC93DC918662EA80FC96C8 /* Pods-PositanoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoKit/Pods-PositanoKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,8 +349,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D614AE171DF7AE1B007747D7 /* Realm.framework in Frameworks */,
-				D614AE181DF7AE1B007747D7 /* RealmSwift.framework in Frameworks */,
+				41436D8382D6E33F18EBBD79 /* Pods_PositanoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +386,7 @@
 				D614ADC21DF41CFA007747D7 /* Ruler.framework in Frameworks */,
 				D614AE331DF7B029007747D7 /* PositanoNetworking.framework in Frameworks */,
 				D614AE881DF801F6007747D7 /* AutoReview.framework in Frameworks */,
-				D649F9021DED09AD00308548 /* RealmSwift.framework in Frameworks */,
-				D649F9001DED09AD00308548 /* Realm.framework in Frameworks */,
+				D614AEFC1DFD5547007747D7 /* MonkeyKing.framework in Frameworks */,
 				8E5246C845F010B546FCE5E0 /* Pods_Positano.framework in Frameworks */,
 				D614AED21DF93EBC007747D7 /* ReSwift.framework in Frameworks */,
 				D614ADF41DF7ACA6007747D7 /* PositanoKit.framework in Frameworks */,
@@ -414,6 +412,8 @@
 				8AA9693423EC97215315240D /* Pods-Positano.release.xcconfig */,
 				C3D055F104FDBC171DE42C53 /* Pods-PositanoTests.debug.xcconfig */,
 				67555F41A03D7A38C07B0BE1 /* Pods-PositanoTests.release.xcconfig */,
+				B10C76A4F031B9282548C093 /* Pods-PositanoKit.debug.xcconfig */,
+				FCAC93DC918662EA80FC96C8 /* Pods-PositanoKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -753,6 +753,8 @@
 				D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */,
 				D614AEAC1DF8E83F007747D7 /* Localizable.strings */,
 				D647B2621DEC4A3600642BAF /* Main.storyboard */,
+				D614AEF81DFD52B6007747D7 /* Positano-Bridging-Header.h */,
+				D614AF001DFD5C7F007747D7 /* Positano.entitlements */,
 			);
 			path = Positano;
 			sourceTree = "<group>";
@@ -769,6 +771,7 @@
 		D647B2861DEC76C300642BAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */,
 				D614AED11DF93EBB007747D7 /* ReSwift.framework */,
 				D614AE8D1DF80264007747D7 /* Proposer.framework */,
 				D614AE8A1DF80238007747D7 /* Kingfisher.framework */,
@@ -776,10 +779,9 @@
 				D614AE4F1DF7F6B4007747D7 /* Navi.framework */,
 				D614ADC11DF41CFA007747D7 /* Ruler.framework */,
 				D614ADAD1DF40FB3007747D7 /* KeypathObserver.framework */,
-				D647B2871DEC76C300642BAF /* Realm.framework */,
-				D647B2881DEC76C300642BAF /* RealmSwift.framework */,
 				E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */,
 				D2B144E61B90019CB43D6187 /* Pods_PositanoTests.framework */,
+				91B18972CFDD5A23427EEB5D /* Pods_PositanoKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -810,10 +812,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D614ADF61DF7ACA6007747D7 /* Build configuration list for PBXNativeTarget "PositanoKit" */;
 			buildPhases = (
+				420302E782A2044A8E6BABA6 /* [CP] Check Pods Manifest.lock */,
 				D614ADDA1DF7ACA6007747D7 /* Sources */,
 				D614ADDB1DF7ACA6007747D7 /* Frameworks */,
 				D614ADDC1DF7ACA6007747D7 /* Headers */,
 				D614ADDD1DF7ACA6007747D7 /* Resources */,
+				B346EC04590B1AB0AF8EF945 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -965,6 +969,14 @@
 						DevelopmentTeam = SFZX37BH94;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					D647B26E1DEC4A3600642BAF = {
 						CreatedOnToolsVersion = 8.0;
@@ -1097,18 +1109,60 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PositanoTests/Pods-PositanoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D647B28B1DEC76E700642BAF /* ShellScript */ = {
+		420302E782A2044A8E6BABA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework\n$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B346EC04590B1AB0AF8EF945 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PositanoKit/Pods-PositanoKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D647B28B1DEC76E700642BAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Navi.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeyboardMan.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Ruler.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Proposer.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MonkeyKing.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AudioBot.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AutoReview.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeypathObserver.framework",
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
@@ -1387,6 +1441,7 @@
 /* Begin XCBuildConfiguration section */
 		D614ADF71DF7ACA6007747D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10C76A4F031B9282548C093 /* Pods-PositanoKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1404,7 +1459,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CSee-Inc.PositanoKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1416,6 +1471,7 @@
 		};
 		D614ADF81DF7ACA6007747D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCAC93DC918662EA80FC96C8 /* Pods-PositanoKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1433,7 +1489,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CSee-Inc.PositanoKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1487,7 +1543,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoNetworking;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CSee-Inc.PositanoNetworking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1512,7 +1568,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Hangzhou.PositanoNetworking;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CSee-Inc.PositanoNetworking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1654,19 +1710,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Positano/Positano.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Positano/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangzhou.positano;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CSee-Inc.Positano";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Positano/Positano-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1677,19 +1736,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Positano/Positano.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SFZX37BH94;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Positano/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hangzhou.positano;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CSee-Inc.Positano";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Positano/Positano-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
