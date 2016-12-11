@@ -11,7 +11,6 @@ def pods
     pod 'pop'
     pod 'JPush', '~> 2.1.9'
     pod 'Fabric'
-    pod ‘LeanCloud’
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
 end

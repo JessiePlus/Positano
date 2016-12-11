@@ -11,7 +11,6 @@ import PositanoKit
 import Ruler
 import RxSwift
 import RxCocoa
-import LeanCloud
 
 final class RegisterPickMailViewController: BaseInputMailViewController, UITextFieldDelegate {
     
