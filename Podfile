@@ -13,6 +13,7 @@ def pods
     pod 'Fabric'
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
+    pod 'Reveal-SDK', :configurations => ['Debug']
 end
 
 target 'Positano' do
