@@ -168,7 +168,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var inMainStory: Bool = true
     
     func startShowStory() {
-        return
+        
         let storyboard = UIStoryboard.yep_show
         window?.rootViewController = storyboard.instantiateInitialViewController()
         

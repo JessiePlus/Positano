@@ -123,6 +123,20 @@
 		D614AEF41DFD357E007747D7 /* LoginByMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D614AEF21DFD357E007747D7 /* LoginByMailViewController.swift */; };
 		D614AEFC1DFD5547007747D7 /* MonkeyKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */; };
 		D614AEFD1DFD5547007747D7 /* MonkeyKing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63B356C1E00101C008DE29B /* Show.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63B356B1E00101C008DE29B /* Show.storyboard */; };
+		D63B356E1E0012CB008DE29B /* Show.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63B356D1E0012CB008DE29B /* Show.xcassets */; };
+		D63B35751E001634008DE29B /* ShowStepGeniusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35701E001634008DE29B /* ShowStepGeniusViewController.swift */; };
+		D63B35761E001634008DE29B /* ShowStepMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35711E001634008DE29B /* ShowStepMatchViewController.swift */; };
+		D63B35771E001634008DE29B /* ShowStepMeetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35721E001634008DE29B /* ShowStepMeetViewController.swift */; };
+		D63B35781E001634008DE29B /* ShowStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35731E001634008DE29B /* ShowStepViewController.swift */; };
+		D63B35791E001634008DE29B /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35741E001634008DE29B /* ShowViewController.swift */; };
+		D63B35821E0016DE008DE29B /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357B1E0016DE008DE29B /* BorderButton.swift */; };
+		D63B35831E0016DE008DE29B /* EdgeBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357C1E0016DE008DE29B /* EdgeBorderButton.swift */; };
+		D63B35841E0016DE008DE29B /* MessageTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357D1E0016DE008DE29B /* MessageTypeButton.swift */; };
+		D63B35851E0016DE008DE29B /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357E1E0016DE008DE29B /* RecordButton.swift */; };
+		D63B35861E0016DE008DE29B /* SkillCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357F1E0016DE008DE29B /* SkillCategoryButton.swift */; };
+		D63B35871E0016DE008DE29B /* TouchZoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35801E0016DE008DE29B /* TouchZoomButton.swift */; };
+		D63B35881E0016DE008DE29B /* YepButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35811E0016DE008DE29B /* YepButton.swift */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
 		D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2621DEC4A3600642BAF /* Main.storyboard */; };
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
@@ -331,6 +345,20 @@
 		D614AEF81DFD52B6007747D7 /* Positano-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Positano-Bridging-Header.h"; sourceTree = "<group>"; };
 		D614AEFB1DFD5547007747D7 /* MonkeyKing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MonkeyKing.framework; path = Carthage/Build/iOS/MonkeyKing.framework; sourceTree = "<group>"; };
 		D614AF001DFD5C7F007747D7 /* Positano.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Positano.entitlements; sourceTree = "<group>"; };
+		D63B356B1E00101C008DE29B /* Show.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Show.storyboard; sourceTree = "<group>"; };
+		D63B356D1E0012CB008DE29B /* Show.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Show.xcassets; sourceTree = "<group>"; };
+		D63B35701E001634008DE29B /* ShowStepGeniusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowStepGeniusViewController.swift; sourceTree = "<group>"; };
+		D63B35711E001634008DE29B /* ShowStepMatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowStepMatchViewController.swift; sourceTree = "<group>"; };
+		D63B35721E001634008DE29B /* ShowStepMeetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowStepMeetViewController.swift; sourceTree = "<group>"; };
+		D63B35731E001634008DE29B /* ShowStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowStepViewController.swift; sourceTree = "<group>"; };
+		D63B35741E001634008DE29B /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		D63B357B1E0016DE008DE29B /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		D63B357C1E0016DE008DE29B /* EdgeBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeBorderButton.swift; sourceTree = "<group>"; };
+		D63B357D1E0016DE008DE29B /* MessageTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTypeButton.swift; sourceTree = "<group>"; };
+		D63B357E1E0016DE008DE29B /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		D63B357F1E0016DE008DE29B /* SkillCategoryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategoryButton.swift; sourceTree = "<group>"; };
+		D63B35801E0016DE008DE29B /* TouchZoomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchZoomButton.swift; sourceTree = "<group>"; };
+		D63B35811E0016DE008DE29B /* YepButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepButton.swift; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B25C1DEC4A3600642BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D647B2631DEC4A3600642BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -421,6 +449,7 @@
 		D614AD661DF40731007747D7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D63B356F1E001634008DE29B /* Show */,
 				D614AEF11DFD357E007747D7 /* Login */,
 				D614AEB41DF9382C007747D7 /* Register */,
 			);
@@ -476,6 +505,7 @@
 		D614ADC61DF6B940007747D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D63B357A1E0016DE008DE29B /* Buttons */,
 				D614ADCC1DF70582007747D7 /* Labels */,
 				D614ADC71DF6B9DC007747D7 /* TextFields */,
 			);
@@ -706,6 +736,32 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		D63B356F1E001634008DE29B /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				D63B35701E001634008DE29B /* ShowStepGeniusViewController.swift */,
+				D63B35711E001634008DE29B /* ShowStepMatchViewController.swift */,
+				D63B35721E001634008DE29B /* ShowStepMeetViewController.swift */,
+				D63B35731E001634008DE29B /* ShowStepViewController.swift */,
+				D63B35741E001634008DE29B /* ShowViewController.swift */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		D63B357A1E0016DE008DE29B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D63B357B1E0016DE008DE29B /* BorderButton.swift */,
+				D63B357C1E0016DE008DE29B /* EdgeBorderButton.swift */,
+				D63B357D1E0016DE008DE29B /* MessageTypeButton.swift */,
+				D63B357E1E0016DE008DE29B /* RecordButton.swift */,
+				D63B357F1E0016DE008DE29B /* SkillCategoryButton.swift */,
+				D63B35801E0016DE008DE29B /* TouchZoomButton.swift */,
+				D63B35811E0016DE008DE29B /* YepButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		D647B2501DEC4A3600642BAF = {
 			isa = PBXGroup;
 			children = (
@@ -755,6 +811,8 @@
 				D647B2621DEC4A3600642BAF /* Main.storyboard */,
 				D614AEF81DFD52B6007747D7 /* Positano-Bridging-Header.h */,
 				D614AF001DFD5C7F007747D7 /* Positano.entitlements */,
+				D63B356B1E00101C008DE29B /* Show.storyboard */,
+				D63B356D1E0012CB008DE29B /* Show.xcassets */,
 			);
 			path = Positano;
 			sourceTree = "<group>";
@@ -1045,12 +1103,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */,
+				D63B356E1E0012CB008DE29B /* Show.xcassets in Resources */,
 				D614AEB01DF8E89B007747D7 /* InfoPlist.strings in Resources */,
 				D614AEAA1DF8E83F007747D7 /* Localizable.strings in Resources */,
 				D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */,
 				D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */,
 				D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */,
 				D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */,
+				D63B356C1E00101C008DE29B /* Show.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1267,6 +1327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63B35771E001634008DE29B /* ShowStepMeetViewController.swift in Sources */,
 				D614AE4A1DF7D862007747D7 /* YepHelpers.swift in Sources */,
 				D614AEEA1DFBAFDD007747D7 /* MobilePhoneReducer.swift in Sources */,
 				D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */,
@@ -1274,22 +1335,29 @@
 				D614AD951DF407FC007747D7 /* DeviceUtil+Yep.swift in Sources */,
 				D614AE811DF7FE26007747D7 /* UserRepresentation.swift in Sources */,
 				D614AD931DF407FC007747D7 /* CLPlacemark+Yep.swift in Sources */,
+				D63B35831E0016DE008DE29B /* EdgeBorderButton.swift in Sources */,
 				D614ADCB1DF6B9DC007747D7 /* UnderLineTextField.swift in Sources */,
 				D614ADA31DF407FC007747D7 /* UIImage+Yep.swift in Sources */,
 				D614AD911DF407FC007747D7 /* CGSize+Yep.swift in Sources */,
 				D614ADA81DF407FC007747D7 /* UISegmentedControl+Yep.swift in Sources */,
 				D614AD6A1DF40755007747D7 /* SegueViewController.swift in Sources */,
+				D63B35881E0016DE008DE29B /* YepButton.swift in Sources */,
 				D614AE591DF7F735007747D7 /* AvatarStyles.swift in Sources */,
 				D614AE851DF7FF3C007747D7 /* NSDate+Extension.swift in Sources */,
+				D63B35791E001634008DE29B /* ShowViewController.swift in Sources */,
 				D614ADCA1DF6B9DC007747D7 /* BorderTextField.swift in Sources */,
 				D614AE491DF7D862007747D7 /* YepAsset.swift in Sources */,
 				D614AD8F1DF407FC007747D7 /* CGImage+Yep.swift in Sources */,
 				D614AEB61DF93840007747D7 /* RegisterPickMobileViewController.swift in Sources */,
+				D63B35781E001634008DE29B /* ShowStepViewController.swift in Sources */,
 				D614AE5B1DF7F735007747D7 /* PlainAvatar.swift in Sources */,
 				D614AD901DF407FC007747D7 /* CGRect+Yep.swift in Sources */,
+				D63B35871E0016DE008DE29B /* TouchZoomButton.swift in Sources */,
 				D614AEE81DFBAF89007747D7 /* MobilePhoneActions.swift in Sources */,
 				D614AEE01DFA8A36007747D7 /* MailAddressReducer.swift in Sources */,
+				D63B35761E001634008DE29B /* ShowStepMatchViewController.swift in Sources */,
 				D614AD691DF40755007747D7 /* BaseViewController.swift in Sources */,
+				D63B35821E0016DE008DE29B /* BorderButton.swift in Sources */,
 				D614ADA61DF407FC007747D7 /* UIScrollView+Yep.swift in Sources */,
 				D614AEDF1DFA8A36007747D7 /* AppState.swift in Sources */,
 				D614ADA51DF407FC007747D7 /* UIMotionEffect+Yep.swift in Sources */,
@@ -1309,6 +1377,7 @@
 				D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */,
 				D614ADD01DF70582007747D7 /* NavigationTitleLabel.swift in Sources */,
 				D614AE7C1DF7FE26007747D7 /* Reusable.swift in Sources */,
+				D63B35851E0016DE008DE29B /* RecordButton.swift in Sources */,
 				D614ADA71DF407FC007747D7 /* UISearchBar+Yep.swift in Sources */,
 				D614AD9F1DF407FC007747D7 /* UIApplication+Yep.swift in Sources */,
 				D614AEEE1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift in Sources */,
@@ -1327,6 +1396,9 @@
 				D614AE7A1DF7FE26007747D7 /* NibLoadable.swift in Sources */,
 				D614AD9E1DF407FC007747D7 /* TimeZone+Yep.swift in Sources */,
 				D614AE6A1DF7FDC8007747D7 /* URL+Yep.swift in Sources */,
+				D63B35841E0016DE008DE29B /* MessageTypeButton.swift in Sources */,
+				D63B35751E001634008DE29B /* ShowStepGeniusViewController.swift in Sources */,
+				D63B35861E0016DE008DE29B /* SkillCategoryButton.swift in Sources */,
 				D614AEED1DFBB1D2007747D7 /* BaseInputMailViewController.swift in Sources */,
 				D614AD9B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift in Sources */,
 				D614AEE61DFBA67E007747D7 /* RegisterPickMailViewController.swift in Sources */,
