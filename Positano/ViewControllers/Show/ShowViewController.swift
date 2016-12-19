@@ -96,12 +96,13 @@ final class ShowViewController: UIViewController {
 
         steps.forEach({ step in
             step.view.translatesAutoresizingMaskIntoConstraints = false
+            
             scrollView.addSubview(step.view)
 
             addChildViewController(step)
             step.didMove(toParentViewController: self)
         })
-
+        
         return steps
     }
 }

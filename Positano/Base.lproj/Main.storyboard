@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTa-cw-wjW" id="3Dr-ut-FdX">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -60,7 +60,11 @@
         <scene sceneID="niI-9M-xej">
             <objects>
                 <navigationController id="C1u-sJ-CD9" userLabel="Discover" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" image="icon_explore" id="pc0-Ma-YPs"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="icon_explore" id="pc0-Ma-YPs">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_explore_active"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sew-RL-bxN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -77,42 +81,25 @@
         <scene sceneID="b8S-es-g7p">
             <objects>
                 <navigationController id="y29-yA-nKz" userLabel="Profile" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="icon_me" id="9t1-t4-Icj"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icon_me" id="9t1-t4-Icj">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_me_active"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jlx-Ay-j9m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="Xhr-Iw-RN1" kind="relationship" relationship="rootViewController" id="VTt-uT-Phm"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9m-Hy-s5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="246" y="695"/>
         </scene>
-        <!--RegisterPickNameViewController-->
-        <scene sceneID="5Wr-gS-rvY">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Intro" referencedIdentifier="RegisterPickNameViewController" id="Vuu-II-W7S" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="CVT-Cr-XQk"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1aI-Hj-W5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="275" y="1128"/>
-        </scene>
-        <!--LoginByMailViewController-->
-        <scene sceneID="5fW-PY-jRG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Intro" referencedIdentifier="LoginByMailViewController" id="Xhr-Iw-RN1" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9an-ic-hGA"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SkW-4F-6xU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="642" y="1127"/>
-        </scene>
     </scenes>
     <resources>
         <image name="icon_explore" width="30" height="30"/>
+        <image name="icon_explore_active" width="30" height="30"/>
         <image name="icon_me" width="30" height="30"/>
+        <image name="icon_me_active" width="30" height="30"/>
     </resources>
 </document>

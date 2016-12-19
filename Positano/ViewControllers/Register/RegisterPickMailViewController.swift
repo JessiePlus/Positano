@@ -119,9 +119,11 @@ final class RegisterPickMailViewController: BaseInputMailViewController, UITextF
                 
                 SafeDispatch.async { [weak self] in
                     
-                saveTokenAndUserInfoOfLoginUser(loginUser)
-                    
-//              self?.performSegue(withIdentifier: "showRegisterPickAvatar", sender: nil)
+                    saveTokenAndUserInfoOfLoginUser(loginUser)
+                        
+                    if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                        appDelegate.startMainStory()
+                    }
                 }
             })
         }

@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcd-6N-JKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159.5" y="329.5"/>
+            <point key="canvasLocation" x="1394" y="329"/>
         </scene>
         <!--RegisterPickNameViewController-->
         <scene sceneID="sja-xO-7YU">
@@ -87,7 +87,7 @@
                 <viewControllerPlaceholder storyboardName="Intro" referencedIdentifier="RegisterPickNameViewController" id="T0I-R4-s9e" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hO1-zJ-Tyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="779"/>
+            <point key="canvasLocation" x="1148" y="790"/>
         </scene>
         <!--LoginByMailViewController-->
         <scene sceneID="cqj-r8-uH5">
@@ -95,7 +95,7 @@
                 <viewControllerPlaceholder storyboardName="Intro" referencedIdentifier="LoginByMailViewController" id="uEL-sA-SIj" userLabel="LoginByMailViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiF-sR-NFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1323" y="779"/>
+            <point key="canvasLocation" x="1538" y="791"/>
         </scene>
         <!--Show Step Genius View Controller-->
         <scene sceneID="Spd-Ml-oSe">
@@ -228,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOq-l5-DGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1607.5" y="329.5"/>
+            <point key="canvasLocation" x="2137" y="340"/>
         </scene>
         <!--Show Step Match View Controller-->
         <scene sceneID="z2Q-dU-ldQ">
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95z-RY-vcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063.5" y="329.5"/>
+            <point key="canvasLocation" x="2850" y="329"/>
         </scene>
         <!--Show Step Meet View Controller-->
         <scene sceneID="3KM-fC-u9r">
@@ -413,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glW-av-S7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2525.5" y="329.5"/>
+            <point key="canvasLocation" x="3566" y="329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FWx-Lg-IK4">

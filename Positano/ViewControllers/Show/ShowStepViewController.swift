@@ -84,6 +84,7 @@ class ShowStepViewController: UIViewController {
 
         let rotate = CABasicAnimation(keyPath: "transform.rotation.z")
 
+
         rotate.fromValue = fromValue
         rotate.toValue = toValue
         rotate.duration = duration

@@ -123,9 +123,9 @@ final class LoginByMailViewController: BaseInputMailViewController, UITextFieldD
                 
                 saveTokenAndUserInfoOfLoginUser(loginUser)
 
-//                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-//                    appDelegate.startMainStory()
-//                }
+                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                    appDelegate.startMainStory()
+                }
             }
         })
     }
