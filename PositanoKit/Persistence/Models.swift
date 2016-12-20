@@ -18,6 +18,15 @@ public let realmQueue = DispatchQueue(label: "com.Positano.realmQueue", qos: .ut
 
 // MARK: User
 
+// 朋友的“状态”, 注意：上线后若要调整，只能增加新状态
+public enum UserFriendState: Int {
+    case stranger       = 0   // 陌生人
+    case issuedRequest  = 1   // 已对其发出好友请求
+    case normal         = 2   // 正常状态的朋友
+    case blocked        = 3   // 被屏蔽
+    case me             = 4   // 自己
+    case yep            = 5   // Yep官方账号
+}
 
 open class Avatar: Object {
     open dynamic var avatarURLString: String = ""
@@ -50,8 +59,15 @@ open class User: Object {
     open dynamic var createdUnixTime: TimeInterval = Date().timeIntervalSince1970
     open dynamic var lastSignInUnixTime: TimeInterval = Date().timeIntervalSince1970
 
+    open dynamic var friendState: Int = UserFriendState.stranger.rawValue
 
-
+    open var canShowProfile: Bool {
+        return friendState != UserFriendState.yep.rawValue
+    }
+    
+    open dynamic var longitude: Double = 0
+    open dynamic var latitude: Double = 0
+    
     open dynamic var notificationEnabled: Bool = true
     open dynamic var blocked: Bool = false
 
@@ -99,6 +115,32 @@ open class User: Object {
         realm.delete(self)
     }
 }
+
+open class UserLocationName: Object {
+    
+    open dynamic var userID: String = ""
+    open dynamic var locationName: String = ""
+    
+    open override class func primaryKey() -> String? {
+        return "userID"
+    }
+    
+    open override class func indexedProperties() -> [String] {
+        return ["userID"]
+    }
+    
+    public convenience init(userID: String, locationName: String) {
+        self.init()
+        
+        self.userID = userID
+        self.locationName = locationName
+    }
+    
+    open class func withUserID(_ userID: String, inRealm realm: Realm) -> UserLocationName? {
+        return realm.objects(UserLocationName.self).filter("userID = %@", userID).first
+    }
+}
+
 
 // MARK: Helpers
 

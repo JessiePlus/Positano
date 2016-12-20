@@ -132,9 +132,6 @@
 		D63B35791E001634008DE29B /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35741E001634008DE29B /* ShowViewController.swift */; };
 		D63B35821E0016DE008DE29B /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357B1E0016DE008DE29B /* BorderButton.swift */; };
 		D63B35831E0016DE008DE29B /* EdgeBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357C1E0016DE008DE29B /* EdgeBorderButton.swift */; };
-		D63B35841E0016DE008DE29B /* MessageTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357D1E0016DE008DE29B /* MessageTypeButton.swift */; };
-		D63B35851E0016DE008DE29B /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357E1E0016DE008DE29B /* RecordButton.swift */; };
-		D63B35861E0016DE008DE29B /* SkillCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B357F1E0016DE008DE29B /* SkillCategoryButton.swift */; };
 		D63B35871E0016DE008DE29B /* TouchZoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35801E0016DE008DE29B /* TouchZoomButton.swift */; };
 		D63B35881E0016DE008DE29B /* YepButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63B35811E0016DE008DE29B /* YepButton.swift */; };
 		D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B25C1DEC4A3600642BAF /* AppDelegate.swift */; };
@@ -142,6 +139,20 @@
 		D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647B2651DEC4A3600642BAF /* Images.xcassets */; };
 		D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */; };
 		D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2731DEC4A3600642BAF /* PositanoTests.swift */; };
+		D669E47B1E07799100EE47E9 /* PositanoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E47A1E07799100EE47E9 /* PositanoTabBarController.swift */; };
+		D669E4811E077C9200EE47E9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669E47D1E077C9200EE47E9 /* Profile.storyboard */; };
+		D669E4831E077C9200EE47E9 /* ProfileViewController+Prepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E47F1E077C9200EE47E9 /* ProfileViewController+Prepare.swift */; };
+		D669E4841E077C9200EE47E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4801E077C9200EE47E9 /* ProfileViewController.swift */; };
+		D669E4871E077DD100EE47E9 /* PositanoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4861E077DD100EE47E9 /* PositanoNavigationController.swift */; };
+		D669E48A1E07816000EE47E9 /* PositanoUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4891E07816000EE47E9 /* PositanoUIModels.swift */; };
+		D669E48D1E07FF7F00EE47E9 /* BottomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E48C1E07FF7F00EE47E9 /* BottomButtonView.swift */; };
+		D669E4971E0942A000EE47E9 /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4951E0942A000EE47E9 /* ProfileHeaderCell.swift */; };
+		D669E4981E0942A000EE47E9 /* ProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669E4961E0942A000EE47E9 /* ProfileHeaderCell.xib */; };
+		D669E49B1E09448200EE47E9 /* UITableView+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4991E09448200EE47E9 /* UITableView+Yep.swift */; };
+		D669E49C1E09448200EE47E9 /* UICollectionView+Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E49A1E09448200EE47E9 /* UICollectionView+Yep.swift */; };
+		D669E4AA1E09478100EE47E9 /* YepLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4A91E09478100EE47E9 /* YepLocationService.swift */; };
+		D669E4AE1E094EBF00EE47E9 /* ProfileFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */; };
+		D669E4AF1E094EBF00EE47E9 /* ProfileFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,9 +365,6 @@
 		D63B35741E001634008DE29B /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		D63B357B1E0016DE008DE29B /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		D63B357C1E0016DE008DE29B /* EdgeBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeBorderButton.swift; sourceTree = "<group>"; };
-		D63B357D1E0016DE008DE29B /* MessageTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTypeButton.swift; sourceTree = "<group>"; };
-		D63B357E1E0016DE008DE29B /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
-		D63B357F1E0016DE008DE29B /* SkillCategoryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillCategoryButton.swift; sourceTree = "<group>"; };
 		D63B35801E0016DE008DE29B /* TouchZoomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchZoomButton.swift; sourceTree = "<group>"; };
 		D63B35811E0016DE008DE29B /* YepButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepButton.swift; sourceTree = "<group>"; };
 		D647B2591DEC4A3600642BAF /* Positano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positano.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,6 +376,20 @@
 		D647B26F1DEC4A3600642BAF /* PositanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D647B2731DEC4A3600642BAF /* PositanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoTests.swift; sourceTree = "<group>"; };
 		D647B2751DEC4A3600642BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D669E47A1E07799100EE47E9 /* PositanoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoTabBarController.swift; sourceTree = "<group>"; };
+		D669E47D1E077C9200EE47E9 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D669E47F1E077C9200EE47E9 /* ProfileViewController+Prepare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+Prepare.swift"; sourceTree = "<group>"; };
+		D669E4801E077C9200EE47E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D669E4861E077DD100EE47E9 /* PositanoNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoNavigationController.swift; sourceTree = "<group>"; };
+		D669E4891E07816000EE47E9 /* PositanoUIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoUIModels.swift; sourceTree = "<group>"; };
+		D669E48C1E07FF7F00EE47E9 /* BottomButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomButtonView.swift; sourceTree = "<group>"; };
+		D669E4951E0942A000EE47E9 /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
+		D669E4961E0942A000EE47E9 /* ProfileHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderCell.xib; sourceTree = "<group>"; };
+		D669E4991E09448200EE47E9 /* UITableView+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Yep.swift"; sourceTree = "<group>"; };
+		D669E49A1E09448200EE47E9 /* UICollectionView+Yep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Yep.swift"; sourceTree = "<group>"; };
+		D669E4A91E09478100EE47E9 /* YepLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepLocationService.swift; sourceTree = "<group>"; };
+		D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFooterCell.swift; sourceTree = "<group>"; };
+		D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileFooterCell.xib; sourceTree = "<group>"; };
 		E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Positano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAC93DC918662EA80FC96C8 /* Pods-PositanoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoKit/Pods-PositanoKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -449,9 +471,12 @@
 		D614AD661DF40731007747D7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D63B356F1E001634008DE29B /* Show */,
 				D614AEF11DFD357E007747D7 /* Login */,
+				D669E4851E077DD100EE47E9 /* Nav */,
+				D669E47C1E077C9200EE47E9 /* Profile */,
 				D614AEB41DF9382C007747D7 /* Register */,
+				D63B356F1E001634008DE29B /* Show */,
+				D669E4791E07799100EE47E9 /* TabBar */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -474,6 +499,7 @@
 				D614AD7D1DF407FC007747D7 /* String+Yep.swift */,
 				D614AD7E1DF407FC007747D7 /* TimeZone+Yep.swift */,
 				D614AD7F1DF407FC007747D7 /* UIApplication+Yep.swift */,
+				D669E49A1E09448200EE47E9 /* UICollectionView+Yep.swift */,
 				D614AD811DF407FC007747D7 /* UIColor+Yep.swift */,
 				D614AD821DF407FC007747D7 /* UIFont+Yep.swift */,
 				D614AD831DF407FC007747D7 /* UIImage+Yep.swift */,
@@ -482,6 +508,7 @@
 				D614AD871DF407FC007747D7 /* UISearchBar+Yep.swift */,
 				D614AD881DF407FC007747D7 /* UISegmentedControl+Yep.swift */,
 				D614AD891DF407FC007747D7 /* UIStoryboard+Yep.swift */,
+				D669E4991E09448200EE47E9 /* UITableView+Yep.swift */,
 				D614ADD81DF7ABE2007747D7 /* UIViewController+Yep.swift */,
 				D614AE691DF7FDC8007747D7 /* URL+Yep.swift */,
 			);
@@ -506,7 +533,9 @@
 			isa = PBXGroup;
 			children = (
 				D63B357A1E0016DE008DE29B /* Buttons */,
+				D669E48E1E09425800EE47E9 /* Cells */,
 				D614ADCC1DF70582007747D7 /* Labels */,
+				D669E48B1E07FF7F00EE47E9 /* SayHi */,
 				D614ADC71DF6B9DC007747D7 /* TextFields */,
 			);
 			path = Views;
@@ -537,6 +566,7 @@
 				D614AE5D1DF7FBE0007747D7 /* Helpers */,
 				D614ADFD1DF7AD2F007747D7 /* Persistence */,
 				D614AEE21DFA8AB5007747D7 /* Remote */,
+				D669E4881E07816000EE47E9 /* UI */,
 				D614AE001DF7AD2F007747D7 /* UserDefaults */,
 				D614ADFC1DF7AD2F007747D7 /* Config.swift */,
 				D614ADE21DF7ACA6007747D7 /* Info.plist */,
@@ -753,9 +783,6 @@
 			children = (
 				D63B357B1E0016DE008DE29B /* BorderButton.swift */,
 				D63B357C1E0016DE008DE29B /* EdgeBorderButton.swift */,
-				D63B357D1E0016DE008DE29B /* MessageTypeButton.swift */,
-				D63B357E1E0016DE008DE29B /* RecordButton.swift */,
-				D63B357F1E0016DE008DE29B /* SkillCategoryButton.swift */,
 				D63B35801E0016DE008DE29B /* TouchZoomButton.swift */,
 				D63B35811E0016DE008DE29B /* YepButton.swift */,
 			);
@@ -799,6 +826,7 @@
 				D614ADB01DF41160007747D7 /* Helpers */,
 				D614AE6B1DF7FE26007747D7 /* Protocols */,
 				D614AED71DFA8A36007747D7 /* ReSwift */,
+				D669E4A81E09477600EE47E9 /* Services */,
 				D614AD661DF40731007747D7 /* ViewControllers */,
 				D614ADC61DF6B940007747D7 /* Views */,
 				D647B25C1DEC4A3600642BAF /* AppDelegate.swift */,
@@ -842,6 +870,83 @@
 				91B18972CFDD5A23427EEB5D /* Pods_PositanoKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D669E4791E07799100EE47E9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D669E47A1E07799100EE47E9 /* PositanoTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D669E47C1E077C9200EE47E9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D669E47D1E077C9200EE47E9 /* Profile.storyboard */,
+				D669E47F1E077C9200EE47E9 /* ProfileViewController+Prepare.swift */,
+				D669E4801E077C9200EE47E9 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D669E4851E077DD100EE47E9 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4861E077DD100EE47E9 /* PositanoNavigationController.swift */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		D669E4881E07816000EE47E9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4891E07816000EE47E9 /* PositanoUIModels.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D669E48B1E07FF7F00EE47E9 /* SayHi */ = {
+			isa = PBXGroup;
+			children = (
+				D669E48C1E07FF7F00EE47E9 /* BottomButtonView.swift */,
+			);
+			path = SayHi;
+			sourceTree = "<group>";
+		};
+		D669E48E1E09425800EE47E9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4AB1E094EBF00EE47E9 /* ProfileFooter */,
+				D669E4941E0942A000EE47E9 /* ProfileHeader */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D669E4941E0942A000EE47E9 /* ProfileHeader */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4951E0942A000EE47E9 /* ProfileHeaderCell.swift */,
+				D669E4961E0942A000EE47E9 /* ProfileHeaderCell.xib */,
+			);
+			path = ProfileHeader;
+			sourceTree = "<group>";
+		};
+		D669E4A81E09477600EE47E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4A91E09478100EE47E9 /* YepLocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D669E4AB1E094EBF00EE47E9 /* ProfileFooter */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */,
+				D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */,
+			);
+			path = ProfileFooter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1104,10 +1209,13 @@
 			files = (
 				D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */,
 				D63B356E1E0012CB008DE29B /* Show.xcassets in Resources */,
+				D669E4811E077C9200EE47E9 /* Profile.storyboard in Resources */,
 				D614AEB01DF8E89B007747D7 /* InfoPlist.strings in Resources */,
 				D614AEAA1DF8E83F007747D7 /* Localizable.strings in Resources */,
 				D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */,
+				D669E4AF1E094EBF00EE47E9 /* ProfileFooterCell.xib in Resources */,
 				D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */,
+				D669E4981E0942A000EE47E9 /* ProfileHeaderCell.xib in Resources */,
 				D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */,
 				D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */,
 				D63B356C1E00101C008DE29B /* Show.storyboard in Resources */,
@@ -1285,6 +1393,7 @@
 				D614AE631DF7FBE0007747D7 /* YepMedia.swift in Sources */,
 				D614AE0F1DF7AD89007747D7 /* Array+Yep.swift in Sources */,
 				D614AE101DF7AD89007747D7 /* Date+Yep.swift in Sources */,
+				D669E48A1E07816000EE47E9 /* PositanoUIModels.swift in Sources */,
 				D614AE141DF7AD89007747D7 /* String+Trans.swift in Sources */,
 				D614AE121DF7AD89007747D7 /* FileManager+Yep.swift in Sources */,
 				D614AE051DF7AD2F007747D7 /* PositanoUserDefaults.swift in Sources */,
@@ -1329,9 +1438,11 @@
 			files = (
 				D63B35771E001634008DE29B /* ShowStepMeetViewController.swift in Sources */,
 				D614AE4A1DF7D862007747D7 /* YepHelpers.swift in Sources */,
+				D669E47B1E07799100EE47E9 /* PositanoTabBarController.swift in Sources */,
 				D614AEEA1DFBAFDD007747D7 /* MobilePhoneReducer.swift in Sources */,
 				D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */,
 				D614AE5A1DF7F735007747D7 /* ImageCache.swift in Sources */,
+				D669E4841E077C9200EE47E9 /* ProfileViewController.swift in Sources */,
 				D614AD951DF407FC007747D7 /* DeviceUtil+Yep.swift in Sources */,
 				D614AE811DF7FE26007747D7 /* UserRepresentation.swift in Sources */,
 				D614AD931DF407FC007747D7 /* CLPlacemark+Yep.swift in Sources */,
@@ -1339,6 +1450,7 @@
 				D614ADCB1DF6B9DC007747D7 /* UnderLineTextField.swift in Sources */,
 				D614ADA31DF407FC007747D7 /* UIImage+Yep.swift in Sources */,
 				D614AD911DF407FC007747D7 /* CGSize+Yep.swift in Sources */,
+				D669E49B1E09448200EE47E9 /* UITableView+Yep.swift in Sources */,
 				D614ADA81DF407FC007747D7 /* UISegmentedControl+Yep.swift in Sources */,
 				D614AD6A1DF40755007747D7 /* SegueViewController.swift in Sources */,
 				D63B35881E0016DE008DE29B /* YepButton.swift in Sources */,
@@ -1347,6 +1459,7 @@
 				D63B35791E001634008DE29B /* ShowViewController.swift in Sources */,
 				D614ADCA1DF6B9DC007747D7 /* BorderTextField.swift in Sources */,
 				D614AE491DF7D862007747D7 /* YepAsset.swift in Sources */,
+				D669E4AE1E094EBF00EE47E9 /* ProfileFooterCell.swift in Sources */,
 				D614AD8F1DF407FC007747D7 /* CGImage+Yep.swift in Sources */,
 				D614AEB61DF93840007747D7 /* RegisterPickMobileViewController.swift in Sources */,
 				D63B35781E001634008DE29B /* ShowStepViewController.swift in Sources */,
@@ -1365,6 +1478,7 @@
 				D614AEBC1DF93915007747D7 /* BaseInputMobileViewController.swift in Sources */,
 				D614AE4B1DF7D862007747D7 /* YepHUD.swift in Sources */,
 				D614ADD91DF7ABE2007747D7 /* UIViewController+Yep.swift in Sources */,
+				D669E4AA1E09478100EE47E9 /* YepLocationService.swift in Sources */,
 				D614ADCF1DF70582007747D7 /* FPSLabel.swift in Sources */,
 				D614ADA91DF407FC007747D7 /* UIStoryboard+Yep.swift in Sources */,
 				D614AE581DF7F735007747D7 /* AttributedStringCache.swift in Sources */,
@@ -1376,18 +1490,22 @@
 				D614ADBF1DF41160007747D7 /* YepLog.swift in Sources */,
 				D647B25D1DEC4A3600642BAF /* AppDelegate.swift in Sources */,
 				D614ADD01DF70582007747D7 /* NavigationTitleLabel.swift in Sources */,
+				D669E48D1E07FF7F00EE47E9 /* BottomButtonView.swift in Sources */,
 				D614AE7C1DF7FE26007747D7 /* Reusable.swift in Sources */,
-				D63B35851E0016DE008DE29B /* RecordButton.swift in Sources */,
+				D669E49C1E09448200EE47E9 /* UICollectionView+Yep.swift in Sources */,
 				D614ADA71DF407FC007747D7 /* UISearchBar+Yep.swift in Sources */,
 				D614AD9F1DF407FC007747D7 /* UIApplication+Yep.swift in Sources */,
 				D614AEEE1DFBB1D2007747D7 /* BaseVerifyMailViewController.swift in Sources */,
 				D614AE481DF7D862007747D7 /* YepAlert.swift in Sources */,
+				D669E4831E077C9200EE47E9 /* ProfileViewController+Prepare.swift in Sources */,
+				D669E4971E0942A000EE47E9 /* ProfileHeaderCell.swift in Sources */,
 				D614AE4C1DF7D862007747D7 /* YepSoundEffect.swift in Sources */,
 				D614AEE11DFA8A36007747D7 /* SharedStore.swift in Sources */,
 				D614AE5C1DF7F735007747D7 /* UserAvatar.swift in Sources */,
 				D614AD651DF406E9007747D7 /* RegisterPickNameViewController.swift in Sources */,
 				D614ADD21DF70729007747D7 /* YepConfig.swift in Sources */,
 				D614AD9A1DF407FC007747D7 /* NSParagraphStyle+Yep.swift in Sources */,
+				D669E4871E077DD100EE47E9 /* PositanoNavigationController.swift in Sources */,
 				D614AD8E1DF407FC007747D7 /* Bundle+Yep.swift in Sources */,
 				D614AEBD1DF93915007747D7 /* BaseVerifyMobileViewController.swift in Sources */,
 				D614AD9C1DF407FC007747D7 /* String+Trans.swift in Sources */,
@@ -1396,9 +1514,7 @@
 				D614AE7A1DF7FE26007747D7 /* NibLoadable.swift in Sources */,
 				D614AD9E1DF407FC007747D7 /* TimeZone+Yep.swift in Sources */,
 				D614AE6A1DF7FDC8007747D7 /* URL+Yep.swift in Sources */,
-				D63B35841E0016DE008DE29B /* MessageTypeButton.swift in Sources */,
 				D63B35751E001634008DE29B /* ShowStepGeniusViewController.swift in Sources */,
-				D63B35861E0016DE008DE29B /* SkillCategoryButton.swift in Sources */,
 				D614AEED1DFBB1D2007747D7 /* BaseInputMailViewController.swift in Sources */,
 				D614AD9B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift in Sources */,
 				D614AEE61DFBA67E007747D7 /* RegisterPickMailViewController.swift in Sources */,

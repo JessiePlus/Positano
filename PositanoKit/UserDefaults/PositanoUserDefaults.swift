@@ -22,6 +22,12 @@ private let adminKey = "admin"
 private let areaCodeKey = "areaCode"
 private let mobileKey = "mobile"
 
+private let latitudeShiftKey = "latitudeShift"
+private let longitudeShiftKey = "longitudeShift"
+private let userCoordinateLatitudeKey = "userCoordinateLatitude"
+private let userCoordinateLongitudeKey = "userCoordinateLongitude"
+private let userLocationNameKey = "userLocationName"
+
 
 private let appLaunchCountKey = "appLaunchCount"
 
@@ -104,6 +110,15 @@ final public class PositanoUserDefaults {
         }
     }
     
+    public static var userCoordinate: CLLocationCoordinate2D? {
+        
+        guard let latitude = PositanoUserDefaults.userCoordinateLatitude.value, let longitude = PositanoUserDefaults.userCoordinateLongitude.value else {
+            return nil
+        }
+        
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
     // MARK: ReLogin
     
     public class func cleanAllUserDefaults() {
@@ -118,6 +133,11 @@ final public class PositanoUserDefaults {
             admin.removeAllListeners()
             areaCode.removeAllListeners()
             mobile.removeAllListeners()
+            latitudeShift.removeAllListeners()
+            longitudeShift.removeAllListeners()
+            userCoordinateLatitude.removeAllListeners()
+            userCoordinateLongitude.removeAllListeners()
+            userLocationName.removeAllListeners()
             appLaunchCount.removeAllListeners()
         }
         
@@ -275,6 +295,46 @@ final public class PositanoUserDefaults {
         
         return nil
     }
+    
+    public static var latitudeShift: Listenable<Double?> = {
+        let latitudeShift = defaults.double(forKey: latitudeShiftKey)
+        
+        return Listenable<Double?>(latitudeShift) { latitudeShift in
+            defaults.set(latitudeShift, forKey: latitudeShiftKey)
+        }
+    }()
+    
+    public static var longitudeShift: Listenable<Double?> = {
+        let longitudeShift = defaults.double(forKey: longitudeShiftKey)
+        
+        return Listenable<Double?>(longitudeShift) { longitudeShift in
+            defaults.set(longitudeShift, forKey: longitudeShiftKey)
+        }
+    }()
+    
+    public static var userCoordinateLatitude: Listenable<Double?> = {
+        let userCoordinateLatitude = defaults.double(forKey: userCoordinateLatitudeKey)
+        
+        return Listenable<Double?>(userCoordinateLatitude) { userCoordinateLatitude in
+            defaults.set(userCoordinateLatitude, forKey: userCoordinateLatitudeKey)
+        }
+    }()
+    
+    public static var userCoordinateLongitude: Listenable<Double?> = {
+        let userCoordinateLongitude = defaults.double(forKey: userCoordinateLongitudeKey)
+        
+        return Listenable<Double?>(userCoordinateLongitude) { userCoordinateLongitude in
+            defaults.set(userCoordinateLongitude, forKey: userCoordinateLongitudeKey)
+        }
+    }()
+    
+    public static var userLocationName: Listenable<String?> = {
+        let userLocationName = defaults.string(forKey: userLocationNameKey)
+        
+        return Listenable<String?>(userLocationName) { userLocationName in
+            defaults.set(userLocationName, forKey: userLocationNameKey)
+        }
+    }()
     
     public static var appLaunchCount: Listenable<Int> = {
         let appLaunchCount = defaults.integer(forKey: appLaunchCountKey)

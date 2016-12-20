@@ -5,6 +5,8 @@
   Created by dinglin on 2016/12/8.
   Copyright © 2016年 dinglin. All rights reserved.
 */
+"CFBundleDisplayName" = "玩的";
+
 "NSLocationWhenInUseUsageDescription" = "与附近的天才相遇";
 "NSPhotoLibraryUsageDescription" = "发送、保存图片，或设置头像";
 "NSCameraUsageDescription" = "拍照以发送图片消息，或设置头像";

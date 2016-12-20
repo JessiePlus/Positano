@@ -200,3 +200,91 @@ public func loginByMail(_ mailAddress: MailAddress, password: String, failureHan
     apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
+// MARK: - User
+
+public func userInfoOfUserWithUserID(_ userID: String, failureHandler: FailureHandler?, completion: @escaping (JSONDictionary) -> Void) {
+    let parse: (JSONDictionary) -> JSONDictionary? = { data in
+        return data
+    }
+    
+    let resource = authJsonResource(path: "/v1/users/\(userID)", method: .get, requestParameters: [:], parse: parse)
+    
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
+
+// 自己的信息
+public func userInfo(failureHandler: FailureHandler?, completion: @escaping (JSONDictionary) -> Void) {
+    let parse: (JSONDictionary) -> JSONDictionary? = { data in
+        return data
+    }
+    
+    let resource = authJsonResource(path: "/v1/user", method: .get, requestParameters: [:], parse: parse)
+    
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
+
+public func updateMyselfWithInfo(_ info: JSONDictionary, failureHandler: FailureHandler?, completion: @escaping (Bool) -> Void) {
+    
+    // nickname
+    // avatar_url
+    // username
+    // latitude
+    // longitude
+    
+    let parse: (JSONDictionary) -> Bool? = { data in
+        return true
+    }
+    
+    let resource = authJsonResource(path: "/v1/user", method: .patch, requestParameters: info, parse: parse)
+    
+    apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
+}
+
+public func updateAvatarWithImageData(_ imageData: Data, failureHandler: FailureHandler?, completion: @escaping (String) -> Void) {
+    
+    guard let token = PositanoUserDefaults.v1AccessToken.value else {
+        println("updateAvatarWithImageData no token")
+        return
+    }
+    
+    let headers: [String: String] = [
+        "Authorization": "Token token=\"\(token)\"",
+    ]
+    
+    let filename = "avatar.jpg"
+    let url = URL(string: PositanoBaseURL.absoluteString + "/v1/user/set_avatar")!
+    
+    Alamofire.upload(multipartFormData: { multipartFormData in
+        
+        multipartFormData.append(imageData, withName: "avatar", fileName: filename, mimeType: "image/jpeg")
+        
+    }, to: url, method: .patch, headers: headers, encodingCompletion: { encodingResult in
+        
+        switch encodingResult {
+            
+        case .success(let upload, _, _):
+            
+            upload.responseJSON(completionHandler: { response in
+                
+                guard
+                    let data = response.data,
+                    let json = decodeJSON(data),
+                    let avatarInfo = json["avatar"] as? JSONDictionary,
+                    let avatarURLString = avatarInfo["url"] as? String else {
+                        failureHandler?(.couldNotParseJSON, "failed parse JSON in updateAvatarWithImageData")
+                        return
+                }
+                
+                completion(avatarURLString)
+            })
+            
+        case .failure(let encodingError):
+            
+            let failureHandler: FailureHandler = { (reason, errorMessage) in
+                defaultFailureHandler(reason, errorMessage)
+                failureHandler?(reason, errorMessage)
+            }
+            failureHandler(.other(nil), "\(encodingError)")
+        }
+    })
+}

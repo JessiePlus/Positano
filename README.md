@@ -1,5 +1,5 @@
 # Positano
-This is a weather APP(ideas and technologies come from Yep).
+This is a social APP(ideas and technologies come from Yep).
 
 ![](https://raw.githubusercontent.com/LinDing/Coffee/master/positano.jpeg)
 
