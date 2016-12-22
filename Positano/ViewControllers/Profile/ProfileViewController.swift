@@ -196,6 +196,8 @@ final class ProfileViewController: SegueViewController, CanScrollsToTop {
             if let me = me() {
                 profileUser = ProfileUser.userType(me)
                 
+                println("loginUser: \(profileUser)")
+
                 
                 updateProfileTableView()
             }
@@ -454,16 +456,6 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate, UIG
                 }
             }
             
-            cell.updatePrettyColorAction = { [weak self] prettyColor in
-                self?.customNavigationBar.tintColor = prettyColor
-                
-                let textAttributes = [
-                    NSForegroundColorAttributeName: prettyColor,
-                    NSFontAttributeName: UIFont.navigationBarTitleFont()
-                ]
-                self?.customNavigationBar.titleTextAttributes = textAttributes
-            }
-            
             return cell
             
         case .footer://介绍
@@ -472,9 +464,6 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate, UIG
             if let profileUser = profileUser {
                 cell.configureWithProfileUser(profileUser)
                 
-                cell.tapUsernameAction = { [weak self] username in
-//                    self?.tryShowProfileWithUsername(username)
-                }
             }
             
             return cell

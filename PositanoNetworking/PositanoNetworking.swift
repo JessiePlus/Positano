@@ -80,7 +80,7 @@ public enum Reason: CustomStringConvertible {
 public typealias FailureHandler = (_ reason: Reason, _ errorMessage: String?) -> Void
 
 public let defaultFailureHandler: FailureHandler = { (reason, errorMessage) in
-    print("\n***************************** YepNetworking Failure *****************************")
+    print("\n***************************** PositanoNetworking Failure *****************************")
     print("Reason: \(reason)")
     if let errorMessage = errorMessage {
         print("errorMessage: >>>\(errorMessage)<<<\n")
@@ -332,7 +332,7 @@ public func jsonResource<A>(token: String?, path: String, method: Method, reques
         "Content-Type": "application/json",
     ]
     if let token = token {
-        headers["Authorization"] = "Token token=\"\(token)\""
+        headers["X-LC-Session"] = "\(token)"
     }
 
     let locale = Locale.autoupdatingCurrent

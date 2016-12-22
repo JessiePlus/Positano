@@ -19,8 +19,6 @@ final class ProfileHeaderCell: UITableViewCell {
     @IBOutlet weak var nicknameLabel: UILabel!
 
 
-    var updatePrettyColorAction: ((UIColor) -> Void)?
-
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -52,12 +50,6 @@ final class ProfileHeaderCell: UITableViewCell {
 
             SafeDispatch.async {
                 self?.avatarImageView.image = image
-
-                let avatarAvarageColor = image.yep_avarageColor
-                let prettyColor = avatarAvarageColor.yep_profilePrettyColor
-                self?.locationLabel.textColor = prettyColor
-
-                self?.updatePrettyColorAction?(prettyColor)
 
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseOut, animations: { [weak self] in
                     self?.avatarImageView.alpha = 1

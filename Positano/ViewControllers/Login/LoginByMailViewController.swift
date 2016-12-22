@@ -122,7 +122,9 @@ final class LoginByMailViewController: BaseInputMailViewController, UITextFieldD
             SafeDispatch.async {
                 
                 saveTokenAndUserInfoOfLoginUser(loginUser)
-
+                
+                syncMyInfoAndDoFurtherAction{};
+                
                 if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
                     appDelegate.startMainStory()
                 }

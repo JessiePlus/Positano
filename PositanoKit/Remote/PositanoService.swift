@@ -207,7 +207,7 @@ public func userInfoOfUserWithUserID(_ userID: String, failureHandler: FailureHa
         return data
     }
     
-    let resource = authJsonResource(path: "/v1/users/\(userID)", method: .get, requestParameters: [:], parse: parse)
+    let resource = authJsonResource(path: "/1.1/users/\(userID)", method: .get, requestParameters: [:], parse: parse)
     
     apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
@@ -218,7 +218,7 @@ public func userInfo(failureHandler: FailureHandler?, completion: @escaping (JSO
         return data
     }
     
-    let resource = authJsonResource(path: "/v1/user", method: .get, requestParameters: [:], parse: parse)
+    let resource = authJsonResource(path: "/1.1/users/me", method: .get, requestParameters: [:], parse: parse)
     
     apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }

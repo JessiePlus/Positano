@@ -153,6 +153,7 @@
 		D669E4AA1E09478100EE47E9 /* YepLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4A91E09478100EE47E9 /* YepLocationService.swift */; };
 		D669E4AE1E094EBF00EE47E9 /* ProfileFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */; };
 		D669E4AF1E094EBF00EE47E9 /* ProfileFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */; };
+		D669E4B11E0C05CA00EE47E9 /* PositanoServiceSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4B01E0C05CA00EE47E9 /* PositanoServiceSync.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -390,6 +391,7 @@
 		D669E4A91E09478100EE47E9 /* YepLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YepLocationService.swift; sourceTree = "<group>"; };
 		D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFooterCell.swift; sourceTree = "<group>"; };
 		D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileFooterCell.xib; sourceTree = "<group>"; };
+		D669E4B01E0C05CA00EE47E9 /* PositanoServiceSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoServiceSync.swift; sourceTree = "<group>"; };
 		E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Positano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAC93DC918662EA80FC96C8 /* Pods-PositanoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoKit/Pods-PositanoKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -754,6 +756,7 @@
 			isa = PBXGroup;
 			children = (
 				D614AEE31DFA8AB5007747D7 /* PositanoService.swift */,
+				D669E4B01E0C05CA00EE47E9 /* PositanoServiceSync.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -1389,6 +1392,7 @@
 				D614AE111DF7AD89007747D7 /* Double+Yep.swift in Sources */,
 				D614AE131DF7AD89007747D7 /* Realm+Yep.swift in Sources */,
 				D614AE621DF7FBE0007747D7 /* SafeDispatch.swift in Sources */,
+				D669E4B11E0C05CA00EE47E9 /* PositanoServiceSync.swift in Sources */,
 				D614AE021DF7AD2F007747D7 /* Config.swift in Sources */,
 				D614AE631DF7FBE0007747D7 /* YepMedia.swift in Sources */,
 				D614AE0F1DF7AD89007747D7 /* Array+Yep.swift in Sources */,

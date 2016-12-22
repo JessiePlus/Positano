@@ -120,6 +120,8 @@ final class RegisterPickMailViewController: BaseInputMailViewController, UITextF
                 SafeDispatch.async { [weak self] in
                     
                     saveTokenAndUserInfoOfLoginUser(loginUser)
+                    
+                    syncMyInfoAndDoFurtherAction{};
                         
                     if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
                         appDelegate.startMainStory()
