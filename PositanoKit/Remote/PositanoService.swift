@@ -223,6 +223,7 @@ public func userInfo(failureHandler: FailureHandler?, completion: @escaping (JSO
     apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }
 
+//该接口还在调试中
 public func updateMyselfWithInfo(_ info: JSONDictionary, failureHandler: FailureHandler?, completion: @escaping (Bool) -> Void) {
     
     // nickname
@@ -235,7 +236,7 @@ public func updateMyselfWithInfo(_ info: JSONDictionary, failureHandler: Failure
         return true
     }
     
-    let resource = authJsonResource(path: "/v1/user", method: .patch, requestParameters: info, parse: parse)
+    let resource = authJsonResource(path: "/1.1/users/me", method: .patch, requestParameters: info, parse: parse)
     
     apiRequest({_ in}, baseURL: PositanoBaseURL, resource: resource, failure: failureHandler, completion: completion)
 }

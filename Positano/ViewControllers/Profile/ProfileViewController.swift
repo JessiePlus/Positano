@@ -113,8 +113,12 @@ final class ProfileViewController: SegueViewController, CanScrollsToTop {
         return 0
     }()
     
-    fileprivate var footerCellHeight: CGFloat {
+    fileprivate var headerCellHeight: CGFloat {
         return 60
+    }
+    
+    fileprivate var footerCellHeight: CGFloat {
+        return 100
     }
     
     fileprivate struct Listener {
@@ -282,7 +286,8 @@ final class ProfileViewController: SegueViewController, CanScrollsToTop {
                     
                     let indexPath = IndexPath(item: 0, section: Section.footer.rawValue)
                     if let cell = self?.profileTableView.cellForRow(at: indexPath) as? ProfileFooterCell {
-                        cell.location = newLocation
+                        
+//                        cell.location = newLocation
                     }
                 }
                 
@@ -482,7 +487,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate, UIG
         switch section {
             
         case .header:
-            return tableViewWidth
+            return headerCellHeight
             
         case .footer:
             return footerCellHeight

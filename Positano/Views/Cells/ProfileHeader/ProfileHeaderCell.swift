@@ -15,8 +15,6 @@ import Navi
 final class ProfileHeaderCell: UITableViewCell {
 
     @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var nicknameLabel: UILabel!
 
 
     deinit {
@@ -61,7 +59,7 @@ final class ProfileHeaderCell: UITableViewCell {
     // MARK: Notifications
     
     func updateAddress() {
-        locationLabel.text = YepLocationService.sharedManager.address
+//        locationLabel.text = YepLocationService.sharedManager.address
     }
 }
 
