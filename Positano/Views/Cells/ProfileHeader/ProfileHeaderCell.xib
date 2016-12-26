@@ -10,22 +10,57 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7By-Jn-rh8" userLabel="ProfileHeaderCell" customClass="ProfileHeaderCell" customModule="Positano" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="7By-Jn-rh8" userLabel="ProfileHeaderCell" customClass="ProfileHeaderCell" customModule="Positano" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="181"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7By-Jn-rh8" id="QUc-hY-93U">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="412" height="180.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-cK-3UB" userLabel="Avatar Image View">
-                        <rect key="frame" x="100" y="-29" width="175" height="100"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LuYun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd4-xP-VGZ" userLabel="Nickname Label">
+                        <rect key="frame" x="178" y="58" width="56" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="86I-Qg-bac"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@luyun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uet-Kf-bc8" userLabel="Username Label">
+                        <rect key="frame" x="180.5" y="87" width="51" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="8nO-Mg-frl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-cK-3UB" userLabel="Avatar Image View">
+                        <rect key="frame" x="182" y="5" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="N4I-XM-OFg"/>
+                            <constraint firstAttribute="width" constant="48" id="dZH-2G-FzI"/>
+                        </constraints>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="rd4-xP-VGZ" firstAttribute="centerX" secondItem="QUc-hY-93U" secondAttribute="centerX" id="7W2-iF-pb5"/>
+                    <constraint firstItem="9iO-cK-3UB" firstAttribute="centerX" secondItem="QUc-hY-93U" secondAttribute="centerX" id="Cxu-14-O7i"/>
+                    <constraint firstItem="uet-Kf-bc8" firstAttribute="top" secondItem="rd4-xP-VGZ" secondAttribute="bottom" constant="5" id="ULs-Vd-Mi2"/>
+                    <constraint firstItem="rd4-xP-VGZ" firstAttribute="top" secondItem="9iO-cK-3UB" secondAttribute="bottom" constant="5" id="dUi-bB-1GE"/>
+                    <constraint firstItem="uet-Kf-bc8" firstAttribute="centerX" secondItem="QUc-hY-93U" secondAttribute="centerX" id="rvq-ou-g0Y"/>
+                    <constraint firstItem="9iO-cK-3UB" firstAttribute="top" secondItem="QUc-hY-93U" secondAttribute="top" constant="5" id="scE-Ix-WnV"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatarImageView" destination="9iO-cK-3UB" id="8U1-ud-HAG"/>
+                <outlet property="nicknameLabel" destination="rd4-xP-VGZ" id="BhQ-pJ-tB0"/>
+                <outlet property="usernameLabel" destination="uet-Kf-bc8" id="bla-IF-jx3"/>
             </connections>
+            <point key="canvasLocation" x="129" y="128.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Camera" width="71" height="45"/>
+    </resources>
 </document>

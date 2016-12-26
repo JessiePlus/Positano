@@ -15,45 +15,49 @@ import Navi
 final class ProfileHeaderCell: UITableViewCell {
 
     @IBOutlet weak var avatarImageView: UIImageView!
-
+    @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
 
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
 
+    var userID: String? {
+        didSet {
+            
+        }
+    }
+    
+    var profileUserIsMe = false {
+        didSet {
+            
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
     }
-
-    func configureWithUser(_ user: User) {
-
-        updateAvatarWithAvatarURLString(user.avatarURLString)
+    
+    func configureWithProfileUser(_ profileUser: ProfileUser) {
+        
+        userID = profileUser.userID
+        profileUserIsMe = profileUser.isMe
+        
+        configureWithNickname(profileUser.nickname, username: profileUser.username)
+        
     }
-
-    func updateAvatarWithAvatarURLString(_ avatarURLString: String) {
-
-        if avatarImageView.image == nil {
-            avatarImageView.alpha = 0
+    
+    fileprivate func configureWithNickname(_ nickname: String, username: String?) {
+        
+        nicknameLabel.text = nickname
+        
+        if let username = username {
+            usernameLabel.text = "@" + username
+        } else {
+            usernameLabel.text = String.trans_promptNoUsername
         }
-
-        let avatarStyle = AvatarStyle.original
-        let plainAvatar = PlainAvatar(avatarURLString: avatarURLString, avatarStyle: avatarStyle)
-
-        AvatarPod.wakeAvatar(plainAvatar) { [weak self] finished, image, _ in
-
-            if finished {
-
-            }
-
-            SafeDispatch.async {
-                self?.avatarImageView.image = image
-
-                UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseOut, animations: { [weak self] in
-                    self?.avatarImageView.alpha = 1
-                }, completion: nil)
-            }
-        }
+        
     }
 
     // MARK: Notifications

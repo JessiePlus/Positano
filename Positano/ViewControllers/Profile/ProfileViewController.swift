@@ -114,7 +114,7 @@ final class ProfileViewController: SegueViewController, CanScrollsToTop {
     }()
     
     fileprivate var headerCellHeight: CGFloat {
-        return 60
+        return 100
     }
     
     fileprivate var footerCellHeight: CGFloat {
@@ -209,17 +209,6 @@ final class ProfileViewController: SegueViewController, CanScrollsToTop {
         
         profileUserIsMe = profileUser?.isMe ?? false
         
-        //Make sure when pan edge screen collectionview not scroll
-        if let gestures = navigationController?.view.gestureRecognizers {
-            for recognizer in gestures {
-                if recognizer.isKind(of: UIScreenEdgePanGestureRecognizer.self) {
-                    profileTableView.panGestureRecognizer.require(toFail: recognizer as! UIScreenEdgePanGestureRecognizer)
-                    println("Require UIScreenEdgePanGestureRecognizer to failed")
-                    break
-                }
-            }
-        }
-        
         if let tabBarController = tabBarController {
             profileTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabBarController.tabBar.bounds.height, right: 0)
         }
@@ -235,17 +224,6 @@ final class ProfileViewController: SegueViewController, CanScrollsToTop {
                         SafeDispatch.async {
                             self?.customNavigationItem.title = nickname
                             self?.updateProfileTableView()
-                        }
-                    }
-                    
-                    PositanoUserDefaults.avatarURLString.bindListener(listener.avatar) { [weak self] avatarURLString in
-                        SafeDispatch.async {
-                            let indexPath = IndexPath(item: 0, section: Section.header.rawValue)
-                            if let cell = self?.profileTableView.cellForRow(at: indexPath) as? ProfileHeaderCell {
-                                if let avatarURLString = avatarURLString {
-                                    cell.updateAvatarWithAvatarURLString(avatarURLString)
-                                }
-                            }
                         }
                     }
                     
@@ -455,10 +433,8 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate, UIG
             let cell: ProfileHeaderCell = tableView.dequeueReusableCell()
             
             if let profileUser = profileUser {
-                switch profileUser {
-                case .userType(let user):
-                    cell.configureWithUser(user)
-                }
+                cell.configureWithProfileUser(profileUser)
+
             }
             
             return cell
