@@ -41,6 +41,7 @@ open class Avatar: Object {
     }
 }
 
+//这里定义一下和数据库交互的models 2016-12-31 13:04:25
 
 open class User: Object {
     open dynamic var userID: String = ""

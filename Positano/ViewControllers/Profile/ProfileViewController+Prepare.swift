@@ -17,21 +17,13 @@ extension ProfileViewController {
             self.profileUser = ProfileUser.userType(user)
         }
         
-        prepareUI()
     }
     
     func prepare(withProfileUser profileUser: ProfileUser) {
         
         self.profileUser = profileUser
         
-        prepareUI()
     }
-    
-    fileprivate func prepareUI() {
-        
-        setBackButtonWithTitle()
-        
-        hidesBottomBarWhenPushed = true
-    }
+
 }
 

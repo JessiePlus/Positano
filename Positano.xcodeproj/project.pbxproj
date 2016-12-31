@@ -140,9 +140,7 @@
 		D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647B2671DEC4A3600642BAF /* LaunchScreen.storyboard */; };
 		D647B2741DEC4A3600642BAF /* PositanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B2731DEC4A3600642BAF /* PositanoTests.swift */; };
 		D669E47B1E07799100EE47E9 /* PositanoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E47A1E07799100EE47E9 /* PositanoTabBarController.swift */; };
-		D669E4811E077C9200EE47E9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669E47D1E077C9200EE47E9 /* Profile.storyboard */; };
 		D669E4831E077C9200EE47E9 /* ProfileViewController+Prepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E47F1E077C9200EE47E9 /* ProfileViewController+Prepare.swift */; };
-		D669E4841E077C9200EE47E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4801E077C9200EE47E9 /* ProfileViewController.swift */; };
 		D669E4871E077DD100EE47E9 /* PositanoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4861E077DD100EE47E9 /* PositanoNavigationController.swift */; };
 		D669E48A1E07816000EE47E9 /* PositanoUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4891E07816000EE47E9 /* PositanoUIModels.swift */; };
 		D669E48D1E07FF7F00EE47E9 /* BottomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E48C1E07FF7F00EE47E9 /* BottomButtonView.swift */; };
@@ -154,6 +152,13 @@
 		D669E4AE1E094EBF00EE47E9 /* ProfileFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */; };
 		D669E4AF1E094EBF00EE47E9 /* ProfileFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */; };
 		D669E4B11E0C05CA00EE47E9 /* PositanoServiceSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4B01E0C05CA00EE47E9 /* PositanoServiceSync.swift */; };
+		D669E4E21E17590200EE47E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4E01E17590200EE47E9 /* ProfileViewController.swift */; };
+		D669E4E31E17590200EE47E9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D669E4E11E17590200EE47E9 /* Profile.storyboard */; };
+		D669E4F41E1759ED00EE47E9 /* SettingsMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4EF1E1759ED00EE47E9 /* SettingsMoreCell.swift */; };
+		D669E4F51E1759ED00EE47E9 /* SettingsMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669E4F01E1759ED00EE47E9 /* SettingsMoreCell.xib */; };
+		D669E4F61E1759ED00EE47E9 /* SettingsUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4F21E1759ED00EE47E9 /* SettingsUserCell.swift */; };
+		D669E4F71E1759ED00EE47E9 /* SettingsUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669E4F31E1759ED00EE47E9 /* SettingsUserCell.xib */; };
+		D669E4FA1E175A9400EE47E9 /* TitleSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669E4F91E175A9400EE47E9 /* TitleSwitchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,9 +383,7 @@
 		D647B2731DEC4A3600642BAF /* PositanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositanoTests.swift; sourceTree = "<group>"; };
 		D647B2751DEC4A3600642BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D669E47A1E07799100EE47E9 /* PositanoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoTabBarController.swift; sourceTree = "<group>"; };
-		D669E47D1E077C9200EE47E9 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D669E47F1E077C9200EE47E9 /* ProfileViewController+Prepare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+Prepare.swift"; sourceTree = "<group>"; };
-		D669E4801E077C9200EE47E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D669E4861E077DD100EE47E9 /* PositanoNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoNavigationController.swift; sourceTree = "<group>"; };
 		D669E4891E07816000EE47E9 /* PositanoUIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoUIModels.swift; sourceTree = "<group>"; };
 		D669E48C1E07FF7F00EE47E9 /* BottomButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomButtonView.swift; sourceTree = "<group>"; };
@@ -392,6 +395,13 @@
 		D669E4AC1E094EBF00EE47E9 /* ProfileFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFooterCell.swift; sourceTree = "<group>"; };
 		D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileFooterCell.xib; sourceTree = "<group>"; };
 		D669E4B01E0C05CA00EE47E9 /* PositanoServiceSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositanoServiceSync.swift; sourceTree = "<group>"; };
+		D669E4E01E17590200EE47E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D669E4E11E17590200EE47E9 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D669E4EF1E1759ED00EE47E9 /* SettingsMoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMoreCell.swift; sourceTree = "<group>"; };
+		D669E4F01E1759ED00EE47E9 /* SettingsMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsMoreCell.xib; sourceTree = "<group>"; };
+		D669E4F21E1759ED00EE47E9 /* SettingsUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUserCell.swift; sourceTree = "<group>"; };
+		D669E4F31E1759ED00EE47E9 /* SettingsUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsUserCell.xib; sourceTree = "<group>"; };
+		D669E4F91E175A9400EE47E9 /* TitleSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSwitchCell.swift; sourceTree = "<group>"; };
 		E9E9977D62F3FEAB92557485 /* Pods_Positano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Positano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAC93DC918662EA80FC96C8 /* Pods-PositanoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PositanoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PositanoKit/Pods-PositanoKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -886,9 +896,9 @@
 		D669E47C1E077C9200EE47E9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				D669E47D1E077C9200EE47E9 /* Profile.storyboard */,
 				D669E47F1E077C9200EE47E9 /* ProfileViewController+Prepare.swift */,
-				D669E4801E077C9200EE47E9 /* ProfileViewController.swift */,
+				D669E4E01E17590200EE47E9 /* ProfileViewController.swift */,
+				D669E4E11E17590200EE47E9 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -920,6 +930,9 @@
 		D669E48E1E09425800EE47E9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D669E4F81E175A9400EE47E9 /* TitleSwitch */,
+				D669E4EE1E1759ED00EE47E9 /* ProfileMore */,
+				D669E4F11E1759ED00EE47E9 /* ProfileUser */,
 				D669E4AB1E094EBF00EE47E9 /* ProfileFooter */,
 				D669E4941E0942A000EE47E9 /* ProfileHeader */,
 			);
@@ -950,6 +963,32 @@
 				D669E4AD1E094EBF00EE47E9 /* ProfileFooterCell.xib */,
 			);
 			path = ProfileFooter;
+			sourceTree = "<group>";
+		};
+		D669E4EE1E1759ED00EE47E9 /* ProfileMore */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4EF1E1759ED00EE47E9 /* SettingsMoreCell.swift */,
+				D669E4F01E1759ED00EE47E9 /* SettingsMoreCell.xib */,
+			);
+			path = ProfileMore;
+			sourceTree = "<group>";
+		};
+		D669E4F11E1759ED00EE47E9 /* ProfileUser */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4F21E1759ED00EE47E9 /* SettingsUserCell.swift */,
+				D669E4F31E1759ED00EE47E9 /* SettingsUserCell.xib */,
+			);
+			path = ProfileUser;
+			sourceTree = "<group>";
+		};
+		D669E4F81E175A9400EE47E9 /* TitleSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				D669E4F91E175A9400EE47E9 /* TitleSwitchCell.swift */,
+			);
+			path = TitleSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1212,12 +1251,14 @@
 			files = (
 				D647B2691DEC4A3600642BAF /* LaunchScreen.storyboard in Resources */,
 				D63B356E1E0012CB008DE29B /* Show.xcassets in Resources */,
-				D669E4811E077C9200EE47E9 /* Profile.storyboard in Resources */,
 				D614AEB01DF8E89B007747D7 /* InfoPlist.strings in Resources */,
+				D669E4E31E17590200EE47E9 /* Profile.storyboard in Resources */,
 				D614AEAA1DF8E83F007747D7 /* Localizable.strings in Resources */,
+				D669E4F51E1759ED00EE47E9 /* SettingsMoreCell.xib in Resources */,
 				D614AE861DF7FF3C007747D7 /* NSDateTimeAgo.bundle in Resources */,
 				D669E4AF1E094EBF00EE47E9 /* ProfileFooterCell.xib in Resources */,
 				D647B2661DEC4A3600642BAF /* Images.xcassets in Resources */,
+				D669E4F71E1759ED00EE47E9 /* SettingsUserCell.xib in Resources */,
 				D669E4981E0942A000EE47E9 /* ProfileHeaderCell.xib in Resources */,
 				D647B2641DEC4A3600642BAF /* Main.storyboard in Resources */,
 				D614AED41DFA42E2007747D7 /* Intro.storyboard in Resources */,
@@ -1446,7 +1487,7 @@
 				D614AEEA1DFBAFDD007747D7 /* MobilePhoneReducer.swift in Sources */,
 				D614AE771DF7FE26007747D7 /* CanScrollsToTop.swift in Sources */,
 				D614AE5A1DF7F735007747D7 /* ImageCache.swift in Sources */,
-				D669E4841E077C9200EE47E9 /* ProfileViewController.swift in Sources */,
+				D669E4FA1E175A9400EE47E9 /* TitleSwitchCell.swift in Sources */,
 				D614AD951DF407FC007747D7 /* DeviceUtil+Yep.swift in Sources */,
 				D614AE811DF7FE26007747D7 /* UserRepresentation.swift in Sources */,
 				D614AD931DF407FC007747D7 /* CLPlacemark+Yep.swift in Sources */,
@@ -1464,6 +1505,7 @@
 				D614ADCA1DF6B9DC007747D7 /* BorderTextField.swift in Sources */,
 				D614AE491DF7D862007747D7 /* YepAsset.swift in Sources */,
 				D669E4AE1E094EBF00EE47E9 /* ProfileFooterCell.swift in Sources */,
+				D669E4E21E17590200EE47E9 /* ProfileViewController.swift in Sources */,
 				D614AD8F1DF407FC007747D7 /* CGImage+Yep.swift in Sources */,
 				D614AEB61DF93840007747D7 /* RegisterPickMobileViewController.swift in Sources */,
 				D63B35781E001634008DE29B /* ShowStepViewController.swift in Sources */,
@@ -1523,7 +1565,9 @@
 				D614AD9B1DF407FC007747D7 /* PHImageRequestOptions+Yep.swift in Sources */,
 				D614AEE61DFBA67E007747D7 /* RegisterPickMailViewController.swift in Sources */,
 				D614ADA11DF407FC007747D7 /* UIColor+Yep.swift in Sources */,
+				D669E4F61E1759ED00EE47E9 /* SettingsUserCell.swift in Sources */,
 				D614AD9D1DF407FC007747D7 /* String+Yep.swift in Sources */,
+				D669E4F41E1759ED00EE47E9 /* SettingsMoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

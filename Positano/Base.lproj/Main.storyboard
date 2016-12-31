@@ -30,7 +30,7 @@
         <!--Discover-->
         <scene sceneID="niI-9M-xej">
             <objects>
-                <navigationController id="C1u-sJ-CD9" userLabel="Discover" sceneMemberID="viewController">
+                <navigationController id="C1u-sJ-CD9" userLabel="Discover" customClass="PositanoNavigationController" customModule="Positano" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Discover" image="icon_explore" id="pc0-Ma-YPs">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_explore_active"/>
@@ -48,7 +48,7 @@
         <!--Profile-->
         <scene sceneID="b8S-es-g7p">
             <objects>
-                <navigationController id="y29-yA-nKz" userLabel="Profile" sceneMemberID="viewController">
+                <navigationController id="y29-yA-nKz" userLabel="Profile" customClass="PositanoNavigationController" customModule="Positano" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="icon_me" id="9t1-t4-Icj">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_me_active"/>

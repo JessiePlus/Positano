@@ -22,15 +22,26 @@ func println(_ item: @autoclosure () -> Any) {
     #endif
 }
 
-// Models
+// 这里定义一下和服务器交互的Models
 
+//登录返回的用户
 public struct LoginUser: CustomStringConvertible {
 
-    public let accessToken: String
+    //不能为空:
     public let userID: String
-    public let username: String?
-    public let nickname: String
+    public let username: String
+    //可以为空:
+    public let nickname: String?
+    public let introduction: String?
     public let avatarURLString: String?
+    public let createdUnixTime: TimeInterval?
+    public let lastSignInUnixTime: TimeInterval?
+    public let longitude: Double?
+    public let latitude: Double?
+    
+    //登录用户独有的数据:
+    //不能为空:
+    public let accessToken: String
     public let pusherID: String
 
     public var description: String {
@@ -39,16 +50,72 @@ public struct LoginUser: CustomStringConvertible {
 
     static func fromJSONDictionary(_ data: JSONDictionary) -> LoginUser? {
 
-        guard let accessToken = data["sessionToken"] as? String else { return nil }
+        //不能为空
         guard let userID = data["objectId"] as? String else { return nil }
         guard let username = data["username"] as? String else { return nil }
-        guard let nickname = data["nickname"] as? String else { return nil }
+        guard let accessToken = data["sessionToken"] as? String else { return nil }
+        guard let pusherID = data["pusher_id"] as? String else { return nil }
         
-        let pusherID = "pusher_id"//data["pusher_id"] as? String else { return nil }
-        let avatarURLString = "avatar_url"//data["avatar_url"] as? String else { return nil }
+        //可以为空
+        let nickname = data["nickname"] as? String
+        let introduction = data["introduction"] as? String
+        let avatarURLString = data["avatarURLString"] as? String
+        let createdUnixTime = data["createdUnixTime"] as? TimeInterval
+        let lastSignInUnixTime = data["lastSignInUnixTime"] as? TimeInterval
+        let longitude = data["longitude"] as? Double
+        let latitude = data["latitude"] as? Double
 
-        return LoginUser(accessToken: accessToken, userID: userID, username: username, nickname: nickname, avatarURLString: avatarURLString, pusherID: pusherID)
+        return LoginUser(userID: userID, username: username,
+                         nickname: nickname, introduction: introduction,
+                         avatarURLString: avatarURLString, createdUnixTime: createdUnixTime,
+                         lastSignInUnixTime: lastSignInUnixTime, longitude: longitude,
+                         latitude: latitude,
+                         accessToken: accessToken, pusherID: pusherID)
     }
+}
+
+//通过扫描二维码或者查询用户名返回的用户
+public struct DiscoveredUser: Hashable {
+    
+    //不能为空:
+    public let userID: String
+    public let username: String
+    
+    //可以为空:
+    public let nickname: String?
+    public let introduction: String?
+    public let avatarURLString: String?
+    public let createdUnixTime: TimeInterval?
+    public let lastSignInUnixTime: TimeInterval?
+    public let longitude: Double?
+    public let latitude: Double?
+    
+    
+    public var hashValue: Int {
+        return userID.hashValue
+    }
+    
+    public var description: String {
+        return "DiscoveredUser(userID: \(userID), username: \(username), nickname: \(nickname), avatarURLString: \(avatarURLString))"
+    }
+    
+    public var isMe: Bool {
+        if let myUserID = PositanoUserDefaults.userID.value {
+            return userID == myUserID
+        }
+        
+        return false
+    }
+    
+    //从数据库的model转成服务器需要的DiscoveredUser
+    public static func fromUser(_ user: User) -> DiscoveredUser {
+        
+        return DiscoveredUser(userID: user.userID, username: user.username, nickname: user.nickname, introduction: user.introduction, avatarURLString: user.avatarURLString, createdUnixTime: user.createdUnixTime, lastSignInUnixTime: user.lastSignInUnixTime, longitude: user.longitude, latitude: user.latitude)
+    }
+}
+
+public func ==(lhs: DiscoveredUser, rhs: DiscoveredUser) -> Bool {
+    return lhs.userID == rhs.userID
 }
 
 public func saveTokenAndUserInfoOfLoginUser(_ loginUser: LoginUser) {
