@@ -24,7 +24,7 @@ func println(_ item: @autoclosure () -> Any) {
 
 // 这里定义一下和服务器交互的Models
 
-//登录返回的用户
+// MARK: - 登录返回的用户
 public struct LoginUser: CustomStringConvertible {
 
     //不能为空:
@@ -74,7 +74,7 @@ public struct LoginUser: CustomStringConvertible {
     }
 }
 
-//通过扫描二维码或者查询用户名返回的用户
+// MARK: - 通过扫描二维码或者查询用户名返回的用户
 public struct DiscoveredUser: Hashable {
     
     //不能为空:
@@ -117,6 +117,10 @@ public struct DiscoveredUser: Hashable {
 public func ==(lhs: DiscoveredUser, rhs: DiscoveredUser) -> Bool {
     return lhs.userID == rhs.userID
 }
+
+
+
+
 
 public func saveTokenAndUserInfoOfLoginUser(_ loginUser: LoginUser) {
 

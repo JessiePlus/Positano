@@ -34,8 +34,6 @@ public func syncMyInfoAndDoFurtherAction(_ furtherAction: @escaping () -> Void) 
                     let newUser = User()
                     newUser.userID = myUserID
                     
-                    newUser.friendState = UserFriendState.me.rawValue
-                    
                     if let createdUnixTime = friendInfo["created_at"] as? TimeInterval {
                         newUser.createdUnixTime = createdUnixTime
                     }
