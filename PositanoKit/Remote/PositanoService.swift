@@ -42,7 +42,8 @@ public struct LoginUser: CustomStringConvertible {
     //登录用户独有的数据:
     //不能为空:
     public let accessToken: String
-    public let pusherID: String
+    //可以为空:
+    public let pusherID: String?
 
     public var description: String {
         return "LoginUser(accessToken: \(accessToken), userID: \(userID), username: \(username), nickname: \(nickname), avatarURLString: \(avatarURLString), pusherID: \(pusherID))"
@@ -54,7 +55,6 @@ public struct LoginUser: CustomStringConvertible {
         guard let userID = data["objectId"] as? String else { return nil }
         guard let username = data["username"] as? String else { return nil }
         guard let accessToken = data["sessionToken"] as? String else { return nil }
-        guard let pusherID = data["pusher_id"] as? String else { return nil }
         
         //可以为空
         let nickname = data["nickname"] as? String
@@ -64,6 +64,8 @@ public struct LoginUser: CustomStringConvertible {
         let lastSignInUnixTime = data["lastSignInUnixTime"] as? TimeInterval
         let longitude = data["longitude"] as? Double
         let latitude = data["latitude"] as? Double
+        let pusherID = data["pusher_id"] as? String
+
 
         return LoginUser(userID: userID, username: username,
                          nickname: nickname, introduction: introduction,
@@ -118,7 +120,26 @@ public func ==(lhs: DiscoveredUser, rhs: DiscoveredUser) -> Bool {
     return lhs.userID == rhs.userID
 }
 
-
+public let parseDiscoveredUser: (JSONDictionary) -> DiscoveredUser? = { userInfo in
+    
+    if let userID = userInfo["userID"] as? String, let username = userInfo["username"] as? String {
+        
+        let nickname = userInfo["nickname"] as? String
+        let avatarURLString = userInfo["url"] as? String
+        let introduction = userInfo["introduction"] as? String
+        let createdUnixTime = userInfo["created_at"] as? TimeInterval
+        let lastSignInUnixTime = userInfo["last_sign_in_at"] as? TimeInterval
+        let longitude = userInfo["longitude"] as? Double
+        let latitude = userInfo["latitude"] as? Double
+    
+        let discoverUser = DiscoveredUser(userID: userID, username: username, nickname: nickname, introduction: introduction, avatarURLString: avatarURLString, createdUnixTime: createdUnixTime, lastSignInUnixTime: lastSignInUnixTime, longitude: longitude, latitude: latitude)
+        
+        return discoverUser
+    }
+    
+    println("failed parseDiscoveredUser userInfo: \(userInfo)")
+    return nil
+}
 
 
 

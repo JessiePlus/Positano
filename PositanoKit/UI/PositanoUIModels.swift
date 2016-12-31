@@ -12,11 +12,14 @@ import CoreLocation
 
 public enum ProfileUser {
     
+    case discoveredUserType(DiscoveredUser)
     case userType(User)
     
     public var userID: String {
         
         switch self {
+        case .discoveredUserType(let discoveredUser):
+            return discoveredUser.userID
         case .userType(let user):
             return user.userID
         }
@@ -26,6 +29,8 @@ public enum ProfileUser {
         
         var username: String? = nil
         switch self {
+        case .discoveredUserType(let discoveredUser):
+            username = discoveredUser.username
         case .userType(let user):
             if !user.username.isEmpty {
                 username = user.username
@@ -35,9 +40,11 @@ public enum ProfileUser {
         return username
     }
     
-    public var nickname: String {
+    public var nickname: String? {
         
         switch self {
+        case .discoveredUserType(let discoveredUser):
+            return discoveredUser.nickname
         case .userType(let user):
             return user.nickname
         }
@@ -47,6 +54,8 @@ public enum ProfileUser {
         
         var avatarURLString: String? = nil
         switch self {
+        case .discoveredUserType(let discoveredUser):
+            avatarURLString = discoveredUser.avatarURLString
         case .userType(let user):
             if !user.avatarURLString.isEmpty {
                 avatarURLString = user.avatarURLString
@@ -60,10 +69,13 @@ public enum ProfileUser {
     public var isMe: Bool {
         
         switch self {
+        case .discoveredUserType(let discoveredUser):
+            return discoveredUser.isMe
         case .userType(let user):
             return user.isMe
         }
     }
+    
 }
 
 public enum PickLocationViewControllerLocation {

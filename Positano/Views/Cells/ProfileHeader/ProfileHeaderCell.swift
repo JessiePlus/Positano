@@ -48,7 +48,7 @@ final class ProfileHeaderCell: UITableViewCell {
         
     }
     
-    fileprivate func configureWithNickname(_ nickname: String, username: String?) {
+    fileprivate func configureWithNickname(_ nickname: String?, username: String?) {
         
         nicknameLabel.text = nickname
         
